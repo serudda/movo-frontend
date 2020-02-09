@@ -1,0 +1,9 @@
+/**************************************************/
+/*        UI GUIDELINE'S STYLES ENTRY POINT       */
+/**************************************************/
+
+/* App Core Styles
+--------------------------------------------------*/
+@import './core/color.css';
+@import './core/reset.css';
+@import './core/utilities.css';
