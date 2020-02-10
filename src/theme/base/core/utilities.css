@@ -414,7 +414,7 @@ ul {
  */
 
 html {
-  font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: Avenir, "Avenir Next", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -450,7 +450,7 @@ html {
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: var(--default-snow); /* 2 */
+  border-color: currentColor; /* 2 */
 }
 
 /*
@@ -674,324 +674,120 @@ video {
   background-color: transparent !important;
 }
 
-.bg-light-secondary {
-  background-color: var(--light-secondary) !important;
-}
-
-.bg-default-secondary {
-  background-color: var(--default-secondary) !important;
-}
-
-.bg-dark-secondary {
-  background-color: var(--dark-secondary) !important;
+.bg-primary {
+  background-color: var(--primary) !important;
 }
 
 .bg-white {
   background-color: var(--white) !important;
 }
 
-.bg-default-snow {
-  background-color: var(--default-snow) !important;
+.bg-anti-flash-white {
+  background-color: var(--anti-flash-white) !important;
 }
 
-.bg-dark-snow {
-  background-color: var(--dark-snow) !important;
+.bg-gainsboro {
+  background-color: var(--gainsboro) !important;
 }
 
-.bg-extra-dark-snow {
-  background-color: var(--extra-dark-snow) !important;
+.bg-lavender-gray {
+  background-color: var(--lavender-gray) !important;
 }
 
-.bg-default-smoke {
-  background-color: var(--default-smoke) !important;
+.bg-quick-silver {
+  background-color: var(--quick-silver) !important;
 }
 
-.bg-dark-smoke {
-  background-color: var(--dark-smoke) !important;
+.bg-aurometalsaurus {
+  background-color: var(--aurometalsaurus) !important;
 }
 
-.bg-extra-dark-smoke {
-  background-color: var(--extra-dark-smoke) !important;
-}
-
-.bg-light-slate {
-  background-color: var(--light-slate) !important;
-}
-
-.bg-medium-slate {
-  background-color: var(--medium-slate) !important;
-}
-
-.bg-slate {
-  background-color: var(--slate) !important;
+.bg-yankees-blue {
+  background-color: var(--yankees-blue) !important;
 }
 
 .bg-black {
   background-color: var(--black) !important;
 }
 
-.bg-light-warning {
-  background-color: var(--light-warning) !important;
-}
-
-.bg-default-warning {
-  background-color: var(--default-warning) !important;
-}
-
-.bg-dark-warning {
-  background-color: var(--dark-warning) !important;
-}
-
-.bg-light-positive {
-  background-color: var(--light-positive) !important;
-}
-
-.bg-default-positive {
-  background-color: var(--default-positive) !important;
-}
-
-.bg-dark-positive {
-  background-color: var(--dark-positive) !important;
-}
-
-.bg-light-negative {
-  background-color: var(--light-negative) !important;
-}
-
-.bg-default-negative {
-  background-color: var(--default-negative) !important;
-}
-
-.bg-dark-negative {
-  background-color: var(--dark-negative) !important;
-}
-
-.bg-light-info {
-  background-color: var(--light-info) !important;
-}
-
-.bg-default-info {
-  background-color: var(--default-info) !important;
-}
-
-.bg-dark-info {
-  background-color: var(--dark-info) !important;
-}
-
 .hover\:bg-transparent:hover {
   background-color: transparent !important;
 }
 
-.hover\:bg-light-secondary:hover {
-  background-color: var(--light-secondary) !important;
-}
-
-.hover\:bg-default-secondary:hover {
-  background-color: var(--default-secondary) !important;
-}
-
-.hover\:bg-dark-secondary:hover {
-  background-color: var(--dark-secondary) !important;
+.hover\:bg-primary:hover {
+  background-color: var(--primary) !important;
 }
 
 .hover\:bg-white:hover {
   background-color: var(--white) !important;
 }
 
-.hover\:bg-default-snow:hover {
-  background-color: var(--default-snow) !important;
+.hover\:bg-anti-flash-white:hover {
+  background-color: var(--anti-flash-white) !important;
 }
 
-.hover\:bg-dark-snow:hover {
-  background-color: var(--dark-snow) !important;
+.hover\:bg-gainsboro:hover {
+  background-color: var(--gainsboro) !important;
 }
 
-.hover\:bg-extra-dark-snow:hover {
-  background-color: var(--extra-dark-snow) !important;
+.hover\:bg-lavender-gray:hover {
+  background-color: var(--lavender-gray) !important;
 }
 
-.hover\:bg-default-smoke:hover {
-  background-color: var(--default-smoke) !important;
+.hover\:bg-quick-silver:hover {
+  background-color: var(--quick-silver) !important;
 }
 
-.hover\:bg-dark-smoke:hover {
-  background-color: var(--dark-smoke) !important;
+.hover\:bg-aurometalsaurus:hover {
+  background-color: var(--aurometalsaurus) !important;
 }
 
-.hover\:bg-extra-dark-smoke:hover {
-  background-color: var(--extra-dark-smoke) !important;
-}
-
-.hover\:bg-light-slate:hover {
-  background-color: var(--light-slate) !important;
-}
-
-.hover\:bg-medium-slate:hover {
-  background-color: var(--medium-slate) !important;
-}
-
-.hover\:bg-slate:hover {
-  background-color: var(--slate) !important;
+.hover\:bg-yankees-blue:hover {
+  background-color: var(--yankees-blue) !important;
 }
 
 .hover\:bg-black:hover {
   background-color: var(--black) !important;
 }
 
-.hover\:bg-light-warning:hover {
-  background-color: var(--light-warning) !important;
-}
-
-.hover\:bg-default-warning:hover {
-  background-color: var(--default-warning) !important;
-}
-
-.hover\:bg-dark-warning:hover {
-  background-color: var(--dark-warning) !important;
-}
-
-.hover\:bg-light-positive:hover {
-  background-color: var(--light-positive) !important;
-}
-
-.hover\:bg-default-positive:hover {
-  background-color: var(--default-positive) !important;
-}
-
-.hover\:bg-dark-positive:hover {
-  background-color: var(--dark-positive) !important;
-}
-
-.hover\:bg-light-negative:hover {
-  background-color: var(--light-negative) !important;
-}
-
-.hover\:bg-default-negative:hover {
-  background-color: var(--default-negative) !important;
-}
-
-.hover\:bg-dark-negative:hover {
-  background-color: var(--dark-negative) !important;
-}
-
-.hover\:bg-light-info:hover {
-  background-color: var(--light-info) !important;
-}
-
-.hover\:bg-default-info:hover {
-  background-color: var(--default-info) !important;
-}
-
-.hover\:bg-dark-info:hover {
-  background-color: var(--dark-info) !important;
-}
-
 .focus\:bg-transparent:focus {
   background-color: transparent !important;
 }
 
-.focus\:bg-light-secondary:focus {
-  background-color: var(--light-secondary) !important;
-}
-
-.focus\:bg-default-secondary:focus {
-  background-color: var(--default-secondary) !important;
-}
-
-.focus\:bg-dark-secondary:focus {
-  background-color: var(--dark-secondary) !important;
+.focus\:bg-primary:focus {
+  background-color: var(--primary) !important;
 }
 
 .focus\:bg-white:focus {
   background-color: var(--white) !important;
 }
 
-.focus\:bg-default-snow:focus {
-  background-color: var(--default-snow) !important;
+.focus\:bg-anti-flash-white:focus {
+  background-color: var(--anti-flash-white) !important;
 }
 
-.focus\:bg-dark-snow:focus {
-  background-color: var(--dark-snow) !important;
+.focus\:bg-gainsboro:focus {
+  background-color: var(--gainsboro) !important;
 }
 
-.focus\:bg-extra-dark-snow:focus {
-  background-color: var(--extra-dark-snow) !important;
+.focus\:bg-lavender-gray:focus {
+  background-color: var(--lavender-gray) !important;
 }
 
-.focus\:bg-default-smoke:focus {
-  background-color: var(--default-smoke) !important;
+.focus\:bg-quick-silver:focus {
+  background-color: var(--quick-silver) !important;
 }
 
-.focus\:bg-dark-smoke:focus {
-  background-color: var(--dark-smoke) !important;
+.focus\:bg-aurometalsaurus:focus {
+  background-color: var(--aurometalsaurus) !important;
 }
 
-.focus\:bg-extra-dark-smoke:focus {
-  background-color: var(--extra-dark-smoke) !important;
-}
-
-.focus\:bg-light-slate:focus {
-  background-color: var(--light-slate) !important;
-}
-
-.focus\:bg-medium-slate:focus {
-  background-color: var(--medium-slate) !important;
-}
-
-.focus\:bg-slate:focus {
-  background-color: var(--slate) !important;
+.focus\:bg-yankees-blue:focus {
+  background-color: var(--yankees-blue) !important;
 }
 
 .focus\:bg-black:focus {
   background-color: var(--black) !important;
-}
-
-.focus\:bg-light-warning:focus {
-  background-color: var(--light-warning) !important;
-}
-
-.focus\:bg-default-warning:focus {
-  background-color: var(--default-warning) !important;
-}
-
-.focus\:bg-dark-warning:focus {
-  background-color: var(--dark-warning) !important;
-}
-
-.focus\:bg-light-positive:focus {
-  background-color: var(--light-positive) !important;
-}
-
-.focus\:bg-default-positive:focus {
-  background-color: var(--default-positive) !important;
-}
-
-.focus\:bg-dark-positive:focus {
-  background-color: var(--dark-positive) !important;
-}
-
-.focus\:bg-light-negative:focus {
-  background-color: var(--light-negative) !important;
-}
-
-.focus\:bg-default-negative:focus {
-  background-color: var(--default-negative) !important;
-}
-
-.focus\:bg-dark-negative:focus {
-  background-color: var(--dark-negative) !important;
-}
-
-.focus\:bg-light-info:focus {
-  background-color: var(--light-info) !important;
-}
-
-.focus\:bg-default-info:focus {
-  background-color: var(--default-info) !important;
-}
-
-.focus\:bg-dark-info:focus {
-  background-color: var(--dark-info) !important;
 }
 
 .bg-bottom {
@@ -1078,324 +874,120 @@ video {
   border-color: transparent !important;
 }
 
-.border-light-secondary {
-  border-color: var(--light-secondary) !important;
-}
-
-.border-default-secondary {
-  border-color: var(--default-secondary) !important;
-}
-
-.border-dark-secondary {
-  border-color: var(--dark-secondary) !important;
+.border-primary {
+  border-color: var(--primary) !important;
 }
 
 .border-white {
   border-color: var(--white) !important;
 }
 
-.border-default-snow {
-  border-color: var(--default-snow) !important;
+.border-anti-flash-white {
+  border-color: var(--anti-flash-white) !important;
 }
 
-.border-dark-snow {
-  border-color: var(--dark-snow) !important;
+.border-gainsboro {
+  border-color: var(--gainsboro) !important;
 }
 
-.border-extra-dark-snow {
-  border-color: var(--extra-dark-snow) !important;
+.border-lavender-gray {
+  border-color: var(--lavender-gray) !important;
 }
 
-.border-default-smoke {
-  border-color: var(--default-smoke) !important;
+.border-quick-silver {
+  border-color: var(--quick-silver) !important;
 }
 
-.border-dark-smoke {
-  border-color: var(--dark-smoke) !important;
+.border-aurometalsaurus {
+  border-color: var(--aurometalsaurus) !important;
 }
 
-.border-extra-dark-smoke {
-  border-color: var(--extra-dark-smoke) !important;
-}
-
-.border-light-slate {
-  border-color: var(--light-slate) !important;
-}
-
-.border-medium-slate {
-  border-color: var(--medium-slate) !important;
-}
-
-.border-slate {
-  border-color: var(--slate) !important;
+.border-yankees-blue {
+  border-color: var(--yankees-blue) !important;
 }
 
 .border-black {
   border-color: var(--black) !important;
 }
 
-.border-light-warning {
-  border-color: var(--light-warning) !important;
-}
-
-.border-default-warning {
-  border-color: var(--default-warning) !important;
-}
-
-.border-dark-warning {
-  border-color: var(--dark-warning) !important;
-}
-
-.border-light-positive {
-  border-color: var(--light-positive) !important;
-}
-
-.border-default-positive {
-  border-color: var(--default-positive) !important;
-}
-
-.border-dark-positive {
-  border-color: var(--dark-positive) !important;
-}
-
-.border-light-negative {
-  border-color: var(--light-negative) !important;
-}
-
-.border-default-negative {
-  border-color: var(--default-negative) !important;
-}
-
-.border-dark-negative {
-  border-color: var(--dark-negative) !important;
-}
-
-.border-light-info {
-  border-color: var(--light-info) !important;
-}
-
-.border-default-info {
-  border-color: var(--default-info) !important;
-}
-
-.border-dark-info {
-  border-color: var(--dark-info) !important;
-}
-
 .hover\:border-transparent:hover {
   border-color: transparent !important;
 }
 
-.hover\:border-light-secondary:hover {
-  border-color: var(--light-secondary) !important;
-}
-
-.hover\:border-default-secondary:hover {
-  border-color: var(--default-secondary) !important;
-}
-
-.hover\:border-dark-secondary:hover {
-  border-color: var(--dark-secondary) !important;
+.hover\:border-primary:hover {
+  border-color: var(--primary) !important;
 }
 
 .hover\:border-white:hover {
   border-color: var(--white) !important;
 }
 
-.hover\:border-default-snow:hover {
-  border-color: var(--default-snow) !important;
+.hover\:border-anti-flash-white:hover {
+  border-color: var(--anti-flash-white) !important;
 }
 
-.hover\:border-dark-snow:hover {
-  border-color: var(--dark-snow) !important;
+.hover\:border-gainsboro:hover {
+  border-color: var(--gainsboro) !important;
 }
 
-.hover\:border-extra-dark-snow:hover {
-  border-color: var(--extra-dark-snow) !important;
+.hover\:border-lavender-gray:hover {
+  border-color: var(--lavender-gray) !important;
 }
 
-.hover\:border-default-smoke:hover {
-  border-color: var(--default-smoke) !important;
+.hover\:border-quick-silver:hover {
+  border-color: var(--quick-silver) !important;
 }
 
-.hover\:border-dark-smoke:hover {
-  border-color: var(--dark-smoke) !important;
+.hover\:border-aurometalsaurus:hover {
+  border-color: var(--aurometalsaurus) !important;
 }
 
-.hover\:border-extra-dark-smoke:hover {
-  border-color: var(--extra-dark-smoke) !important;
-}
-
-.hover\:border-light-slate:hover {
-  border-color: var(--light-slate) !important;
-}
-
-.hover\:border-medium-slate:hover {
-  border-color: var(--medium-slate) !important;
-}
-
-.hover\:border-slate:hover {
-  border-color: var(--slate) !important;
+.hover\:border-yankees-blue:hover {
+  border-color: var(--yankees-blue) !important;
 }
 
 .hover\:border-black:hover {
   border-color: var(--black) !important;
 }
 
-.hover\:border-light-warning:hover {
-  border-color: var(--light-warning) !important;
-}
-
-.hover\:border-default-warning:hover {
-  border-color: var(--default-warning) !important;
-}
-
-.hover\:border-dark-warning:hover {
-  border-color: var(--dark-warning) !important;
-}
-
-.hover\:border-light-positive:hover {
-  border-color: var(--light-positive) !important;
-}
-
-.hover\:border-default-positive:hover {
-  border-color: var(--default-positive) !important;
-}
-
-.hover\:border-dark-positive:hover {
-  border-color: var(--dark-positive) !important;
-}
-
-.hover\:border-light-negative:hover {
-  border-color: var(--light-negative) !important;
-}
-
-.hover\:border-default-negative:hover {
-  border-color: var(--default-negative) !important;
-}
-
-.hover\:border-dark-negative:hover {
-  border-color: var(--dark-negative) !important;
-}
-
-.hover\:border-light-info:hover {
-  border-color: var(--light-info) !important;
-}
-
-.hover\:border-default-info:hover {
-  border-color: var(--default-info) !important;
-}
-
-.hover\:border-dark-info:hover {
-  border-color: var(--dark-info) !important;
-}
-
 .focus\:border-transparent:focus {
   border-color: transparent !important;
 }
 
-.focus\:border-light-secondary:focus {
-  border-color: var(--light-secondary) !important;
-}
-
-.focus\:border-default-secondary:focus {
-  border-color: var(--default-secondary) !important;
-}
-
-.focus\:border-dark-secondary:focus {
-  border-color: var(--dark-secondary) !important;
+.focus\:border-primary:focus {
+  border-color: var(--primary) !important;
 }
 
 .focus\:border-white:focus {
   border-color: var(--white) !important;
 }
 
-.focus\:border-default-snow:focus {
-  border-color: var(--default-snow) !important;
+.focus\:border-anti-flash-white:focus {
+  border-color: var(--anti-flash-white) !important;
 }
 
-.focus\:border-dark-snow:focus {
-  border-color: var(--dark-snow) !important;
+.focus\:border-gainsboro:focus {
+  border-color: var(--gainsboro) !important;
 }
 
-.focus\:border-extra-dark-snow:focus {
-  border-color: var(--extra-dark-snow) !important;
+.focus\:border-lavender-gray:focus {
+  border-color: var(--lavender-gray) !important;
 }
 
-.focus\:border-default-smoke:focus {
-  border-color: var(--default-smoke) !important;
+.focus\:border-quick-silver:focus {
+  border-color: var(--quick-silver) !important;
 }
 
-.focus\:border-dark-smoke:focus {
-  border-color: var(--dark-smoke) !important;
+.focus\:border-aurometalsaurus:focus {
+  border-color: var(--aurometalsaurus) !important;
 }
 
-.focus\:border-extra-dark-smoke:focus {
-  border-color: var(--extra-dark-smoke) !important;
-}
-
-.focus\:border-light-slate:focus {
-  border-color: var(--light-slate) !important;
-}
-
-.focus\:border-medium-slate:focus {
-  border-color: var(--medium-slate) !important;
-}
-
-.focus\:border-slate:focus {
-  border-color: var(--slate) !important;
+.focus\:border-yankees-blue:focus {
+  border-color: var(--yankees-blue) !important;
 }
 
 .focus\:border-black:focus {
   border-color: var(--black) !important;
-}
-
-.focus\:border-light-warning:focus {
-  border-color: var(--light-warning) !important;
-}
-
-.focus\:border-default-warning:focus {
-  border-color: var(--default-warning) !important;
-}
-
-.focus\:border-dark-warning:focus {
-  border-color: var(--dark-warning) !important;
-}
-
-.focus\:border-light-positive:focus {
-  border-color: var(--light-positive) !important;
-}
-
-.focus\:border-default-positive:focus {
-  border-color: var(--default-positive) !important;
-}
-
-.focus\:border-dark-positive:focus {
-  border-color: var(--dark-positive) !important;
-}
-
-.focus\:border-light-negative:focus {
-  border-color: var(--light-negative) !important;
-}
-
-.focus\:border-default-negative:focus {
-  border-color: var(--default-negative) !important;
-}
-
-.focus\:border-dark-negative:focus {
-  border-color: var(--dark-negative) !important;
-}
-
-.focus\:border-light-info:focus {
-  border-color: var(--light-info) !important;
-}
-
-.focus\:border-default-info:focus {
-  border-color: var(--default-info) !important;
-}
-
-.focus\:border-dark-info:focus {
-  border-color: var(--dark-info) !important;
 }
 
 .rounded-none {
@@ -2053,7 +1645,7 @@ video {
 }
 
 .font-sans {
-  font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-family: Avenir, "Avenir Next", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 
 .font-serif {
@@ -4222,216 +3814,80 @@ video {
   color: transparent !important;
 }
 
-.placeholder-light-secondary::placeholder {
-  color: var(--light-secondary) !important;
-}
-
-.placeholder-default-secondary::placeholder {
-  color: var(--default-secondary) !important;
-}
-
-.placeholder-dark-secondary::placeholder {
-  color: var(--dark-secondary) !important;
+.placeholder-primary::placeholder {
+  color: var(--primary) !important;
 }
 
 .placeholder-white::placeholder {
   color: var(--white) !important;
 }
 
-.placeholder-default-snow::placeholder {
-  color: var(--default-snow) !important;
+.placeholder-anti-flash-white::placeholder {
+  color: var(--anti-flash-white) !important;
 }
 
-.placeholder-dark-snow::placeholder {
-  color: var(--dark-snow) !important;
+.placeholder-gainsboro::placeholder {
+  color: var(--gainsboro) !important;
 }
 
-.placeholder-extra-dark-snow::placeholder {
-  color: var(--extra-dark-snow) !important;
+.placeholder-lavender-gray::placeholder {
+  color: var(--lavender-gray) !important;
 }
 
-.placeholder-default-smoke::placeholder {
-  color: var(--default-smoke) !important;
+.placeholder-quick-silver::placeholder {
+  color: var(--quick-silver) !important;
 }
 
-.placeholder-dark-smoke::placeholder {
-  color: var(--dark-smoke) !important;
+.placeholder-aurometalsaurus::placeholder {
+  color: var(--aurometalsaurus) !important;
 }
 
-.placeholder-extra-dark-smoke::placeholder {
-  color: var(--extra-dark-smoke) !important;
-}
-
-.placeholder-light-slate::placeholder {
-  color: var(--light-slate) !important;
-}
-
-.placeholder-medium-slate::placeholder {
-  color: var(--medium-slate) !important;
-}
-
-.placeholder-slate::placeholder {
-  color: var(--slate) !important;
+.placeholder-yankees-blue::placeholder {
+  color: var(--yankees-blue) !important;
 }
 
 .placeholder-black::placeholder {
   color: var(--black) !important;
 }
 
-.placeholder-light-warning::placeholder {
-  color: var(--light-warning) !important;
-}
-
-.placeholder-default-warning::placeholder {
-  color: var(--default-warning) !important;
-}
-
-.placeholder-dark-warning::placeholder {
-  color: var(--dark-warning) !important;
-}
-
-.placeholder-light-positive::placeholder {
-  color: var(--light-positive) !important;
-}
-
-.placeholder-default-positive::placeholder {
-  color: var(--default-positive) !important;
-}
-
-.placeholder-dark-positive::placeholder {
-  color: var(--dark-positive) !important;
-}
-
-.placeholder-light-negative::placeholder {
-  color: var(--light-negative) !important;
-}
-
-.placeholder-default-negative::placeholder {
-  color: var(--default-negative) !important;
-}
-
-.placeholder-dark-negative::placeholder {
-  color: var(--dark-negative) !important;
-}
-
-.placeholder-light-info::placeholder {
-  color: var(--light-info) !important;
-}
-
-.placeholder-default-info::placeholder {
-  color: var(--default-info) !important;
-}
-
-.placeholder-dark-info::placeholder {
-  color: var(--dark-info) !important;
-}
-
 .focus\:placeholder-transparent:focus::placeholder {
   color: transparent !important;
 }
 
-.focus\:placeholder-light-secondary:focus::placeholder {
-  color: var(--light-secondary) !important;
-}
-
-.focus\:placeholder-default-secondary:focus::placeholder {
-  color: var(--default-secondary) !important;
-}
-
-.focus\:placeholder-dark-secondary:focus::placeholder {
-  color: var(--dark-secondary) !important;
+.focus\:placeholder-primary:focus::placeholder {
+  color: var(--primary) !important;
 }
 
 .focus\:placeholder-white:focus::placeholder {
   color: var(--white) !important;
 }
 
-.focus\:placeholder-default-snow:focus::placeholder {
-  color: var(--default-snow) !important;
+.focus\:placeholder-anti-flash-white:focus::placeholder {
+  color: var(--anti-flash-white) !important;
 }
 
-.focus\:placeholder-dark-snow:focus::placeholder {
-  color: var(--dark-snow) !important;
+.focus\:placeholder-gainsboro:focus::placeholder {
+  color: var(--gainsboro) !important;
 }
 
-.focus\:placeholder-extra-dark-snow:focus::placeholder {
-  color: var(--extra-dark-snow) !important;
+.focus\:placeholder-lavender-gray:focus::placeholder {
+  color: var(--lavender-gray) !important;
 }
 
-.focus\:placeholder-default-smoke:focus::placeholder {
-  color: var(--default-smoke) !important;
+.focus\:placeholder-quick-silver:focus::placeholder {
+  color: var(--quick-silver) !important;
 }
 
-.focus\:placeholder-dark-smoke:focus::placeholder {
-  color: var(--dark-smoke) !important;
+.focus\:placeholder-aurometalsaurus:focus::placeholder {
+  color: var(--aurometalsaurus) !important;
 }
 
-.focus\:placeholder-extra-dark-smoke:focus::placeholder {
-  color: var(--extra-dark-smoke) !important;
-}
-
-.focus\:placeholder-light-slate:focus::placeholder {
-  color: var(--light-slate) !important;
-}
-
-.focus\:placeholder-medium-slate:focus::placeholder {
-  color: var(--medium-slate) !important;
-}
-
-.focus\:placeholder-slate:focus::placeholder {
-  color: var(--slate) !important;
+.focus\:placeholder-yankees-blue:focus::placeholder {
+  color: var(--yankees-blue) !important;
 }
 
 .focus\:placeholder-black:focus::placeholder {
   color: var(--black) !important;
-}
-
-.focus\:placeholder-light-warning:focus::placeholder {
-  color: var(--light-warning) !important;
-}
-
-.focus\:placeholder-default-warning:focus::placeholder {
-  color: var(--default-warning) !important;
-}
-
-.focus\:placeholder-dark-warning:focus::placeholder {
-  color: var(--dark-warning) !important;
-}
-
-.focus\:placeholder-light-positive:focus::placeholder {
-  color: var(--light-positive) !important;
-}
-
-.focus\:placeholder-default-positive:focus::placeholder {
-  color: var(--default-positive) !important;
-}
-
-.focus\:placeholder-dark-positive:focus::placeholder {
-  color: var(--dark-positive) !important;
-}
-
-.focus\:placeholder-light-negative:focus::placeholder {
-  color: var(--light-negative) !important;
-}
-
-.focus\:placeholder-default-negative:focus::placeholder {
-  color: var(--default-negative) !important;
-}
-
-.focus\:placeholder-dark-negative:focus::placeholder {
-  color: var(--dark-negative) !important;
-}
-
-.focus\:placeholder-light-info:focus::placeholder {
-  color: var(--light-info) !important;
-}
-
-.focus\:placeholder-default-info:focus::placeholder {
-  color: var(--default-info) !important;
-}
-
-.focus\:placeholder-dark-info:focus::placeholder {
-  color: var(--dark-info) !important;
 }
 
 .pointer-events-none {
@@ -4677,324 +4133,120 @@ video {
   color: transparent !important;
 }
 
-.text-light-secondary {
-  color: var(--light-secondary) !important;
-}
-
-.text-default-secondary {
-  color: var(--default-secondary) !important;
-}
-
-.text-dark-secondary {
-  color: var(--dark-secondary) !important;
+.text-primary {
+  color: var(--primary) !important;
 }
 
 .text-white {
   color: var(--white) !important;
 }
 
-.text-default-snow {
-  color: var(--default-snow) !important;
+.text-anti-flash-white {
+  color: var(--anti-flash-white) !important;
 }
 
-.text-dark-snow {
-  color: var(--dark-snow) !important;
+.text-gainsboro {
+  color: var(--gainsboro) !important;
 }
 
-.text-extra-dark-snow {
-  color: var(--extra-dark-snow) !important;
+.text-lavender-gray {
+  color: var(--lavender-gray) !important;
 }
 
-.text-default-smoke {
-  color: var(--default-smoke) !important;
+.text-quick-silver {
+  color: var(--quick-silver) !important;
 }
 
-.text-dark-smoke {
-  color: var(--dark-smoke) !important;
+.text-aurometalsaurus {
+  color: var(--aurometalsaurus) !important;
 }
 
-.text-extra-dark-smoke {
-  color: var(--extra-dark-smoke) !important;
-}
-
-.text-light-slate {
-  color: var(--light-slate) !important;
-}
-
-.text-medium-slate {
-  color: var(--medium-slate) !important;
-}
-
-.text-slate {
-  color: var(--slate) !important;
+.text-yankees-blue {
+  color: var(--yankees-blue) !important;
 }
 
 .text-black {
   color: var(--black) !important;
 }
 
-.text-light-warning {
-  color: var(--light-warning) !important;
-}
-
-.text-default-warning {
-  color: var(--default-warning) !important;
-}
-
-.text-dark-warning {
-  color: var(--dark-warning) !important;
-}
-
-.text-light-positive {
-  color: var(--light-positive) !important;
-}
-
-.text-default-positive {
-  color: var(--default-positive) !important;
-}
-
-.text-dark-positive {
-  color: var(--dark-positive) !important;
-}
-
-.text-light-negative {
-  color: var(--light-negative) !important;
-}
-
-.text-default-negative {
-  color: var(--default-negative) !important;
-}
-
-.text-dark-negative {
-  color: var(--dark-negative) !important;
-}
-
-.text-light-info {
-  color: var(--light-info) !important;
-}
-
-.text-default-info {
-  color: var(--default-info) !important;
-}
-
-.text-dark-info {
-  color: var(--dark-info) !important;
-}
-
 .hover\:text-transparent:hover {
   color: transparent !important;
 }
 
-.hover\:text-light-secondary:hover {
-  color: var(--light-secondary) !important;
-}
-
-.hover\:text-default-secondary:hover {
-  color: var(--default-secondary) !important;
-}
-
-.hover\:text-dark-secondary:hover {
-  color: var(--dark-secondary) !important;
+.hover\:text-primary:hover {
+  color: var(--primary) !important;
 }
 
 .hover\:text-white:hover {
   color: var(--white) !important;
 }
 
-.hover\:text-default-snow:hover {
-  color: var(--default-snow) !important;
+.hover\:text-anti-flash-white:hover {
+  color: var(--anti-flash-white) !important;
 }
 
-.hover\:text-dark-snow:hover {
-  color: var(--dark-snow) !important;
+.hover\:text-gainsboro:hover {
+  color: var(--gainsboro) !important;
 }
 
-.hover\:text-extra-dark-snow:hover {
-  color: var(--extra-dark-snow) !important;
+.hover\:text-lavender-gray:hover {
+  color: var(--lavender-gray) !important;
 }
 
-.hover\:text-default-smoke:hover {
-  color: var(--default-smoke) !important;
+.hover\:text-quick-silver:hover {
+  color: var(--quick-silver) !important;
 }
 
-.hover\:text-dark-smoke:hover {
-  color: var(--dark-smoke) !important;
+.hover\:text-aurometalsaurus:hover {
+  color: var(--aurometalsaurus) !important;
 }
 
-.hover\:text-extra-dark-smoke:hover {
-  color: var(--extra-dark-smoke) !important;
-}
-
-.hover\:text-light-slate:hover {
-  color: var(--light-slate) !important;
-}
-
-.hover\:text-medium-slate:hover {
-  color: var(--medium-slate) !important;
-}
-
-.hover\:text-slate:hover {
-  color: var(--slate) !important;
+.hover\:text-yankees-blue:hover {
+  color: var(--yankees-blue) !important;
 }
 
 .hover\:text-black:hover {
   color: var(--black) !important;
 }
 
-.hover\:text-light-warning:hover {
-  color: var(--light-warning) !important;
-}
-
-.hover\:text-default-warning:hover {
-  color: var(--default-warning) !important;
-}
-
-.hover\:text-dark-warning:hover {
-  color: var(--dark-warning) !important;
-}
-
-.hover\:text-light-positive:hover {
-  color: var(--light-positive) !important;
-}
-
-.hover\:text-default-positive:hover {
-  color: var(--default-positive) !important;
-}
-
-.hover\:text-dark-positive:hover {
-  color: var(--dark-positive) !important;
-}
-
-.hover\:text-light-negative:hover {
-  color: var(--light-negative) !important;
-}
-
-.hover\:text-default-negative:hover {
-  color: var(--default-negative) !important;
-}
-
-.hover\:text-dark-negative:hover {
-  color: var(--dark-negative) !important;
-}
-
-.hover\:text-light-info:hover {
-  color: var(--light-info) !important;
-}
-
-.hover\:text-default-info:hover {
-  color: var(--default-info) !important;
-}
-
-.hover\:text-dark-info:hover {
-  color: var(--dark-info) !important;
-}
-
 .focus\:text-transparent:focus {
   color: transparent !important;
 }
 
-.focus\:text-light-secondary:focus {
-  color: var(--light-secondary) !important;
-}
-
-.focus\:text-default-secondary:focus {
-  color: var(--default-secondary) !important;
-}
-
-.focus\:text-dark-secondary:focus {
-  color: var(--dark-secondary) !important;
+.focus\:text-primary:focus {
+  color: var(--primary) !important;
 }
 
 .focus\:text-white:focus {
   color: var(--white) !important;
 }
 
-.focus\:text-default-snow:focus {
-  color: var(--default-snow) !important;
+.focus\:text-anti-flash-white:focus {
+  color: var(--anti-flash-white) !important;
 }
 
-.focus\:text-dark-snow:focus {
-  color: var(--dark-snow) !important;
+.focus\:text-gainsboro:focus {
+  color: var(--gainsboro) !important;
 }
 
-.focus\:text-extra-dark-snow:focus {
-  color: var(--extra-dark-snow) !important;
+.focus\:text-lavender-gray:focus {
+  color: var(--lavender-gray) !important;
 }
 
-.focus\:text-default-smoke:focus {
-  color: var(--default-smoke) !important;
+.focus\:text-quick-silver:focus {
+  color: var(--quick-silver) !important;
 }
 
-.focus\:text-dark-smoke:focus {
-  color: var(--dark-smoke) !important;
+.focus\:text-aurometalsaurus:focus {
+  color: var(--aurometalsaurus) !important;
 }
 
-.focus\:text-extra-dark-smoke:focus {
-  color: var(--extra-dark-smoke) !important;
-}
-
-.focus\:text-light-slate:focus {
-  color: var(--light-slate) !important;
-}
-
-.focus\:text-medium-slate:focus {
-  color: var(--medium-slate) !important;
-}
-
-.focus\:text-slate:focus {
-  color: var(--slate) !important;
+.focus\:text-yankees-blue:focus {
+  color: var(--yankees-blue) !important;
 }
 
 .focus\:text-black:focus {
   color: var(--black) !important;
-}
-
-.focus\:text-light-warning:focus {
-  color: var(--light-warning) !important;
-}
-
-.focus\:text-default-warning:focus {
-  color: var(--default-warning) !important;
-}
-
-.focus\:text-dark-warning:focus {
-  color: var(--dark-warning) !important;
-}
-
-.focus\:text-light-positive:focus {
-  color: var(--light-positive) !important;
-}
-
-.focus\:text-default-positive:focus {
-  color: var(--default-positive) !important;
-}
-
-.focus\:text-dark-positive:focus {
-  color: var(--dark-positive) !important;
-}
-
-.focus\:text-light-negative:focus {
-  color: var(--light-negative) !important;
-}
-
-.focus\:text-default-negative:focus {
-  color: var(--default-negative) !important;
-}
-
-.focus\:text-dark-negative:focus {
-  color: var(--dark-negative) !important;
-}
-
-.focus\:text-light-info:focus {
-  color: var(--light-info) !important;
-}
-
-.focus\:text-default-info:focus {
-  color: var(--default-info) !important;
-}
-
-.focus\:text-dark-info:focus {
-  color: var(--dark-info) !important;
 }
 
 .text-2xs {
@@ -7905,324 +7157,120 @@ video {
     background-color: transparent !important;
   }
 
-  .sm\:bg-light-secondary {
-    background-color: var(--light-secondary) !important;
-  }
-
-  .sm\:bg-default-secondary {
-    background-color: var(--default-secondary) !important;
-  }
-
-  .sm\:bg-dark-secondary {
-    background-color: var(--dark-secondary) !important;
+  .sm\:bg-primary {
+    background-color: var(--primary) !important;
   }
 
   .sm\:bg-white {
     background-color: var(--white) !important;
   }
 
-  .sm\:bg-default-snow {
-    background-color: var(--default-snow) !important;
+  .sm\:bg-anti-flash-white {
+    background-color: var(--anti-flash-white) !important;
   }
 
-  .sm\:bg-dark-snow {
-    background-color: var(--dark-snow) !important;
+  .sm\:bg-gainsboro {
+    background-color: var(--gainsboro) !important;
   }
 
-  .sm\:bg-extra-dark-snow {
-    background-color: var(--extra-dark-snow) !important;
+  .sm\:bg-lavender-gray {
+    background-color: var(--lavender-gray) !important;
   }
 
-  .sm\:bg-default-smoke {
-    background-color: var(--default-smoke) !important;
+  .sm\:bg-quick-silver {
+    background-color: var(--quick-silver) !important;
   }
 
-  .sm\:bg-dark-smoke {
-    background-color: var(--dark-smoke) !important;
+  .sm\:bg-aurometalsaurus {
+    background-color: var(--aurometalsaurus) !important;
   }
 
-  .sm\:bg-extra-dark-smoke {
-    background-color: var(--extra-dark-smoke) !important;
-  }
-
-  .sm\:bg-light-slate {
-    background-color: var(--light-slate) !important;
-  }
-
-  .sm\:bg-medium-slate {
-    background-color: var(--medium-slate) !important;
-  }
-
-  .sm\:bg-slate {
-    background-color: var(--slate) !important;
+  .sm\:bg-yankees-blue {
+    background-color: var(--yankees-blue) !important;
   }
 
   .sm\:bg-black {
     background-color: var(--black) !important;
   }
 
-  .sm\:bg-light-warning {
-    background-color: var(--light-warning) !important;
-  }
-
-  .sm\:bg-default-warning {
-    background-color: var(--default-warning) !important;
-  }
-
-  .sm\:bg-dark-warning {
-    background-color: var(--dark-warning) !important;
-  }
-
-  .sm\:bg-light-positive {
-    background-color: var(--light-positive) !important;
-  }
-
-  .sm\:bg-default-positive {
-    background-color: var(--default-positive) !important;
-  }
-
-  .sm\:bg-dark-positive {
-    background-color: var(--dark-positive) !important;
-  }
-
-  .sm\:bg-light-negative {
-    background-color: var(--light-negative) !important;
-  }
-
-  .sm\:bg-default-negative {
-    background-color: var(--default-negative) !important;
-  }
-
-  .sm\:bg-dark-negative {
-    background-color: var(--dark-negative) !important;
-  }
-
-  .sm\:bg-light-info {
-    background-color: var(--light-info) !important;
-  }
-
-  .sm\:bg-default-info {
-    background-color: var(--default-info) !important;
-  }
-
-  .sm\:bg-dark-info {
-    background-color: var(--dark-info) !important;
-  }
-
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent !important;
   }
 
-  .sm\:hover\:bg-light-secondary:hover {
-    background-color: var(--light-secondary) !important;
-  }
-
-  .sm\:hover\:bg-default-secondary:hover {
-    background-color: var(--default-secondary) !important;
-  }
-
-  .sm\:hover\:bg-dark-secondary:hover {
-    background-color: var(--dark-secondary) !important;
+  .sm\:hover\:bg-primary:hover {
+    background-color: var(--primary) !important;
   }
 
   .sm\:hover\:bg-white:hover {
     background-color: var(--white) !important;
   }
 
-  .sm\:hover\:bg-default-snow:hover {
-    background-color: var(--default-snow) !important;
+  .sm\:hover\:bg-anti-flash-white:hover {
+    background-color: var(--anti-flash-white) !important;
   }
 
-  .sm\:hover\:bg-dark-snow:hover {
-    background-color: var(--dark-snow) !important;
+  .sm\:hover\:bg-gainsboro:hover {
+    background-color: var(--gainsboro) !important;
   }
 
-  .sm\:hover\:bg-extra-dark-snow:hover {
-    background-color: var(--extra-dark-snow) !important;
+  .sm\:hover\:bg-lavender-gray:hover {
+    background-color: var(--lavender-gray) !important;
   }
 
-  .sm\:hover\:bg-default-smoke:hover {
-    background-color: var(--default-smoke) !important;
+  .sm\:hover\:bg-quick-silver:hover {
+    background-color: var(--quick-silver) !important;
   }
 
-  .sm\:hover\:bg-dark-smoke:hover {
-    background-color: var(--dark-smoke) !important;
+  .sm\:hover\:bg-aurometalsaurus:hover {
+    background-color: var(--aurometalsaurus) !important;
   }
 
-  .sm\:hover\:bg-extra-dark-smoke:hover {
-    background-color: var(--extra-dark-smoke) !important;
-  }
-
-  .sm\:hover\:bg-light-slate:hover {
-    background-color: var(--light-slate) !important;
-  }
-
-  .sm\:hover\:bg-medium-slate:hover {
-    background-color: var(--medium-slate) !important;
-  }
-
-  .sm\:hover\:bg-slate:hover {
-    background-color: var(--slate) !important;
+  .sm\:hover\:bg-yankees-blue:hover {
+    background-color: var(--yankees-blue) !important;
   }
 
   .sm\:hover\:bg-black:hover {
     background-color: var(--black) !important;
   }
 
-  .sm\:hover\:bg-light-warning:hover {
-    background-color: var(--light-warning) !important;
-  }
-
-  .sm\:hover\:bg-default-warning:hover {
-    background-color: var(--default-warning) !important;
-  }
-
-  .sm\:hover\:bg-dark-warning:hover {
-    background-color: var(--dark-warning) !important;
-  }
-
-  .sm\:hover\:bg-light-positive:hover {
-    background-color: var(--light-positive) !important;
-  }
-
-  .sm\:hover\:bg-default-positive:hover {
-    background-color: var(--default-positive) !important;
-  }
-
-  .sm\:hover\:bg-dark-positive:hover {
-    background-color: var(--dark-positive) !important;
-  }
-
-  .sm\:hover\:bg-light-negative:hover {
-    background-color: var(--light-negative) !important;
-  }
-
-  .sm\:hover\:bg-default-negative:hover {
-    background-color: var(--default-negative) !important;
-  }
-
-  .sm\:hover\:bg-dark-negative:hover {
-    background-color: var(--dark-negative) !important;
-  }
-
-  .sm\:hover\:bg-light-info:hover {
-    background-color: var(--light-info) !important;
-  }
-
-  .sm\:hover\:bg-default-info:hover {
-    background-color: var(--default-info) !important;
-  }
-
-  .sm\:hover\:bg-dark-info:hover {
-    background-color: var(--dark-info) !important;
-  }
-
   .sm\:focus\:bg-transparent:focus {
     background-color: transparent !important;
   }
 
-  .sm\:focus\:bg-light-secondary:focus {
-    background-color: var(--light-secondary) !important;
-  }
-
-  .sm\:focus\:bg-default-secondary:focus {
-    background-color: var(--default-secondary) !important;
-  }
-
-  .sm\:focus\:bg-dark-secondary:focus {
-    background-color: var(--dark-secondary) !important;
+  .sm\:focus\:bg-primary:focus {
+    background-color: var(--primary) !important;
   }
 
   .sm\:focus\:bg-white:focus {
     background-color: var(--white) !important;
   }
 
-  .sm\:focus\:bg-default-snow:focus {
-    background-color: var(--default-snow) !important;
+  .sm\:focus\:bg-anti-flash-white:focus {
+    background-color: var(--anti-flash-white) !important;
   }
 
-  .sm\:focus\:bg-dark-snow:focus {
-    background-color: var(--dark-snow) !important;
+  .sm\:focus\:bg-gainsboro:focus {
+    background-color: var(--gainsboro) !important;
   }
 
-  .sm\:focus\:bg-extra-dark-snow:focus {
-    background-color: var(--extra-dark-snow) !important;
+  .sm\:focus\:bg-lavender-gray:focus {
+    background-color: var(--lavender-gray) !important;
   }
 
-  .sm\:focus\:bg-default-smoke:focus {
-    background-color: var(--default-smoke) !important;
+  .sm\:focus\:bg-quick-silver:focus {
+    background-color: var(--quick-silver) !important;
   }
 
-  .sm\:focus\:bg-dark-smoke:focus {
-    background-color: var(--dark-smoke) !important;
+  .sm\:focus\:bg-aurometalsaurus:focus {
+    background-color: var(--aurometalsaurus) !important;
   }
 
-  .sm\:focus\:bg-extra-dark-smoke:focus {
-    background-color: var(--extra-dark-smoke) !important;
-  }
-
-  .sm\:focus\:bg-light-slate:focus {
-    background-color: var(--light-slate) !important;
-  }
-
-  .sm\:focus\:bg-medium-slate:focus {
-    background-color: var(--medium-slate) !important;
-  }
-
-  .sm\:focus\:bg-slate:focus {
-    background-color: var(--slate) !important;
+  .sm\:focus\:bg-yankees-blue:focus {
+    background-color: var(--yankees-blue) !important;
   }
 
   .sm\:focus\:bg-black:focus {
     background-color: var(--black) !important;
-  }
-
-  .sm\:focus\:bg-light-warning:focus {
-    background-color: var(--light-warning) !important;
-  }
-
-  .sm\:focus\:bg-default-warning:focus {
-    background-color: var(--default-warning) !important;
-  }
-
-  .sm\:focus\:bg-dark-warning:focus {
-    background-color: var(--dark-warning) !important;
-  }
-
-  .sm\:focus\:bg-light-positive:focus {
-    background-color: var(--light-positive) !important;
-  }
-
-  .sm\:focus\:bg-default-positive:focus {
-    background-color: var(--default-positive) !important;
-  }
-
-  .sm\:focus\:bg-dark-positive:focus {
-    background-color: var(--dark-positive) !important;
-  }
-
-  .sm\:focus\:bg-light-negative:focus {
-    background-color: var(--light-negative) !important;
-  }
-
-  .sm\:focus\:bg-default-negative:focus {
-    background-color: var(--default-negative) !important;
-  }
-
-  .sm\:focus\:bg-dark-negative:focus {
-    background-color: var(--dark-negative) !important;
-  }
-
-  .sm\:focus\:bg-light-info:focus {
-    background-color: var(--light-info) !important;
-  }
-
-  .sm\:focus\:bg-default-info:focus {
-    background-color: var(--default-info) !important;
-  }
-
-  .sm\:focus\:bg-dark-info:focus {
-    background-color: var(--dark-info) !important;
   }
 
   .sm\:bg-bottom {
@@ -8309,324 +7357,120 @@ video {
     border-color: transparent !important;
   }
 
-  .sm\:border-light-secondary {
-    border-color: var(--light-secondary) !important;
-  }
-
-  .sm\:border-default-secondary {
-    border-color: var(--default-secondary) !important;
-  }
-
-  .sm\:border-dark-secondary {
-    border-color: var(--dark-secondary) !important;
+  .sm\:border-primary {
+    border-color: var(--primary) !important;
   }
 
   .sm\:border-white {
     border-color: var(--white) !important;
   }
 
-  .sm\:border-default-snow {
-    border-color: var(--default-snow) !important;
+  .sm\:border-anti-flash-white {
+    border-color: var(--anti-flash-white) !important;
   }
 
-  .sm\:border-dark-snow {
-    border-color: var(--dark-snow) !important;
+  .sm\:border-gainsboro {
+    border-color: var(--gainsboro) !important;
   }
 
-  .sm\:border-extra-dark-snow {
-    border-color: var(--extra-dark-snow) !important;
+  .sm\:border-lavender-gray {
+    border-color: var(--lavender-gray) !important;
   }
 
-  .sm\:border-default-smoke {
-    border-color: var(--default-smoke) !important;
+  .sm\:border-quick-silver {
+    border-color: var(--quick-silver) !important;
   }
 
-  .sm\:border-dark-smoke {
-    border-color: var(--dark-smoke) !important;
+  .sm\:border-aurometalsaurus {
+    border-color: var(--aurometalsaurus) !important;
   }
 
-  .sm\:border-extra-dark-smoke {
-    border-color: var(--extra-dark-smoke) !important;
-  }
-
-  .sm\:border-light-slate {
-    border-color: var(--light-slate) !important;
-  }
-
-  .sm\:border-medium-slate {
-    border-color: var(--medium-slate) !important;
-  }
-
-  .sm\:border-slate {
-    border-color: var(--slate) !important;
+  .sm\:border-yankees-blue {
+    border-color: var(--yankees-blue) !important;
   }
 
   .sm\:border-black {
     border-color: var(--black) !important;
   }
 
-  .sm\:border-light-warning {
-    border-color: var(--light-warning) !important;
-  }
-
-  .sm\:border-default-warning {
-    border-color: var(--default-warning) !important;
-  }
-
-  .sm\:border-dark-warning {
-    border-color: var(--dark-warning) !important;
-  }
-
-  .sm\:border-light-positive {
-    border-color: var(--light-positive) !important;
-  }
-
-  .sm\:border-default-positive {
-    border-color: var(--default-positive) !important;
-  }
-
-  .sm\:border-dark-positive {
-    border-color: var(--dark-positive) !important;
-  }
-
-  .sm\:border-light-negative {
-    border-color: var(--light-negative) !important;
-  }
-
-  .sm\:border-default-negative {
-    border-color: var(--default-negative) !important;
-  }
-
-  .sm\:border-dark-negative {
-    border-color: var(--dark-negative) !important;
-  }
-
-  .sm\:border-light-info {
-    border-color: var(--light-info) !important;
-  }
-
-  .sm\:border-default-info {
-    border-color: var(--default-info) !important;
-  }
-
-  .sm\:border-dark-info {
-    border-color: var(--dark-info) !important;
-  }
-
   .sm\:hover\:border-transparent:hover {
     border-color: transparent !important;
   }
 
-  .sm\:hover\:border-light-secondary:hover {
-    border-color: var(--light-secondary) !important;
-  }
-
-  .sm\:hover\:border-default-secondary:hover {
-    border-color: var(--default-secondary) !important;
-  }
-
-  .sm\:hover\:border-dark-secondary:hover {
-    border-color: var(--dark-secondary) !important;
+  .sm\:hover\:border-primary:hover {
+    border-color: var(--primary) !important;
   }
 
   .sm\:hover\:border-white:hover {
     border-color: var(--white) !important;
   }
 
-  .sm\:hover\:border-default-snow:hover {
-    border-color: var(--default-snow) !important;
+  .sm\:hover\:border-anti-flash-white:hover {
+    border-color: var(--anti-flash-white) !important;
   }
 
-  .sm\:hover\:border-dark-snow:hover {
-    border-color: var(--dark-snow) !important;
+  .sm\:hover\:border-gainsboro:hover {
+    border-color: var(--gainsboro) !important;
   }
 
-  .sm\:hover\:border-extra-dark-snow:hover {
-    border-color: var(--extra-dark-snow) !important;
+  .sm\:hover\:border-lavender-gray:hover {
+    border-color: var(--lavender-gray) !important;
   }
 
-  .sm\:hover\:border-default-smoke:hover {
-    border-color: var(--default-smoke) !important;
+  .sm\:hover\:border-quick-silver:hover {
+    border-color: var(--quick-silver) !important;
   }
 
-  .sm\:hover\:border-dark-smoke:hover {
-    border-color: var(--dark-smoke) !important;
+  .sm\:hover\:border-aurometalsaurus:hover {
+    border-color: var(--aurometalsaurus) !important;
   }
 
-  .sm\:hover\:border-extra-dark-smoke:hover {
-    border-color: var(--extra-dark-smoke) !important;
-  }
-
-  .sm\:hover\:border-light-slate:hover {
-    border-color: var(--light-slate) !important;
-  }
-
-  .sm\:hover\:border-medium-slate:hover {
-    border-color: var(--medium-slate) !important;
-  }
-
-  .sm\:hover\:border-slate:hover {
-    border-color: var(--slate) !important;
+  .sm\:hover\:border-yankees-blue:hover {
+    border-color: var(--yankees-blue) !important;
   }
 
   .sm\:hover\:border-black:hover {
     border-color: var(--black) !important;
   }
 
-  .sm\:hover\:border-light-warning:hover {
-    border-color: var(--light-warning) !important;
-  }
-
-  .sm\:hover\:border-default-warning:hover {
-    border-color: var(--default-warning) !important;
-  }
-
-  .sm\:hover\:border-dark-warning:hover {
-    border-color: var(--dark-warning) !important;
-  }
-
-  .sm\:hover\:border-light-positive:hover {
-    border-color: var(--light-positive) !important;
-  }
-
-  .sm\:hover\:border-default-positive:hover {
-    border-color: var(--default-positive) !important;
-  }
-
-  .sm\:hover\:border-dark-positive:hover {
-    border-color: var(--dark-positive) !important;
-  }
-
-  .sm\:hover\:border-light-negative:hover {
-    border-color: var(--light-negative) !important;
-  }
-
-  .sm\:hover\:border-default-negative:hover {
-    border-color: var(--default-negative) !important;
-  }
-
-  .sm\:hover\:border-dark-negative:hover {
-    border-color: var(--dark-negative) !important;
-  }
-
-  .sm\:hover\:border-light-info:hover {
-    border-color: var(--light-info) !important;
-  }
-
-  .sm\:hover\:border-default-info:hover {
-    border-color: var(--default-info) !important;
-  }
-
-  .sm\:hover\:border-dark-info:hover {
-    border-color: var(--dark-info) !important;
-  }
-
   .sm\:focus\:border-transparent:focus {
     border-color: transparent !important;
   }
 
-  .sm\:focus\:border-light-secondary:focus {
-    border-color: var(--light-secondary) !important;
-  }
-
-  .sm\:focus\:border-default-secondary:focus {
-    border-color: var(--default-secondary) !important;
-  }
-
-  .sm\:focus\:border-dark-secondary:focus {
-    border-color: var(--dark-secondary) !important;
+  .sm\:focus\:border-primary:focus {
+    border-color: var(--primary) !important;
   }
 
   .sm\:focus\:border-white:focus {
     border-color: var(--white) !important;
   }
 
-  .sm\:focus\:border-default-snow:focus {
-    border-color: var(--default-snow) !important;
+  .sm\:focus\:border-anti-flash-white:focus {
+    border-color: var(--anti-flash-white) !important;
   }
 
-  .sm\:focus\:border-dark-snow:focus {
-    border-color: var(--dark-snow) !important;
+  .sm\:focus\:border-gainsboro:focus {
+    border-color: var(--gainsboro) !important;
   }
 
-  .sm\:focus\:border-extra-dark-snow:focus {
-    border-color: var(--extra-dark-snow) !important;
+  .sm\:focus\:border-lavender-gray:focus {
+    border-color: var(--lavender-gray) !important;
   }
 
-  .sm\:focus\:border-default-smoke:focus {
-    border-color: var(--default-smoke) !important;
+  .sm\:focus\:border-quick-silver:focus {
+    border-color: var(--quick-silver) !important;
   }
 
-  .sm\:focus\:border-dark-smoke:focus {
-    border-color: var(--dark-smoke) !important;
+  .sm\:focus\:border-aurometalsaurus:focus {
+    border-color: var(--aurometalsaurus) !important;
   }
 
-  .sm\:focus\:border-extra-dark-smoke:focus {
-    border-color: var(--extra-dark-smoke) !important;
-  }
-
-  .sm\:focus\:border-light-slate:focus {
-    border-color: var(--light-slate) !important;
-  }
-
-  .sm\:focus\:border-medium-slate:focus {
-    border-color: var(--medium-slate) !important;
-  }
-
-  .sm\:focus\:border-slate:focus {
-    border-color: var(--slate) !important;
+  .sm\:focus\:border-yankees-blue:focus {
+    border-color: var(--yankees-blue) !important;
   }
 
   .sm\:focus\:border-black:focus {
     border-color: var(--black) !important;
-  }
-
-  .sm\:focus\:border-light-warning:focus {
-    border-color: var(--light-warning) !important;
-  }
-
-  .sm\:focus\:border-default-warning:focus {
-    border-color: var(--default-warning) !important;
-  }
-
-  .sm\:focus\:border-dark-warning:focus {
-    border-color: var(--dark-warning) !important;
-  }
-
-  .sm\:focus\:border-light-positive:focus {
-    border-color: var(--light-positive) !important;
-  }
-
-  .sm\:focus\:border-default-positive:focus {
-    border-color: var(--default-positive) !important;
-  }
-
-  .sm\:focus\:border-dark-positive:focus {
-    border-color: var(--dark-positive) !important;
-  }
-
-  .sm\:focus\:border-light-negative:focus {
-    border-color: var(--light-negative) !important;
-  }
-
-  .sm\:focus\:border-default-negative:focus {
-    border-color: var(--default-negative) !important;
-  }
-
-  .sm\:focus\:border-dark-negative:focus {
-    border-color: var(--dark-negative) !important;
-  }
-
-  .sm\:focus\:border-light-info:focus {
-    border-color: var(--light-info) !important;
-  }
-
-  .sm\:focus\:border-default-info:focus {
-    border-color: var(--default-info) !important;
-  }
-
-  .sm\:focus\:border-dark-info:focus {
-    border-color: var(--dark-info) !important;
   }
 
   .sm\:rounded-none {
@@ -9284,7 +8128,7 @@ video {
   }
 
   .sm\:font-sans {
-    font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-family: Avenir, "Avenir Next", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
   }
 
   .sm\:font-serif {
@@ -11453,216 +10297,80 @@ video {
     color: transparent !important;
   }
 
-  .sm\:placeholder-light-secondary::placeholder {
-    color: var(--light-secondary) !important;
-  }
-
-  .sm\:placeholder-default-secondary::placeholder {
-    color: var(--default-secondary) !important;
-  }
-
-  .sm\:placeholder-dark-secondary::placeholder {
-    color: var(--dark-secondary) !important;
+  .sm\:placeholder-primary::placeholder {
+    color: var(--primary) !important;
   }
 
   .sm\:placeholder-white::placeholder {
     color: var(--white) !important;
   }
 
-  .sm\:placeholder-default-snow::placeholder {
-    color: var(--default-snow) !important;
+  .sm\:placeholder-anti-flash-white::placeholder {
+    color: var(--anti-flash-white) !important;
   }
 
-  .sm\:placeholder-dark-snow::placeholder {
-    color: var(--dark-snow) !important;
+  .sm\:placeholder-gainsboro::placeholder {
+    color: var(--gainsboro) !important;
   }
 
-  .sm\:placeholder-extra-dark-snow::placeholder {
-    color: var(--extra-dark-snow) !important;
+  .sm\:placeholder-lavender-gray::placeholder {
+    color: var(--lavender-gray) !important;
   }
 
-  .sm\:placeholder-default-smoke::placeholder {
-    color: var(--default-smoke) !important;
+  .sm\:placeholder-quick-silver::placeholder {
+    color: var(--quick-silver) !important;
   }
 
-  .sm\:placeholder-dark-smoke::placeholder {
-    color: var(--dark-smoke) !important;
+  .sm\:placeholder-aurometalsaurus::placeholder {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .sm\:placeholder-extra-dark-smoke::placeholder {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .sm\:placeholder-light-slate::placeholder {
-    color: var(--light-slate) !important;
-  }
-
-  .sm\:placeholder-medium-slate::placeholder {
-    color: var(--medium-slate) !important;
-  }
-
-  .sm\:placeholder-slate::placeholder {
-    color: var(--slate) !important;
+  .sm\:placeholder-yankees-blue::placeholder {
+    color: var(--yankees-blue) !important;
   }
 
   .sm\:placeholder-black::placeholder {
     color: var(--black) !important;
   }
 
-  .sm\:placeholder-light-warning::placeholder {
-    color: var(--light-warning) !important;
-  }
-
-  .sm\:placeholder-default-warning::placeholder {
-    color: var(--default-warning) !important;
-  }
-
-  .sm\:placeholder-dark-warning::placeholder {
-    color: var(--dark-warning) !important;
-  }
-
-  .sm\:placeholder-light-positive::placeholder {
-    color: var(--light-positive) !important;
-  }
-
-  .sm\:placeholder-default-positive::placeholder {
-    color: var(--default-positive) !important;
-  }
-
-  .sm\:placeholder-dark-positive::placeholder {
-    color: var(--dark-positive) !important;
-  }
-
-  .sm\:placeholder-light-negative::placeholder {
-    color: var(--light-negative) !important;
-  }
-
-  .sm\:placeholder-default-negative::placeholder {
-    color: var(--default-negative) !important;
-  }
-
-  .sm\:placeholder-dark-negative::placeholder {
-    color: var(--dark-negative) !important;
-  }
-
-  .sm\:placeholder-light-info::placeholder {
-    color: var(--light-info) !important;
-  }
-
-  .sm\:placeholder-default-info::placeholder {
-    color: var(--default-info) !important;
-  }
-
-  .sm\:placeholder-dark-info::placeholder {
-    color: var(--dark-info) !important;
-  }
-
   .sm\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent !important;
   }
 
-  .sm\:focus\:placeholder-light-secondary:focus::placeholder {
-    color: var(--light-secondary) !important;
-  }
-
-  .sm\:focus\:placeholder-default-secondary:focus::placeholder {
-    color: var(--default-secondary) !important;
-  }
-
-  .sm\:focus\:placeholder-dark-secondary:focus::placeholder {
-    color: var(--dark-secondary) !important;
+  .sm\:focus\:placeholder-primary:focus::placeholder {
+    color: var(--primary) !important;
   }
 
   .sm\:focus\:placeholder-white:focus::placeholder {
     color: var(--white) !important;
   }
 
-  .sm\:focus\:placeholder-default-snow:focus::placeholder {
-    color: var(--default-snow) !important;
+  .sm\:focus\:placeholder-anti-flash-white:focus::placeholder {
+    color: var(--anti-flash-white) !important;
   }
 
-  .sm\:focus\:placeholder-dark-snow:focus::placeholder {
-    color: var(--dark-snow) !important;
+  .sm\:focus\:placeholder-gainsboro:focus::placeholder {
+    color: var(--gainsboro) !important;
   }
 
-  .sm\:focus\:placeholder-extra-dark-snow:focus::placeholder {
-    color: var(--extra-dark-snow) !important;
+  .sm\:focus\:placeholder-lavender-gray:focus::placeholder {
+    color: var(--lavender-gray) !important;
   }
 
-  .sm\:focus\:placeholder-default-smoke:focus::placeholder {
-    color: var(--default-smoke) !important;
+  .sm\:focus\:placeholder-quick-silver:focus::placeholder {
+    color: var(--quick-silver) !important;
   }
 
-  .sm\:focus\:placeholder-dark-smoke:focus::placeholder {
-    color: var(--dark-smoke) !important;
+  .sm\:focus\:placeholder-aurometalsaurus:focus::placeholder {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .sm\:focus\:placeholder-extra-dark-smoke:focus::placeholder {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .sm\:focus\:placeholder-light-slate:focus::placeholder {
-    color: var(--light-slate) !important;
-  }
-
-  .sm\:focus\:placeholder-medium-slate:focus::placeholder {
-    color: var(--medium-slate) !important;
-  }
-
-  .sm\:focus\:placeholder-slate:focus::placeholder {
-    color: var(--slate) !important;
+  .sm\:focus\:placeholder-yankees-blue:focus::placeholder {
+    color: var(--yankees-blue) !important;
   }
 
   .sm\:focus\:placeholder-black:focus::placeholder {
     color: var(--black) !important;
-  }
-
-  .sm\:focus\:placeholder-light-warning:focus::placeholder {
-    color: var(--light-warning) !important;
-  }
-
-  .sm\:focus\:placeholder-default-warning:focus::placeholder {
-    color: var(--default-warning) !important;
-  }
-
-  .sm\:focus\:placeholder-dark-warning:focus::placeholder {
-    color: var(--dark-warning) !important;
-  }
-
-  .sm\:focus\:placeholder-light-positive:focus::placeholder {
-    color: var(--light-positive) !important;
-  }
-
-  .sm\:focus\:placeholder-default-positive:focus::placeholder {
-    color: var(--default-positive) !important;
-  }
-
-  .sm\:focus\:placeholder-dark-positive:focus::placeholder {
-    color: var(--dark-positive) !important;
-  }
-
-  .sm\:focus\:placeholder-light-negative:focus::placeholder {
-    color: var(--light-negative) !important;
-  }
-
-  .sm\:focus\:placeholder-default-negative:focus::placeholder {
-    color: var(--default-negative) !important;
-  }
-
-  .sm\:focus\:placeholder-dark-negative:focus::placeholder {
-    color: var(--dark-negative) !important;
-  }
-
-  .sm\:focus\:placeholder-light-info:focus::placeholder {
-    color: var(--light-info) !important;
-  }
-
-  .sm\:focus\:placeholder-default-info:focus::placeholder {
-    color: var(--default-info) !important;
-  }
-
-  .sm\:focus\:placeholder-dark-info:focus::placeholder {
-    color: var(--dark-info) !important;
   }
 
   .sm\:pointer-events-none {
@@ -11908,324 +10616,120 @@ video {
     color: transparent !important;
   }
 
-  .sm\:text-light-secondary {
-    color: var(--light-secondary) !important;
-  }
-
-  .sm\:text-default-secondary {
-    color: var(--default-secondary) !important;
-  }
-
-  .sm\:text-dark-secondary {
-    color: var(--dark-secondary) !important;
+  .sm\:text-primary {
+    color: var(--primary) !important;
   }
 
   .sm\:text-white {
     color: var(--white) !important;
   }
 
-  .sm\:text-default-snow {
-    color: var(--default-snow) !important;
+  .sm\:text-anti-flash-white {
+    color: var(--anti-flash-white) !important;
   }
 
-  .sm\:text-dark-snow {
-    color: var(--dark-snow) !important;
+  .sm\:text-gainsboro {
+    color: var(--gainsboro) !important;
   }
 
-  .sm\:text-extra-dark-snow {
-    color: var(--extra-dark-snow) !important;
+  .sm\:text-lavender-gray {
+    color: var(--lavender-gray) !important;
   }
 
-  .sm\:text-default-smoke {
-    color: var(--default-smoke) !important;
+  .sm\:text-quick-silver {
+    color: var(--quick-silver) !important;
   }
 
-  .sm\:text-dark-smoke {
-    color: var(--dark-smoke) !important;
+  .sm\:text-aurometalsaurus {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .sm\:text-extra-dark-smoke {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .sm\:text-light-slate {
-    color: var(--light-slate) !important;
-  }
-
-  .sm\:text-medium-slate {
-    color: var(--medium-slate) !important;
-  }
-
-  .sm\:text-slate {
-    color: var(--slate) !important;
+  .sm\:text-yankees-blue {
+    color: var(--yankees-blue) !important;
   }
 
   .sm\:text-black {
     color: var(--black) !important;
   }
 
-  .sm\:text-light-warning {
-    color: var(--light-warning) !important;
-  }
-
-  .sm\:text-default-warning {
-    color: var(--default-warning) !important;
-  }
-
-  .sm\:text-dark-warning {
-    color: var(--dark-warning) !important;
-  }
-
-  .sm\:text-light-positive {
-    color: var(--light-positive) !important;
-  }
-
-  .sm\:text-default-positive {
-    color: var(--default-positive) !important;
-  }
-
-  .sm\:text-dark-positive {
-    color: var(--dark-positive) !important;
-  }
-
-  .sm\:text-light-negative {
-    color: var(--light-negative) !important;
-  }
-
-  .sm\:text-default-negative {
-    color: var(--default-negative) !important;
-  }
-
-  .sm\:text-dark-negative {
-    color: var(--dark-negative) !important;
-  }
-
-  .sm\:text-light-info {
-    color: var(--light-info) !important;
-  }
-
-  .sm\:text-default-info {
-    color: var(--default-info) !important;
-  }
-
-  .sm\:text-dark-info {
-    color: var(--dark-info) !important;
-  }
-
   .sm\:hover\:text-transparent:hover {
     color: transparent !important;
   }
 
-  .sm\:hover\:text-light-secondary:hover {
-    color: var(--light-secondary) !important;
-  }
-
-  .sm\:hover\:text-default-secondary:hover {
-    color: var(--default-secondary) !important;
-  }
-
-  .sm\:hover\:text-dark-secondary:hover {
-    color: var(--dark-secondary) !important;
+  .sm\:hover\:text-primary:hover {
+    color: var(--primary) !important;
   }
 
   .sm\:hover\:text-white:hover {
     color: var(--white) !important;
   }
 
-  .sm\:hover\:text-default-snow:hover {
-    color: var(--default-snow) !important;
+  .sm\:hover\:text-anti-flash-white:hover {
+    color: var(--anti-flash-white) !important;
   }
 
-  .sm\:hover\:text-dark-snow:hover {
-    color: var(--dark-snow) !important;
+  .sm\:hover\:text-gainsboro:hover {
+    color: var(--gainsboro) !important;
   }
 
-  .sm\:hover\:text-extra-dark-snow:hover {
-    color: var(--extra-dark-snow) !important;
+  .sm\:hover\:text-lavender-gray:hover {
+    color: var(--lavender-gray) !important;
   }
 
-  .sm\:hover\:text-default-smoke:hover {
-    color: var(--default-smoke) !important;
+  .sm\:hover\:text-quick-silver:hover {
+    color: var(--quick-silver) !important;
   }
 
-  .sm\:hover\:text-dark-smoke:hover {
-    color: var(--dark-smoke) !important;
+  .sm\:hover\:text-aurometalsaurus:hover {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .sm\:hover\:text-extra-dark-smoke:hover {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .sm\:hover\:text-light-slate:hover {
-    color: var(--light-slate) !important;
-  }
-
-  .sm\:hover\:text-medium-slate:hover {
-    color: var(--medium-slate) !important;
-  }
-
-  .sm\:hover\:text-slate:hover {
-    color: var(--slate) !important;
+  .sm\:hover\:text-yankees-blue:hover {
+    color: var(--yankees-blue) !important;
   }
 
   .sm\:hover\:text-black:hover {
     color: var(--black) !important;
   }
 
-  .sm\:hover\:text-light-warning:hover {
-    color: var(--light-warning) !important;
-  }
-
-  .sm\:hover\:text-default-warning:hover {
-    color: var(--default-warning) !important;
-  }
-
-  .sm\:hover\:text-dark-warning:hover {
-    color: var(--dark-warning) !important;
-  }
-
-  .sm\:hover\:text-light-positive:hover {
-    color: var(--light-positive) !important;
-  }
-
-  .sm\:hover\:text-default-positive:hover {
-    color: var(--default-positive) !important;
-  }
-
-  .sm\:hover\:text-dark-positive:hover {
-    color: var(--dark-positive) !important;
-  }
-
-  .sm\:hover\:text-light-negative:hover {
-    color: var(--light-negative) !important;
-  }
-
-  .sm\:hover\:text-default-negative:hover {
-    color: var(--default-negative) !important;
-  }
-
-  .sm\:hover\:text-dark-negative:hover {
-    color: var(--dark-negative) !important;
-  }
-
-  .sm\:hover\:text-light-info:hover {
-    color: var(--light-info) !important;
-  }
-
-  .sm\:hover\:text-default-info:hover {
-    color: var(--default-info) !important;
-  }
-
-  .sm\:hover\:text-dark-info:hover {
-    color: var(--dark-info) !important;
-  }
-
   .sm\:focus\:text-transparent:focus {
     color: transparent !important;
   }
 
-  .sm\:focus\:text-light-secondary:focus {
-    color: var(--light-secondary) !important;
-  }
-
-  .sm\:focus\:text-default-secondary:focus {
-    color: var(--default-secondary) !important;
-  }
-
-  .sm\:focus\:text-dark-secondary:focus {
-    color: var(--dark-secondary) !important;
+  .sm\:focus\:text-primary:focus {
+    color: var(--primary) !important;
   }
 
   .sm\:focus\:text-white:focus {
     color: var(--white) !important;
   }
 
-  .sm\:focus\:text-default-snow:focus {
-    color: var(--default-snow) !important;
+  .sm\:focus\:text-anti-flash-white:focus {
+    color: var(--anti-flash-white) !important;
   }
 
-  .sm\:focus\:text-dark-snow:focus {
-    color: var(--dark-snow) !important;
+  .sm\:focus\:text-gainsboro:focus {
+    color: var(--gainsboro) !important;
   }
 
-  .sm\:focus\:text-extra-dark-snow:focus {
-    color: var(--extra-dark-snow) !important;
+  .sm\:focus\:text-lavender-gray:focus {
+    color: var(--lavender-gray) !important;
   }
 
-  .sm\:focus\:text-default-smoke:focus {
-    color: var(--default-smoke) !important;
+  .sm\:focus\:text-quick-silver:focus {
+    color: var(--quick-silver) !important;
   }
 
-  .sm\:focus\:text-dark-smoke:focus {
-    color: var(--dark-smoke) !important;
+  .sm\:focus\:text-aurometalsaurus:focus {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .sm\:focus\:text-extra-dark-smoke:focus {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .sm\:focus\:text-light-slate:focus {
-    color: var(--light-slate) !important;
-  }
-
-  .sm\:focus\:text-medium-slate:focus {
-    color: var(--medium-slate) !important;
-  }
-
-  .sm\:focus\:text-slate:focus {
-    color: var(--slate) !important;
+  .sm\:focus\:text-yankees-blue:focus {
+    color: var(--yankees-blue) !important;
   }
 
   .sm\:focus\:text-black:focus {
     color: var(--black) !important;
-  }
-
-  .sm\:focus\:text-light-warning:focus {
-    color: var(--light-warning) !important;
-  }
-
-  .sm\:focus\:text-default-warning:focus {
-    color: var(--default-warning) !important;
-  }
-
-  .sm\:focus\:text-dark-warning:focus {
-    color: var(--dark-warning) !important;
-  }
-
-  .sm\:focus\:text-light-positive:focus {
-    color: var(--light-positive) !important;
-  }
-
-  .sm\:focus\:text-default-positive:focus {
-    color: var(--default-positive) !important;
-  }
-
-  .sm\:focus\:text-dark-positive:focus {
-    color: var(--dark-positive) !important;
-  }
-
-  .sm\:focus\:text-light-negative:focus {
-    color: var(--light-negative) !important;
-  }
-
-  .sm\:focus\:text-default-negative:focus {
-    color: var(--default-negative) !important;
-  }
-
-  .sm\:focus\:text-dark-negative:focus {
-    color: var(--dark-negative) !important;
-  }
-
-  .sm\:focus\:text-light-info:focus {
-    color: var(--light-info) !important;
-  }
-
-  .sm\:focus\:text-default-info:focus {
-    color: var(--default-info) !important;
-  }
-
-  .sm\:focus\:text-dark-info:focus {
-    color: var(--dark-info) !important;
   }
 
   .sm\:text-2xs {
@@ -15137,324 +13641,120 @@ video {
     background-color: transparent !important;
   }
 
-  .md\:bg-light-secondary {
-    background-color: var(--light-secondary) !important;
-  }
-
-  .md\:bg-default-secondary {
-    background-color: var(--default-secondary) !important;
-  }
-
-  .md\:bg-dark-secondary {
-    background-color: var(--dark-secondary) !important;
+  .md\:bg-primary {
+    background-color: var(--primary) !important;
   }
 
   .md\:bg-white {
     background-color: var(--white) !important;
   }
 
-  .md\:bg-default-snow {
-    background-color: var(--default-snow) !important;
+  .md\:bg-anti-flash-white {
+    background-color: var(--anti-flash-white) !important;
   }
 
-  .md\:bg-dark-snow {
-    background-color: var(--dark-snow) !important;
+  .md\:bg-gainsboro {
+    background-color: var(--gainsboro) !important;
   }
 
-  .md\:bg-extra-dark-snow {
-    background-color: var(--extra-dark-snow) !important;
+  .md\:bg-lavender-gray {
+    background-color: var(--lavender-gray) !important;
   }
 
-  .md\:bg-default-smoke {
-    background-color: var(--default-smoke) !important;
+  .md\:bg-quick-silver {
+    background-color: var(--quick-silver) !important;
   }
 
-  .md\:bg-dark-smoke {
-    background-color: var(--dark-smoke) !important;
+  .md\:bg-aurometalsaurus {
+    background-color: var(--aurometalsaurus) !important;
   }
 
-  .md\:bg-extra-dark-smoke {
-    background-color: var(--extra-dark-smoke) !important;
-  }
-
-  .md\:bg-light-slate {
-    background-color: var(--light-slate) !important;
-  }
-
-  .md\:bg-medium-slate {
-    background-color: var(--medium-slate) !important;
-  }
-
-  .md\:bg-slate {
-    background-color: var(--slate) !important;
+  .md\:bg-yankees-blue {
+    background-color: var(--yankees-blue) !important;
   }
 
   .md\:bg-black {
     background-color: var(--black) !important;
   }
 
-  .md\:bg-light-warning {
-    background-color: var(--light-warning) !important;
-  }
-
-  .md\:bg-default-warning {
-    background-color: var(--default-warning) !important;
-  }
-
-  .md\:bg-dark-warning {
-    background-color: var(--dark-warning) !important;
-  }
-
-  .md\:bg-light-positive {
-    background-color: var(--light-positive) !important;
-  }
-
-  .md\:bg-default-positive {
-    background-color: var(--default-positive) !important;
-  }
-
-  .md\:bg-dark-positive {
-    background-color: var(--dark-positive) !important;
-  }
-
-  .md\:bg-light-negative {
-    background-color: var(--light-negative) !important;
-  }
-
-  .md\:bg-default-negative {
-    background-color: var(--default-negative) !important;
-  }
-
-  .md\:bg-dark-negative {
-    background-color: var(--dark-negative) !important;
-  }
-
-  .md\:bg-light-info {
-    background-color: var(--light-info) !important;
-  }
-
-  .md\:bg-default-info {
-    background-color: var(--default-info) !important;
-  }
-
-  .md\:bg-dark-info {
-    background-color: var(--dark-info) !important;
-  }
-
   .md\:hover\:bg-transparent:hover {
     background-color: transparent !important;
   }
 
-  .md\:hover\:bg-light-secondary:hover {
-    background-color: var(--light-secondary) !important;
-  }
-
-  .md\:hover\:bg-default-secondary:hover {
-    background-color: var(--default-secondary) !important;
-  }
-
-  .md\:hover\:bg-dark-secondary:hover {
-    background-color: var(--dark-secondary) !important;
+  .md\:hover\:bg-primary:hover {
+    background-color: var(--primary) !important;
   }
 
   .md\:hover\:bg-white:hover {
     background-color: var(--white) !important;
   }
 
-  .md\:hover\:bg-default-snow:hover {
-    background-color: var(--default-snow) !important;
+  .md\:hover\:bg-anti-flash-white:hover {
+    background-color: var(--anti-flash-white) !important;
   }
 
-  .md\:hover\:bg-dark-snow:hover {
-    background-color: var(--dark-snow) !important;
+  .md\:hover\:bg-gainsboro:hover {
+    background-color: var(--gainsboro) !important;
   }
 
-  .md\:hover\:bg-extra-dark-snow:hover {
-    background-color: var(--extra-dark-snow) !important;
+  .md\:hover\:bg-lavender-gray:hover {
+    background-color: var(--lavender-gray) !important;
   }
 
-  .md\:hover\:bg-default-smoke:hover {
-    background-color: var(--default-smoke) !important;
+  .md\:hover\:bg-quick-silver:hover {
+    background-color: var(--quick-silver) !important;
   }
 
-  .md\:hover\:bg-dark-smoke:hover {
-    background-color: var(--dark-smoke) !important;
+  .md\:hover\:bg-aurometalsaurus:hover {
+    background-color: var(--aurometalsaurus) !important;
   }
 
-  .md\:hover\:bg-extra-dark-smoke:hover {
-    background-color: var(--extra-dark-smoke) !important;
-  }
-
-  .md\:hover\:bg-light-slate:hover {
-    background-color: var(--light-slate) !important;
-  }
-
-  .md\:hover\:bg-medium-slate:hover {
-    background-color: var(--medium-slate) !important;
-  }
-
-  .md\:hover\:bg-slate:hover {
-    background-color: var(--slate) !important;
+  .md\:hover\:bg-yankees-blue:hover {
+    background-color: var(--yankees-blue) !important;
   }
 
   .md\:hover\:bg-black:hover {
     background-color: var(--black) !important;
   }
 
-  .md\:hover\:bg-light-warning:hover {
-    background-color: var(--light-warning) !important;
-  }
-
-  .md\:hover\:bg-default-warning:hover {
-    background-color: var(--default-warning) !important;
-  }
-
-  .md\:hover\:bg-dark-warning:hover {
-    background-color: var(--dark-warning) !important;
-  }
-
-  .md\:hover\:bg-light-positive:hover {
-    background-color: var(--light-positive) !important;
-  }
-
-  .md\:hover\:bg-default-positive:hover {
-    background-color: var(--default-positive) !important;
-  }
-
-  .md\:hover\:bg-dark-positive:hover {
-    background-color: var(--dark-positive) !important;
-  }
-
-  .md\:hover\:bg-light-negative:hover {
-    background-color: var(--light-negative) !important;
-  }
-
-  .md\:hover\:bg-default-negative:hover {
-    background-color: var(--default-negative) !important;
-  }
-
-  .md\:hover\:bg-dark-negative:hover {
-    background-color: var(--dark-negative) !important;
-  }
-
-  .md\:hover\:bg-light-info:hover {
-    background-color: var(--light-info) !important;
-  }
-
-  .md\:hover\:bg-default-info:hover {
-    background-color: var(--default-info) !important;
-  }
-
-  .md\:hover\:bg-dark-info:hover {
-    background-color: var(--dark-info) !important;
-  }
-
   .md\:focus\:bg-transparent:focus {
     background-color: transparent !important;
   }
 
-  .md\:focus\:bg-light-secondary:focus {
-    background-color: var(--light-secondary) !important;
-  }
-
-  .md\:focus\:bg-default-secondary:focus {
-    background-color: var(--default-secondary) !important;
-  }
-
-  .md\:focus\:bg-dark-secondary:focus {
-    background-color: var(--dark-secondary) !important;
+  .md\:focus\:bg-primary:focus {
+    background-color: var(--primary) !important;
   }
 
   .md\:focus\:bg-white:focus {
     background-color: var(--white) !important;
   }
 
-  .md\:focus\:bg-default-snow:focus {
-    background-color: var(--default-snow) !important;
+  .md\:focus\:bg-anti-flash-white:focus {
+    background-color: var(--anti-flash-white) !important;
   }
 
-  .md\:focus\:bg-dark-snow:focus {
-    background-color: var(--dark-snow) !important;
+  .md\:focus\:bg-gainsboro:focus {
+    background-color: var(--gainsboro) !important;
   }
 
-  .md\:focus\:bg-extra-dark-snow:focus {
-    background-color: var(--extra-dark-snow) !important;
+  .md\:focus\:bg-lavender-gray:focus {
+    background-color: var(--lavender-gray) !important;
   }
 
-  .md\:focus\:bg-default-smoke:focus {
-    background-color: var(--default-smoke) !important;
+  .md\:focus\:bg-quick-silver:focus {
+    background-color: var(--quick-silver) !important;
   }
 
-  .md\:focus\:bg-dark-smoke:focus {
-    background-color: var(--dark-smoke) !important;
+  .md\:focus\:bg-aurometalsaurus:focus {
+    background-color: var(--aurometalsaurus) !important;
   }
 
-  .md\:focus\:bg-extra-dark-smoke:focus {
-    background-color: var(--extra-dark-smoke) !important;
-  }
-
-  .md\:focus\:bg-light-slate:focus {
-    background-color: var(--light-slate) !important;
-  }
-
-  .md\:focus\:bg-medium-slate:focus {
-    background-color: var(--medium-slate) !important;
-  }
-
-  .md\:focus\:bg-slate:focus {
-    background-color: var(--slate) !important;
+  .md\:focus\:bg-yankees-blue:focus {
+    background-color: var(--yankees-blue) !important;
   }
 
   .md\:focus\:bg-black:focus {
     background-color: var(--black) !important;
-  }
-
-  .md\:focus\:bg-light-warning:focus {
-    background-color: var(--light-warning) !important;
-  }
-
-  .md\:focus\:bg-default-warning:focus {
-    background-color: var(--default-warning) !important;
-  }
-
-  .md\:focus\:bg-dark-warning:focus {
-    background-color: var(--dark-warning) !important;
-  }
-
-  .md\:focus\:bg-light-positive:focus {
-    background-color: var(--light-positive) !important;
-  }
-
-  .md\:focus\:bg-default-positive:focus {
-    background-color: var(--default-positive) !important;
-  }
-
-  .md\:focus\:bg-dark-positive:focus {
-    background-color: var(--dark-positive) !important;
-  }
-
-  .md\:focus\:bg-light-negative:focus {
-    background-color: var(--light-negative) !important;
-  }
-
-  .md\:focus\:bg-default-negative:focus {
-    background-color: var(--default-negative) !important;
-  }
-
-  .md\:focus\:bg-dark-negative:focus {
-    background-color: var(--dark-negative) !important;
-  }
-
-  .md\:focus\:bg-light-info:focus {
-    background-color: var(--light-info) !important;
-  }
-
-  .md\:focus\:bg-default-info:focus {
-    background-color: var(--default-info) !important;
-  }
-
-  .md\:focus\:bg-dark-info:focus {
-    background-color: var(--dark-info) !important;
   }
 
   .md\:bg-bottom {
@@ -15541,324 +13841,120 @@ video {
     border-color: transparent !important;
   }
 
-  .md\:border-light-secondary {
-    border-color: var(--light-secondary) !important;
-  }
-
-  .md\:border-default-secondary {
-    border-color: var(--default-secondary) !important;
-  }
-
-  .md\:border-dark-secondary {
-    border-color: var(--dark-secondary) !important;
+  .md\:border-primary {
+    border-color: var(--primary) !important;
   }
 
   .md\:border-white {
     border-color: var(--white) !important;
   }
 
-  .md\:border-default-snow {
-    border-color: var(--default-snow) !important;
+  .md\:border-anti-flash-white {
+    border-color: var(--anti-flash-white) !important;
   }
 
-  .md\:border-dark-snow {
-    border-color: var(--dark-snow) !important;
+  .md\:border-gainsboro {
+    border-color: var(--gainsboro) !important;
   }
 
-  .md\:border-extra-dark-snow {
-    border-color: var(--extra-dark-snow) !important;
+  .md\:border-lavender-gray {
+    border-color: var(--lavender-gray) !important;
   }
 
-  .md\:border-default-smoke {
-    border-color: var(--default-smoke) !important;
+  .md\:border-quick-silver {
+    border-color: var(--quick-silver) !important;
   }
 
-  .md\:border-dark-smoke {
-    border-color: var(--dark-smoke) !important;
+  .md\:border-aurometalsaurus {
+    border-color: var(--aurometalsaurus) !important;
   }
 
-  .md\:border-extra-dark-smoke {
-    border-color: var(--extra-dark-smoke) !important;
-  }
-
-  .md\:border-light-slate {
-    border-color: var(--light-slate) !important;
-  }
-
-  .md\:border-medium-slate {
-    border-color: var(--medium-slate) !important;
-  }
-
-  .md\:border-slate {
-    border-color: var(--slate) !important;
+  .md\:border-yankees-blue {
+    border-color: var(--yankees-blue) !important;
   }
 
   .md\:border-black {
     border-color: var(--black) !important;
   }
 
-  .md\:border-light-warning {
-    border-color: var(--light-warning) !important;
-  }
-
-  .md\:border-default-warning {
-    border-color: var(--default-warning) !important;
-  }
-
-  .md\:border-dark-warning {
-    border-color: var(--dark-warning) !important;
-  }
-
-  .md\:border-light-positive {
-    border-color: var(--light-positive) !important;
-  }
-
-  .md\:border-default-positive {
-    border-color: var(--default-positive) !important;
-  }
-
-  .md\:border-dark-positive {
-    border-color: var(--dark-positive) !important;
-  }
-
-  .md\:border-light-negative {
-    border-color: var(--light-negative) !important;
-  }
-
-  .md\:border-default-negative {
-    border-color: var(--default-negative) !important;
-  }
-
-  .md\:border-dark-negative {
-    border-color: var(--dark-negative) !important;
-  }
-
-  .md\:border-light-info {
-    border-color: var(--light-info) !important;
-  }
-
-  .md\:border-default-info {
-    border-color: var(--default-info) !important;
-  }
-
-  .md\:border-dark-info {
-    border-color: var(--dark-info) !important;
-  }
-
   .md\:hover\:border-transparent:hover {
     border-color: transparent !important;
   }
 
-  .md\:hover\:border-light-secondary:hover {
-    border-color: var(--light-secondary) !important;
-  }
-
-  .md\:hover\:border-default-secondary:hover {
-    border-color: var(--default-secondary) !important;
-  }
-
-  .md\:hover\:border-dark-secondary:hover {
-    border-color: var(--dark-secondary) !important;
+  .md\:hover\:border-primary:hover {
+    border-color: var(--primary) !important;
   }
 
   .md\:hover\:border-white:hover {
     border-color: var(--white) !important;
   }
 
-  .md\:hover\:border-default-snow:hover {
-    border-color: var(--default-snow) !important;
+  .md\:hover\:border-anti-flash-white:hover {
+    border-color: var(--anti-flash-white) !important;
   }
 
-  .md\:hover\:border-dark-snow:hover {
-    border-color: var(--dark-snow) !important;
+  .md\:hover\:border-gainsboro:hover {
+    border-color: var(--gainsboro) !important;
   }
 
-  .md\:hover\:border-extra-dark-snow:hover {
-    border-color: var(--extra-dark-snow) !important;
+  .md\:hover\:border-lavender-gray:hover {
+    border-color: var(--lavender-gray) !important;
   }
 
-  .md\:hover\:border-default-smoke:hover {
-    border-color: var(--default-smoke) !important;
+  .md\:hover\:border-quick-silver:hover {
+    border-color: var(--quick-silver) !important;
   }
 
-  .md\:hover\:border-dark-smoke:hover {
-    border-color: var(--dark-smoke) !important;
+  .md\:hover\:border-aurometalsaurus:hover {
+    border-color: var(--aurometalsaurus) !important;
   }
 
-  .md\:hover\:border-extra-dark-smoke:hover {
-    border-color: var(--extra-dark-smoke) !important;
-  }
-
-  .md\:hover\:border-light-slate:hover {
-    border-color: var(--light-slate) !important;
-  }
-
-  .md\:hover\:border-medium-slate:hover {
-    border-color: var(--medium-slate) !important;
-  }
-
-  .md\:hover\:border-slate:hover {
-    border-color: var(--slate) !important;
+  .md\:hover\:border-yankees-blue:hover {
+    border-color: var(--yankees-blue) !important;
   }
 
   .md\:hover\:border-black:hover {
     border-color: var(--black) !important;
   }
 
-  .md\:hover\:border-light-warning:hover {
-    border-color: var(--light-warning) !important;
-  }
-
-  .md\:hover\:border-default-warning:hover {
-    border-color: var(--default-warning) !important;
-  }
-
-  .md\:hover\:border-dark-warning:hover {
-    border-color: var(--dark-warning) !important;
-  }
-
-  .md\:hover\:border-light-positive:hover {
-    border-color: var(--light-positive) !important;
-  }
-
-  .md\:hover\:border-default-positive:hover {
-    border-color: var(--default-positive) !important;
-  }
-
-  .md\:hover\:border-dark-positive:hover {
-    border-color: var(--dark-positive) !important;
-  }
-
-  .md\:hover\:border-light-negative:hover {
-    border-color: var(--light-negative) !important;
-  }
-
-  .md\:hover\:border-default-negative:hover {
-    border-color: var(--default-negative) !important;
-  }
-
-  .md\:hover\:border-dark-negative:hover {
-    border-color: var(--dark-negative) !important;
-  }
-
-  .md\:hover\:border-light-info:hover {
-    border-color: var(--light-info) !important;
-  }
-
-  .md\:hover\:border-default-info:hover {
-    border-color: var(--default-info) !important;
-  }
-
-  .md\:hover\:border-dark-info:hover {
-    border-color: var(--dark-info) !important;
-  }
-
   .md\:focus\:border-transparent:focus {
     border-color: transparent !important;
   }
 
-  .md\:focus\:border-light-secondary:focus {
-    border-color: var(--light-secondary) !important;
-  }
-
-  .md\:focus\:border-default-secondary:focus {
-    border-color: var(--default-secondary) !important;
-  }
-
-  .md\:focus\:border-dark-secondary:focus {
-    border-color: var(--dark-secondary) !important;
+  .md\:focus\:border-primary:focus {
+    border-color: var(--primary) !important;
   }
 
   .md\:focus\:border-white:focus {
     border-color: var(--white) !important;
   }
 
-  .md\:focus\:border-default-snow:focus {
-    border-color: var(--default-snow) !important;
+  .md\:focus\:border-anti-flash-white:focus {
+    border-color: var(--anti-flash-white) !important;
   }
 
-  .md\:focus\:border-dark-snow:focus {
-    border-color: var(--dark-snow) !important;
+  .md\:focus\:border-gainsboro:focus {
+    border-color: var(--gainsboro) !important;
   }
 
-  .md\:focus\:border-extra-dark-snow:focus {
-    border-color: var(--extra-dark-snow) !important;
+  .md\:focus\:border-lavender-gray:focus {
+    border-color: var(--lavender-gray) !important;
   }
 
-  .md\:focus\:border-default-smoke:focus {
-    border-color: var(--default-smoke) !important;
+  .md\:focus\:border-quick-silver:focus {
+    border-color: var(--quick-silver) !important;
   }
 
-  .md\:focus\:border-dark-smoke:focus {
-    border-color: var(--dark-smoke) !important;
+  .md\:focus\:border-aurometalsaurus:focus {
+    border-color: var(--aurometalsaurus) !important;
   }
 
-  .md\:focus\:border-extra-dark-smoke:focus {
-    border-color: var(--extra-dark-smoke) !important;
-  }
-
-  .md\:focus\:border-light-slate:focus {
-    border-color: var(--light-slate) !important;
-  }
-
-  .md\:focus\:border-medium-slate:focus {
-    border-color: var(--medium-slate) !important;
-  }
-
-  .md\:focus\:border-slate:focus {
-    border-color: var(--slate) !important;
+  .md\:focus\:border-yankees-blue:focus {
+    border-color: var(--yankees-blue) !important;
   }
 
   .md\:focus\:border-black:focus {
     border-color: var(--black) !important;
-  }
-
-  .md\:focus\:border-light-warning:focus {
-    border-color: var(--light-warning) !important;
-  }
-
-  .md\:focus\:border-default-warning:focus {
-    border-color: var(--default-warning) !important;
-  }
-
-  .md\:focus\:border-dark-warning:focus {
-    border-color: var(--dark-warning) !important;
-  }
-
-  .md\:focus\:border-light-positive:focus {
-    border-color: var(--light-positive) !important;
-  }
-
-  .md\:focus\:border-default-positive:focus {
-    border-color: var(--default-positive) !important;
-  }
-
-  .md\:focus\:border-dark-positive:focus {
-    border-color: var(--dark-positive) !important;
-  }
-
-  .md\:focus\:border-light-negative:focus {
-    border-color: var(--light-negative) !important;
-  }
-
-  .md\:focus\:border-default-negative:focus {
-    border-color: var(--default-negative) !important;
-  }
-
-  .md\:focus\:border-dark-negative:focus {
-    border-color: var(--dark-negative) !important;
-  }
-
-  .md\:focus\:border-light-info:focus {
-    border-color: var(--light-info) !important;
-  }
-
-  .md\:focus\:border-default-info:focus {
-    border-color: var(--default-info) !important;
-  }
-
-  .md\:focus\:border-dark-info:focus {
-    border-color: var(--dark-info) !important;
   }
 
   .md\:rounded-none {
@@ -16516,7 +14612,7 @@ video {
   }
 
   .md\:font-sans {
-    font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-family: Avenir, "Avenir Next", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
   }
 
   .md\:font-serif {
@@ -18685,216 +16781,80 @@ video {
     color: transparent !important;
   }
 
-  .md\:placeholder-light-secondary::placeholder {
-    color: var(--light-secondary) !important;
-  }
-
-  .md\:placeholder-default-secondary::placeholder {
-    color: var(--default-secondary) !important;
-  }
-
-  .md\:placeholder-dark-secondary::placeholder {
-    color: var(--dark-secondary) !important;
+  .md\:placeholder-primary::placeholder {
+    color: var(--primary) !important;
   }
 
   .md\:placeholder-white::placeholder {
     color: var(--white) !important;
   }
 
-  .md\:placeholder-default-snow::placeholder {
-    color: var(--default-snow) !important;
+  .md\:placeholder-anti-flash-white::placeholder {
+    color: var(--anti-flash-white) !important;
   }
 
-  .md\:placeholder-dark-snow::placeholder {
-    color: var(--dark-snow) !important;
+  .md\:placeholder-gainsboro::placeholder {
+    color: var(--gainsboro) !important;
   }
 
-  .md\:placeholder-extra-dark-snow::placeholder {
-    color: var(--extra-dark-snow) !important;
+  .md\:placeholder-lavender-gray::placeholder {
+    color: var(--lavender-gray) !important;
   }
 
-  .md\:placeholder-default-smoke::placeholder {
-    color: var(--default-smoke) !important;
+  .md\:placeholder-quick-silver::placeholder {
+    color: var(--quick-silver) !important;
   }
 
-  .md\:placeholder-dark-smoke::placeholder {
-    color: var(--dark-smoke) !important;
+  .md\:placeholder-aurometalsaurus::placeholder {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .md\:placeholder-extra-dark-smoke::placeholder {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .md\:placeholder-light-slate::placeholder {
-    color: var(--light-slate) !important;
-  }
-
-  .md\:placeholder-medium-slate::placeholder {
-    color: var(--medium-slate) !important;
-  }
-
-  .md\:placeholder-slate::placeholder {
-    color: var(--slate) !important;
+  .md\:placeholder-yankees-blue::placeholder {
+    color: var(--yankees-blue) !important;
   }
 
   .md\:placeholder-black::placeholder {
     color: var(--black) !important;
   }
 
-  .md\:placeholder-light-warning::placeholder {
-    color: var(--light-warning) !important;
-  }
-
-  .md\:placeholder-default-warning::placeholder {
-    color: var(--default-warning) !important;
-  }
-
-  .md\:placeholder-dark-warning::placeholder {
-    color: var(--dark-warning) !important;
-  }
-
-  .md\:placeholder-light-positive::placeholder {
-    color: var(--light-positive) !important;
-  }
-
-  .md\:placeholder-default-positive::placeholder {
-    color: var(--default-positive) !important;
-  }
-
-  .md\:placeholder-dark-positive::placeholder {
-    color: var(--dark-positive) !important;
-  }
-
-  .md\:placeholder-light-negative::placeholder {
-    color: var(--light-negative) !important;
-  }
-
-  .md\:placeholder-default-negative::placeholder {
-    color: var(--default-negative) !important;
-  }
-
-  .md\:placeholder-dark-negative::placeholder {
-    color: var(--dark-negative) !important;
-  }
-
-  .md\:placeholder-light-info::placeholder {
-    color: var(--light-info) !important;
-  }
-
-  .md\:placeholder-default-info::placeholder {
-    color: var(--default-info) !important;
-  }
-
-  .md\:placeholder-dark-info::placeholder {
-    color: var(--dark-info) !important;
-  }
-
   .md\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent !important;
   }
 
-  .md\:focus\:placeholder-light-secondary:focus::placeholder {
-    color: var(--light-secondary) !important;
-  }
-
-  .md\:focus\:placeholder-default-secondary:focus::placeholder {
-    color: var(--default-secondary) !important;
-  }
-
-  .md\:focus\:placeholder-dark-secondary:focus::placeholder {
-    color: var(--dark-secondary) !important;
+  .md\:focus\:placeholder-primary:focus::placeholder {
+    color: var(--primary) !important;
   }
 
   .md\:focus\:placeholder-white:focus::placeholder {
     color: var(--white) !important;
   }
 
-  .md\:focus\:placeholder-default-snow:focus::placeholder {
-    color: var(--default-snow) !important;
+  .md\:focus\:placeholder-anti-flash-white:focus::placeholder {
+    color: var(--anti-flash-white) !important;
   }
 
-  .md\:focus\:placeholder-dark-snow:focus::placeholder {
-    color: var(--dark-snow) !important;
+  .md\:focus\:placeholder-gainsboro:focus::placeholder {
+    color: var(--gainsboro) !important;
   }
 
-  .md\:focus\:placeholder-extra-dark-snow:focus::placeholder {
-    color: var(--extra-dark-snow) !important;
+  .md\:focus\:placeholder-lavender-gray:focus::placeholder {
+    color: var(--lavender-gray) !important;
   }
 
-  .md\:focus\:placeholder-default-smoke:focus::placeholder {
-    color: var(--default-smoke) !important;
+  .md\:focus\:placeholder-quick-silver:focus::placeholder {
+    color: var(--quick-silver) !important;
   }
 
-  .md\:focus\:placeholder-dark-smoke:focus::placeholder {
-    color: var(--dark-smoke) !important;
+  .md\:focus\:placeholder-aurometalsaurus:focus::placeholder {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .md\:focus\:placeholder-extra-dark-smoke:focus::placeholder {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .md\:focus\:placeholder-light-slate:focus::placeholder {
-    color: var(--light-slate) !important;
-  }
-
-  .md\:focus\:placeholder-medium-slate:focus::placeholder {
-    color: var(--medium-slate) !important;
-  }
-
-  .md\:focus\:placeholder-slate:focus::placeholder {
-    color: var(--slate) !important;
+  .md\:focus\:placeholder-yankees-blue:focus::placeholder {
+    color: var(--yankees-blue) !important;
   }
 
   .md\:focus\:placeholder-black:focus::placeholder {
     color: var(--black) !important;
-  }
-
-  .md\:focus\:placeholder-light-warning:focus::placeholder {
-    color: var(--light-warning) !important;
-  }
-
-  .md\:focus\:placeholder-default-warning:focus::placeholder {
-    color: var(--default-warning) !important;
-  }
-
-  .md\:focus\:placeholder-dark-warning:focus::placeholder {
-    color: var(--dark-warning) !important;
-  }
-
-  .md\:focus\:placeholder-light-positive:focus::placeholder {
-    color: var(--light-positive) !important;
-  }
-
-  .md\:focus\:placeholder-default-positive:focus::placeholder {
-    color: var(--default-positive) !important;
-  }
-
-  .md\:focus\:placeholder-dark-positive:focus::placeholder {
-    color: var(--dark-positive) !important;
-  }
-
-  .md\:focus\:placeholder-light-negative:focus::placeholder {
-    color: var(--light-negative) !important;
-  }
-
-  .md\:focus\:placeholder-default-negative:focus::placeholder {
-    color: var(--default-negative) !important;
-  }
-
-  .md\:focus\:placeholder-dark-negative:focus::placeholder {
-    color: var(--dark-negative) !important;
-  }
-
-  .md\:focus\:placeholder-light-info:focus::placeholder {
-    color: var(--light-info) !important;
-  }
-
-  .md\:focus\:placeholder-default-info:focus::placeholder {
-    color: var(--default-info) !important;
-  }
-
-  .md\:focus\:placeholder-dark-info:focus::placeholder {
-    color: var(--dark-info) !important;
   }
 
   .md\:pointer-events-none {
@@ -19140,324 +17100,120 @@ video {
     color: transparent !important;
   }
 
-  .md\:text-light-secondary {
-    color: var(--light-secondary) !important;
-  }
-
-  .md\:text-default-secondary {
-    color: var(--default-secondary) !important;
-  }
-
-  .md\:text-dark-secondary {
-    color: var(--dark-secondary) !important;
+  .md\:text-primary {
+    color: var(--primary) !important;
   }
 
   .md\:text-white {
     color: var(--white) !important;
   }
 
-  .md\:text-default-snow {
-    color: var(--default-snow) !important;
+  .md\:text-anti-flash-white {
+    color: var(--anti-flash-white) !important;
   }
 
-  .md\:text-dark-snow {
-    color: var(--dark-snow) !important;
+  .md\:text-gainsboro {
+    color: var(--gainsboro) !important;
   }
 
-  .md\:text-extra-dark-snow {
-    color: var(--extra-dark-snow) !important;
+  .md\:text-lavender-gray {
+    color: var(--lavender-gray) !important;
   }
 
-  .md\:text-default-smoke {
-    color: var(--default-smoke) !important;
+  .md\:text-quick-silver {
+    color: var(--quick-silver) !important;
   }
 
-  .md\:text-dark-smoke {
-    color: var(--dark-smoke) !important;
+  .md\:text-aurometalsaurus {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .md\:text-extra-dark-smoke {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .md\:text-light-slate {
-    color: var(--light-slate) !important;
-  }
-
-  .md\:text-medium-slate {
-    color: var(--medium-slate) !important;
-  }
-
-  .md\:text-slate {
-    color: var(--slate) !important;
+  .md\:text-yankees-blue {
+    color: var(--yankees-blue) !important;
   }
 
   .md\:text-black {
     color: var(--black) !important;
   }
 
-  .md\:text-light-warning {
-    color: var(--light-warning) !important;
-  }
-
-  .md\:text-default-warning {
-    color: var(--default-warning) !important;
-  }
-
-  .md\:text-dark-warning {
-    color: var(--dark-warning) !important;
-  }
-
-  .md\:text-light-positive {
-    color: var(--light-positive) !important;
-  }
-
-  .md\:text-default-positive {
-    color: var(--default-positive) !important;
-  }
-
-  .md\:text-dark-positive {
-    color: var(--dark-positive) !important;
-  }
-
-  .md\:text-light-negative {
-    color: var(--light-negative) !important;
-  }
-
-  .md\:text-default-negative {
-    color: var(--default-negative) !important;
-  }
-
-  .md\:text-dark-negative {
-    color: var(--dark-negative) !important;
-  }
-
-  .md\:text-light-info {
-    color: var(--light-info) !important;
-  }
-
-  .md\:text-default-info {
-    color: var(--default-info) !important;
-  }
-
-  .md\:text-dark-info {
-    color: var(--dark-info) !important;
-  }
-
   .md\:hover\:text-transparent:hover {
     color: transparent !important;
   }
 
-  .md\:hover\:text-light-secondary:hover {
-    color: var(--light-secondary) !important;
-  }
-
-  .md\:hover\:text-default-secondary:hover {
-    color: var(--default-secondary) !important;
-  }
-
-  .md\:hover\:text-dark-secondary:hover {
-    color: var(--dark-secondary) !important;
+  .md\:hover\:text-primary:hover {
+    color: var(--primary) !important;
   }
 
   .md\:hover\:text-white:hover {
     color: var(--white) !important;
   }
 
-  .md\:hover\:text-default-snow:hover {
-    color: var(--default-snow) !important;
+  .md\:hover\:text-anti-flash-white:hover {
+    color: var(--anti-flash-white) !important;
   }
 
-  .md\:hover\:text-dark-snow:hover {
-    color: var(--dark-snow) !important;
+  .md\:hover\:text-gainsboro:hover {
+    color: var(--gainsboro) !important;
   }
 
-  .md\:hover\:text-extra-dark-snow:hover {
-    color: var(--extra-dark-snow) !important;
+  .md\:hover\:text-lavender-gray:hover {
+    color: var(--lavender-gray) !important;
   }
 
-  .md\:hover\:text-default-smoke:hover {
-    color: var(--default-smoke) !important;
+  .md\:hover\:text-quick-silver:hover {
+    color: var(--quick-silver) !important;
   }
 
-  .md\:hover\:text-dark-smoke:hover {
-    color: var(--dark-smoke) !important;
+  .md\:hover\:text-aurometalsaurus:hover {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .md\:hover\:text-extra-dark-smoke:hover {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .md\:hover\:text-light-slate:hover {
-    color: var(--light-slate) !important;
-  }
-
-  .md\:hover\:text-medium-slate:hover {
-    color: var(--medium-slate) !important;
-  }
-
-  .md\:hover\:text-slate:hover {
-    color: var(--slate) !important;
+  .md\:hover\:text-yankees-blue:hover {
+    color: var(--yankees-blue) !important;
   }
 
   .md\:hover\:text-black:hover {
     color: var(--black) !important;
   }
 
-  .md\:hover\:text-light-warning:hover {
-    color: var(--light-warning) !important;
-  }
-
-  .md\:hover\:text-default-warning:hover {
-    color: var(--default-warning) !important;
-  }
-
-  .md\:hover\:text-dark-warning:hover {
-    color: var(--dark-warning) !important;
-  }
-
-  .md\:hover\:text-light-positive:hover {
-    color: var(--light-positive) !important;
-  }
-
-  .md\:hover\:text-default-positive:hover {
-    color: var(--default-positive) !important;
-  }
-
-  .md\:hover\:text-dark-positive:hover {
-    color: var(--dark-positive) !important;
-  }
-
-  .md\:hover\:text-light-negative:hover {
-    color: var(--light-negative) !important;
-  }
-
-  .md\:hover\:text-default-negative:hover {
-    color: var(--default-negative) !important;
-  }
-
-  .md\:hover\:text-dark-negative:hover {
-    color: var(--dark-negative) !important;
-  }
-
-  .md\:hover\:text-light-info:hover {
-    color: var(--light-info) !important;
-  }
-
-  .md\:hover\:text-default-info:hover {
-    color: var(--default-info) !important;
-  }
-
-  .md\:hover\:text-dark-info:hover {
-    color: var(--dark-info) !important;
-  }
-
   .md\:focus\:text-transparent:focus {
     color: transparent !important;
   }
 
-  .md\:focus\:text-light-secondary:focus {
-    color: var(--light-secondary) !important;
-  }
-
-  .md\:focus\:text-default-secondary:focus {
-    color: var(--default-secondary) !important;
-  }
-
-  .md\:focus\:text-dark-secondary:focus {
-    color: var(--dark-secondary) !important;
+  .md\:focus\:text-primary:focus {
+    color: var(--primary) !important;
   }
 
   .md\:focus\:text-white:focus {
     color: var(--white) !important;
   }
 
-  .md\:focus\:text-default-snow:focus {
-    color: var(--default-snow) !important;
+  .md\:focus\:text-anti-flash-white:focus {
+    color: var(--anti-flash-white) !important;
   }
 
-  .md\:focus\:text-dark-snow:focus {
-    color: var(--dark-snow) !important;
+  .md\:focus\:text-gainsboro:focus {
+    color: var(--gainsboro) !important;
   }
 
-  .md\:focus\:text-extra-dark-snow:focus {
-    color: var(--extra-dark-snow) !important;
+  .md\:focus\:text-lavender-gray:focus {
+    color: var(--lavender-gray) !important;
   }
 
-  .md\:focus\:text-default-smoke:focus {
-    color: var(--default-smoke) !important;
+  .md\:focus\:text-quick-silver:focus {
+    color: var(--quick-silver) !important;
   }
 
-  .md\:focus\:text-dark-smoke:focus {
-    color: var(--dark-smoke) !important;
+  .md\:focus\:text-aurometalsaurus:focus {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .md\:focus\:text-extra-dark-smoke:focus {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .md\:focus\:text-light-slate:focus {
-    color: var(--light-slate) !important;
-  }
-
-  .md\:focus\:text-medium-slate:focus {
-    color: var(--medium-slate) !important;
-  }
-
-  .md\:focus\:text-slate:focus {
-    color: var(--slate) !important;
+  .md\:focus\:text-yankees-blue:focus {
+    color: var(--yankees-blue) !important;
   }
 
   .md\:focus\:text-black:focus {
     color: var(--black) !important;
-  }
-
-  .md\:focus\:text-light-warning:focus {
-    color: var(--light-warning) !important;
-  }
-
-  .md\:focus\:text-default-warning:focus {
-    color: var(--default-warning) !important;
-  }
-
-  .md\:focus\:text-dark-warning:focus {
-    color: var(--dark-warning) !important;
-  }
-
-  .md\:focus\:text-light-positive:focus {
-    color: var(--light-positive) !important;
-  }
-
-  .md\:focus\:text-default-positive:focus {
-    color: var(--default-positive) !important;
-  }
-
-  .md\:focus\:text-dark-positive:focus {
-    color: var(--dark-positive) !important;
-  }
-
-  .md\:focus\:text-light-negative:focus {
-    color: var(--light-negative) !important;
-  }
-
-  .md\:focus\:text-default-negative:focus {
-    color: var(--default-negative) !important;
-  }
-
-  .md\:focus\:text-dark-negative:focus {
-    color: var(--dark-negative) !important;
-  }
-
-  .md\:focus\:text-light-info:focus {
-    color: var(--light-info) !important;
-  }
-
-  .md\:focus\:text-default-info:focus {
-    color: var(--default-info) !important;
-  }
-
-  .md\:focus\:text-dark-info:focus {
-    color: var(--dark-info) !important;
   }
 
   .md\:text-2xs {
@@ -22369,324 +20125,120 @@ video {
     background-color: transparent !important;
   }
 
-  .lg\:bg-light-secondary {
-    background-color: var(--light-secondary) !important;
-  }
-
-  .lg\:bg-default-secondary {
-    background-color: var(--default-secondary) !important;
-  }
-
-  .lg\:bg-dark-secondary {
-    background-color: var(--dark-secondary) !important;
+  .lg\:bg-primary {
+    background-color: var(--primary) !important;
   }
 
   .lg\:bg-white {
     background-color: var(--white) !important;
   }
 
-  .lg\:bg-default-snow {
-    background-color: var(--default-snow) !important;
+  .lg\:bg-anti-flash-white {
+    background-color: var(--anti-flash-white) !important;
   }
 
-  .lg\:bg-dark-snow {
-    background-color: var(--dark-snow) !important;
+  .lg\:bg-gainsboro {
+    background-color: var(--gainsboro) !important;
   }
 
-  .lg\:bg-extra-dark-snow {
-    background-color: var(--extra-dark-snow) !important;
+  .lg\:bg-lavender-gray {
+    background-color: var(--lavender-gray) !important;
   }
 
-  .lg\:bg-default-smoke {
-    background-color: var(--default-smoke) !important;
+  .lg\:bg-quick-silver {
+    background-color: var(--quick-silver) !important;
   }
 
-  .lg\:bg-dark-smoke {
-    background-color: var(--dark-smoke) !important;
+  .lg\:bg-aurometalsaurus {
+    background-color: var(--aurometalsaurus) !important;
   }
 
-  .lg\:bg-extra-dark-smoke {
-    background-color: var(--extra-dark-smoke) !important;
-  }
-
-  .lg\:bg-light-slate {
-    background-color: var(--light-slate) !important;
-  }
-
-  .lg\:bg-medium-slate {
-    background-color: var(--medium-slate) !important;
-  }
-
-  .lg\:bg-slate {
-    background-color: var(--slate) !important;
+  .lg\:bg-yankees-blue {
+    background-color: var(--yankees-blue) !important;
   }
 
   .lg\:bg-black {
     background-color: var(--black) !important;
   }
 
-  .lg\:bg-light-warning {
-    background-color: var(--light-warning) !important;
-  }
-
-  .lg\:bg-default-warning {
-    background-color: var(--default-warning) !important;
-  }
-
-  .lg\:bg-dark-warning {
-    background-color: var(--dark-warning) !important;
-  }
-
-  .lg\:bg-light-positive {
-    background-color: var(--light-positive) !important;
-  }
-
-  .lg\:bg-default-positive {
-    background-color: var(--default-positive) !important;
-  }
-
-  .lg\:bg-dark-positive {
-    background-color: var(--dark-positive) !important;
-  }
-
-  .lg\:bg-light-negative {
-    background-color: var(--light-negative) !important;
-  }
-
-  .lg\:bg-default-negative {
-    background-color: var(--default-negative) !important;
-  }
-
-  .lg\:bg-dark-negative {
-    background-color: var(--dark-negative) !important;
-  }
-
-  .lg\:bg-light-info {
-    background-color: var(--light-info) !important;
-  }
-
-  .lg\:bg-default-info {
-    background-color: var(--default-info) !important;
-  }
-
-  .lg\:bg-dark-info {
-    background-color: var(--dark-info) !important;
-  }
-
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent !important;
   }
 
-  .lg\:hover\:bg-light-secondary:hover {
-    background-color: var(--light-secondary) !important;
-  }
-
-  .lg\:hover\:bg-default-secondary:hover {
-    background-color: var(--default-secondary) !important;
-  }
-
-  .lg\:hover\:bg-dark-secondary:hover {
-    background-color: var(--dark-secondary) !important;
+  .lg\:hover\:bg-primary:hover {
+    background-color: var(--primary) !important;
   }
 
   .lg\:hover\:bg-white:hover {
     background-color: var(--white) !important;
   }
 
-  .lg\:hover\:bg-default-snow:hover {
-    background-color: var(--default-snow) !important;
+  .lg\:hover\:bg-anti-flash-white:hover {
+    background-color: var(--anti-flash-white) !important;
   }
 
-  .lg\:hover\:bg-dark-snow:hover {
-    background-color: var(--dark-snow) !important;
+  .lg\:hover\:bg-gainsboro:hover {
+    background-color: var(--gainsboro) !important;
   }
 
-  .lg\:hover\:bg-extra-dark-snow:hover {
-    background-color: var(--extra-dark-snow) !important;
+  .lg\:hover\:bg-lavender-gray:hover {
+    background-color: var(--lavender-gray) !important;
   }
 
-  .lg\:hover\:bg-default-smoke:hover {
-    background-color: var(--default-smoke) !important;
+  .lg\:hover\:bg-quick-silver:hover {
+    background-color: var(--quick-silver) !important;
   }
 
-  .lg\:hover\:bg-dark-smoke:hover {
-    background-color: var(--dark-smoke) !important;
+  .lg\:hover\:bg-aurometalsaurus:hover {
+    background-color: var(--aurometalsaurus) !important;
   }
 
-  .lg\:hover\:bg-extra-dark-smoke:hover {
-    background-color: var(--extra-dark-smoke) !important;
-  }
-
-  .lg\:hover\:bg-light-slate:hover {
-    background-color: var(--light-slate) !important;
-  }
-
-  .lg\:hover\:bg-medium-slate:hover {
-    background-color: var(--medium-slate) !important;
-  }
-
-  .lg\:hover\:bg-slate:hover {
-    background-color: var(--slate) !important;
+  .lg\:hover\:bg-yankees-blue:hover {
+    background-color: var(--yankees-blue) !important;
   }
 
   .lg\:hover\:bg-black:hover {
     background-color: var(--black) !important;
   }
 
-  .lg\:hover\:bg-light-warning:hover {
-    background-color: var(--light-warning) !important;
-  }
-
-  .lg\:hover\:bg-default-warning:hover {
-    background-color: var(--default-warning) !important;
-  }
-
-  .lg\:hover\:bg-dark-warning:hover {
-    background-color: var(--dark-warning) !important;
-  }
-
-  .lg\:hover\:bg-light-positive:hover {
-    background-color: var(--light-positive) !important;
-  }
-
-  .lg\:hover\:bg-default-positive:hover {
-    background-color: var(--default-positive) !important;
-  }
-
-  .lg\:hover\:bg-dark-positive:hover {
-    background-color: var(--dark-positive) !important;
-  }
-
-  .lg\:hover\:bg-light-negative:hover {
-    background-color: var(--light-negative) !important;
-  }
-
-  .lg\:hover\:bg-default-negative:hover {
-    background-color: var(--default-negative) !important;
-  }
-
-  .lg\:hover\:bg-dark-negative:hover {
-    background-color: var(--dark-negative) !important;
-  }
-
-  .lg\:hover\:bg-light-info:hover {
-    background-color: var(--light-info) !important;
-  }
-
-  .lg\:hover\:bg-default-info:hover {
-    background-color: var(--default-info) !important;
-  }
-
-  .lg\:hover\:bg-dark-info:hover {
-    background-color: var(--dark-info) !important;
-  }
-
   .lg\:focus\:bg-transparent:focus {
     background-color: transparent !important;
   }
 
-  .lg\:focus\:bg-light-secondary:focus {
-    background-color: var(--light-secondary) !important;
-  }
-
-  .lg\:focus\:bg-default-secondary:focus {
-    background-color: var(--default-secondary) !important;
-  }
-
-  .lg\:focus\:bg-dark-secondary:focus {
-    background-color: var(--dark-secondary) !important;
+  .lg\:focus\:bg-primary:focus {
+    background-color: var(--primary) !important;
   }
 
   .lg\:focus\:bg-white:focus {
     background-color: var(--white) !important;
   }
 
-  .lg\:focus\:bg-default-snow:focus {
-    background-color: var(--default-snow) !important;
+  .lg\:focus\:bg-anti-flash-white:focus {
+    background-color: var(--anti-flash-white) !important;
   }
 
-  .lg\:focus\:bg-dark-snow:focus {
-    background-color: var(--dark-snow) !important;
+  .lg\:focus\:bg-gainsboro:focus {
+    background-color: var(--gainsboro) !important;
   }
 
-  .lg\:focus\:bg-extra-dark-snow:focus {
-    background-color: var(--extra-dark-snow) !important;
+  .lg\:focus\:bg-lavender-gray:focus {
+    background-color: var(--lavender-gray) !important;
   }
 
-  .lg\:focus\:bg-default-smoke:focus {
-    background-color: var(--default-smoke) !important;
+  .lg\:focus\:bg-quick-silver:focus {
+    background-color: var(--quick-silver) !important;
   }
 
-  .lg\:focus\:bg-dark-smoke:focus {
-    background-color: var(--dark-smoke) !important;
+  .lg\:focus\:bg-aurometalsaurus:focus {
+    background-color: var(--aurometalsaurus) !important;
   }
 
-  .lg\:focus\:bg-extra-dark-smoke:focus {
-    background-color: var(--extra-dark-smoke) !important;
-  }
-
-  .lg\:focus\:bg-light-slate:focus {
-    background-color: var(--light-slate) !important;
-  }
-
-  .lg\:focus\:bg-medium-slate:focus {
-    background-color: var(--medium-slate) !important;
-  }
-
-  .lg\:focus\:bg-slate:focus {
-    background-color: var(--slate) !important;
+  .lg\:focus\:bg-yankees-blue:focus {
+    background-color: var(--yankees-blue) !important;
   }
 
   .lg\:focus\:bg-black:focus {
     background-color: var(--black) !important;
-  }
-
-  .lg\:focus\:bg-light-warning:focus {
-    background-color: var(--light-warning) !important;
-  }
-
-  .lg\:focus\:bg-default-warning:focus {
-    background-color: var(--default-warning) !important;
-  }
-
-  .lg\:focus\:bg-dark-warning:focus {
-    background-color: var(--dark-warning) !important;
-  }
-
-  .lg\:focus\:bg-light-positive:focus {
-    background-color: var(--light-positive) !important;
-  }
-
-  .lg\:focus\:bg-default-positive:focus {
-    background-color: var(--default-positive) !important;
-  }
-
-  .lg\:focus\:bg-dark-positive:focus {
-    background-color: var(--dark-positive) !important;
-  }
-
-  .lg\:focus\:bg-light-negative:focus {
-    background-color: var(--light-negative) !important;
-  }
-
-  .lg\:focus\:bg-default-negative:focus {
-    background-color: var(--default-negative) !important;
-  }
-
-  .lg\:focus\:bg-dark-negative:focus {
-    background-color: var(--dark-negative) !important;
-  }
-
-  .lg\:focus\:bg-light-info:focus {
-    background-color: var(--light-info) !important;
-  }
-
-  .lg\:focus\:bg-default-info:focus {
-    background-color: var(--default-info) !important;
-  }
-
-  .lg\:focus\:bg-dark-info:focus {
-    background-color: var(--dark-info) !important;
   }
 
   .lg\:bg-bottom {
@@ -22773,324 +20325,120 @@ video {
     border-color: transparent !important;
   }
 
-  .lg\:border-light-secondary {
-    border-color: var(--light-secondary) !important;
-  }
-
-  .lg\:border-default-secondary {
-    border-color: var(--default-secondary) !important;
-  }
-
-  .lg\:border-dark-secondary {
-    border-color: var(--dark-secondary) !important;
+  .lg\:border-primary {
+    border-color: var(--primary) !important;
   }
 
   .lg\:border-white {
     border-color: var(--white) !important;
   }
 
-  .lg\:border-default-snow {
-    border-color: var(--default-snow) !important;
+  .lg\:border-anti-flash-white {
+    border-color: var(--anti-flash-white) !important;
   }
 
-  .lg\:border-dark-snow {
-    border-color: var(--dark-snow) !important;
+  .lg\:border-gainsboro {
+    border-color: var(--gainsboro) !important;
   }
 
-  .lg\:border-extra-dark-snow {
-    border-color: var(--extra-dark-snow) !important;
+  .lg\:border-lavender-gray {
+    border-color: var(--lavender-gray) !important;
   }
 
-  .lg\:border-default-smoke {
-    border-color: var(--default-smoke) !important;
+  .lg\:border-quick-silver {
+    border-color: var(--quick-silver) !important;
   }
 
-  .lg\:border-dark-smoke {
-    border-color: var(--dark-smoke) !important;
+  .lg\:border-aurometalsaurus {
+    border-color: var(--aurometalsaurus) !important;
   }
 
-  .lg\:border-extra-dark-smoke {
-    border-color: var(--extra-dark-smoke) !important;
-  }
-
-  .lg\:border-light-slate {
-    border-color: var(--light-slate) !important;
-  }
-
-  .lg\:border-medium-slate {
-    border-color: var(--medium-slate) !important;
-  }
-
-  .lg\:border-slate {
-    border-color: var(--slate) !important;
+  .lg\:border-yankees-blue {
+    border-color: var(--yankees-blue) !important;
   }
 
   .lg\:border-black {
     border-color: var(--black) !important;
   }
 
-  .lg\:border-light-warning {
-    border-color: var(--light-warning) !important;
-  }
-
-  .lg\:border-default-warning {
-    border-color: var(--default-warning) !important;
-  }
-
-  .lg\:border-dark-warning {
-    border-color: var(--dark-warning) !important;
-  }
-
-  .lg\:border-light-positive {
-    border-color: var(--light-positive) !important;
-  }
-
-  .lg\:border-default-positive {
-    border-color: var(--default-positive) !important;
-  }
-
-  .lg\:border-dark-positive {
-    border-color: var(--dark-positive) !important;
-  }
-
-  .lg\:border-light-negative {
-    border-color: var(--light-negative) !important;
-  }
-
-  .lg\:border-default-negative {
-    border-color: var(--default-negative) !important;
-  }
-
-  .lg\:border-dark-negative {
-    border-color: var(--dark-negative) !important;
-  }
-
-  .lg\:border-light-info {
-    border-color: var(--light-info) !important;
-  }
-
-  .lg\:border-default-info {
-    border-color: var(--default-info) !important;
-  }
-
-  .lg\:border-dark-info {
-    border-color: var(--dark-info) !important;
-  }
-
   .lg\:hover\:border-transparent:hover {
     border-color: transparent !important;
   }
 
-  .lg\:hover\:border-light-secondary:hover {
-    border-color: var(--light-secondary) !important;
-  }
-
-  .lg\:hover\:border-default-secondary:hover {
-    border-color: var(--default-secondary) !important;
-  }
-
-  .lg\:hover\:border-dark-secondary:hover {
-    border-color: var(--dark-secondary) !important;
+  .lg\:hover\:border-primary:hover {
+    border-color: var(--primary) !important;
   }
 
   .lg\:hover\:border-white:hover {
     border-color: var(--white) !important;
   }
 
-  .lg\:hover\:border-default-snow:hover {
-    border-color: var(--default-snow) !important;
+  .lg\:hover\:border-anti-flash-white:hover {
+    border-color: var(--anti-flash-white) !important;
   }
 
-  .lg\:hover\:border-dark-snow:hover {
-    border-color: var(--dark-snow) !important;
+  .lg\:hover\:border-gainsboro:hover {
+    border-color: var(--gainsboro) !important;
   }
 
-  .lg\:hover\:border-extra-dark-snow:hover {
-    border-color: var(--extra-dark-snow) !important;
+  .lg\:hover\:border-lavender-gray:hover {
+    border-color: var(--lavender-gray) !important;
   }
 
-  .lg\:hover\:border-default-smoke:hover {
-    border-color: var(--default-smoke) !important;
+  .lg\:hover\:border-quick-silver:hover {
+    border-color: var(--quick-silver) !important;
   }
 
-  .lg\:hover\:border-dark-smoke:hover {
-    border-color: var(--dark-smoke) !important;
+  .lg\:hover\:border-aurometalsaurus:hover {
+    border-color: var(--aurometalsaurus) !important;
   }
 
-  .lg\:hover\:border-extra-dark-smoke:hover {
-    border-color: var(--extra-dark-smoke) !important;
-  }
-
-  .lg\:hover\:border-light-slate:hover {
-    border-color: var(--light-slate) !important;
-  }
-
-  .lg\:hover\:border-medium-slate:hover {
-    border-color: var(--medium-slate) !important;
-  }
-
-  .lg\:hover\:border-slate:hover {
-    border-color: var(--slate) !important;
+  .lg\:hover\:border-yankees-blue:hover {
+    border-color: var(--yankees-blue) !important;
   }
 
   .lg\:hover\:border-black:hover {
     border-color: var(--black) !important;
   }
 
-  .lg\:hover\:border-light-warning:hover {
-    border-color: var(--light-warning) !important;
-  }
-
-  .lg\:hover\:border-default-warning:hover {
-    border-color: var(--default-warning) !important;
-  }
-
-  .lg\:hover\:border-dark-warning:hover {
-    border-color: var(--dark-warning) !important;
-  }
-
-  .lg\:hover\:border-light-positive:hover {
-    border-color: var(--light-positive) !important;
-  }
-
-  .lg\:hover\:border-default-positive:hover {
-    border-color: var(--default-positive) !important;
-  }
-
-  .lg\:hover\:border-dark-positive:hover {
-    border-color: var(--dark-positive) !important;
-  }
-
-  .lg\:hover\:border-light-negative:hover {
-    border-color: var(--light-negative) !important;
-  }
-
-  .lg\:hover\:border-default-negative:hover {
-    border-color: var(--default-negative) !important;
-  }
-
-  .lg\:hover\:border-dark-negative:hover {
-    border-color: var(--dark-negative) !important;
-  }
-
-  .lg\:hover\:border-light-info:hover {
-    border-color: var(--light-info) !important;
-  }
-
-  .lg\:hover\:border-default-info:hover {
-    border-color: var(--default-info) !important;
-  }
-
-  .lg\:hover\:border-dark-info:hover {
-    border-color: var(--dark-info) !important;
-  }
-
   .lg\:focus\:border-transparent:focus {
     border-color: transparent !important;
   }
 
-  .lg\:focus\:border-light-secondary:focus {
-    border-color: var(--light-secondary) !important;
-  }
-
-  .lg\:focus\:border-default-secondary:focus {
-    border-color: var(--default-secondary) !important;
-  }
-
-  .lg\:focus\:border-dark-secondary:focus {
-    border-color: var(--dark-secondary) !important;
+  .lg\:focus\:border-primary:focus {
+    border-color: var(--primary) !important;
   }
 
   .lg\:focus\:border-white:focus {
     border-color: var(--white) !important;
   }
 
-  .lg\:focus\:border-default-snow:focus {
-    border-color: var(--default-snow) !important;
+  .lg\:focus\:border-anti-flash-white:focus {
+    border-color: var(--anti-flash-white) !important;
   }
 
-  .lg\:focus\:border-dark-snow:focus {
-    border-color: var(--dark-snow) !important;
+  .lg\:focus\:border-gainsboro:focus {
+    border-color: var(--gainsboro) !important;
   }
 
-  .lg\:focus\:border-extra-dark-snow:focus {
-    border-color: var(--extra-dark-snow) !important;
+  .lg\:focus\:border-lavender-gray:focus {
+    border-color: var(--lavender-gray) !important;
   }
 
-  .lg\:focus\:border-default-smoke:focus {
-    border-color: var(--default-smoke) !important;
+  .lg\:focus\:border-quick-silver:focus {
+    border-color: var(--quick-silver) !important;
   }
 
-  .lg\:focus\:border-dark-smoke:focus {
-    border-color: var(--dark-smoke) !important;
+  .lg\:focus\:border-aurometalsaurus:focus {
+    border-color: var(--aurometalsaurus) !important;
   }
 
-  .lg\:focus\:border-extra-dark-smoke:focus {
-    border-color: var(--extra-dark-smoke) !important;
-  }
-
-  .lg\:focus\:border-light-slate:focus {
-    border-color: var(--light-slate) !important;
-  }
-
-  .lg\:focus\:border-medium-slate:focus {
-    border-color: var(--medium-slate) !important;
-  }
-
-  .lg\:focus\:border-slate:focus {
-    border-color: var(--slate) !important;
+  .lg\:focus\:border-yankees-blue:focus {
+    border-color: var(--yankees-blue) !important;
   }
 
   .lg\:focus\:border-black:focus {
     border-color: var(--black) !important;
-  }
-
-  .lg\:focus\:border-light-warning:focus {
-    border-color: var(--light-warning) !important;
-  }
-
-  .lg\:focus\:border-default-warning:focus {
-    border-color: var(--default-warning) !important;
-  }
-
-  .lg\:focus\:border-dark-warning:focus {
-    border-color: var(--dark-warning) !important;
-  }
-
-  .lg\:focus\:border-light-positive:focus {
-    border-color: var(--light-positive) !important;
-  }
-
-  .lg\:focus\:border-default-positive:focus {
-    border-color: var(--default-positive) !important;
-  }
-
-  .lg\:focus\:border-dark-positive:focus {
-    border-color: var(--dark-positive) !important;
-  }
-
-  .lg\:focus\:border-light-negative:focus {
-    border-color: var(--light-negative) !important;
-  }
-
-  .lg\:focus\:border-default-negative:focus {
-    border-color: var(--default-negative) !important;
-  }
-
-  .lg\:focus\:border-dark-negative:focus {
-    border-color: var(--dark-negative) !important;
-  }
-
-  .lg\:focus\:border-light-info:focus {
-    border-color: var(--light-info) !important;
-  }
-
-  .lg\:focus\:border-default-info:focus {
-    border-color: var(--default-info) !important;
-  }
-
-  .lg\:focus\:border-dark-info:focus {
-    border-color: var(--dark-info) !important;
   }
 
   .lg\:rounded-none {
@@ -23748,7 +21096,7 @@ video {
   }
 
   .lg\:font-sans {
-    font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-family: Avenir, "Avenir Next", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
   }
 
   .lg\:font-serif {
@@ -25917,216 +23265,80 @@ video {
     color: transparent !important;
   }
 
-  .lg\:placeholder-light-secondary::placeholder {
-    color: var(--light-secondary) !important;
-  }
-
-  .lg\:placeholder-default-secondary::placeholder {
-    color: var(--default-secondary) !important;
-  }
-
-  .lg\:placeholder-dark-secondary::placeholder {
-    color: var(--dark-secondary) !important;
+  .lg\:placeholder-primary::placeholder {
+    color: var(--primary) !important;
   }
 
   .lg\:placeholder-white::placeholder {
     color: var(--white) !important;
   }
 
-  .lg\:placeholder-default-snow::placeholder {
-    color: var(--default-snow) !important;
+  .lg\:placeholder-anti-flash-white::placeholder {
+    color: var(--anti-flash-white) !important;
   }
 
-  .lg\:placeholder-dark-snow::placeholder {
-    color: var(--dark-snow) !important;
+  .lg\:placeholder-gainsboro::placeholder {
+    color: var(--gainsboro) !important;
   }
 
-  .lg\:placeholder-extra-dark-snow::placeholder {
-    color: var(--extra-dark-snow) !important;
+  .lg\:placeholder-lavender-gray::placeholder {
+    color: var(--lavender-gray) !important;
   }
 
-  .lg\:placeholder-default-smoke::placeholder {
-    color: var(--default-smoke) !important;
+  .lg\:placeholder-quick-silver::placeholder {
+    color: var(--quick-silver) !important;
   }
 
-  .lg\:placeholder-dark-smoke::placeholder {
-    color: var(--dark-smoke) !important;
+  .lg\:placeholder-aurometalsaurus::placeholder {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .lg\:placeholder-extra-dark-smoke::placeholder {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .lg\:placeholder-light-slate::placeholder {
-    color: var(--light-slate) !important;
-  }
-
-  .lg\:placeholder-medium-slate::placeholder {
-    color: var(--medium-slate) !important;
-  }
-
-  .lg\:placeholder-slate::placeholder {
-    color: var(--slate) !important;
+  .lg\:placeholder-yankees-blue::placeholder {
+    color: var(--yankees-blue) !important;
   }
 
   .lg\:placeholder-black::placeholder {
     color: var(--black) !important;
   }
 
-  .lg\:placeholder-light-warning::placeholder {
-    color: var(--light-warning) !important;
-  }
-
-  .lg\:placeholder-default-warning::placeholder {
-    color: var(--default-warning) !important;
-  }
-
-  .lg\:placeholder-dark-warning::placeholder {
-    color: var(--dark-warning) !important;
-  }
-
-  .lg\:placeholder-light-positive::placeholder {
-    color: var(--light-positive) !important;
-  }
-
-  .lg\:placeholder-default-positive::placeholder {
-    color: var(--default-positive) !important;
-  }
-
-  .lg\:placeholder-dark-positive::placeholder {
-    color: var(--dark-positive) !important;
-  }
-
-  .lg\:placeholder-light-negative::placeholder {
-    color: var(--light-negative) !important;
-  }
-
-  .lg\:placeholder-default-negative::placeholder {
-    color: var(--default-negative) !important;
-  }
-
-  .lg\:placeholder-dark-negative::placeholder {
-    color: var(--dark-negative) !important;
-  }
-
-  .lg\:placeholder-light-info::placeholder {
-    color: var(--light-info) !important;
-  }
-
-  .lg\:placeholder-default-info::placeholder {
-    color: var(--default-info) !important;
-  }
-
-  .lg\:placeholder-dark-info::placeholder {
-    color: var(--dark-info) !important;
-  }
-
   .lg\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent !important;
   }
 
-  .lg\:focus\:placeholder-light-secondary:focus::placeholder {
-    color: var(--light-secondary) !important;
-  }
-
-  .lg\:focus\:placeholder-default-secondary:focus::placeholder {
-    color: var(--default-secondary) !important;
-  }
-
-  .lg\:focus\:placeholder-dark-secondary:focus::placeholder {
-    color: var(--dark-secondary) !important;
+  .lg\:focus\:placeholder-primary:focus::placeholder {
+    color: var(--primary) !important;
   }
 
   .lg\:focus\:placeholder-white:focus::placeholder {
     color: var(--white) !important;
   }
 
-  .lg\:focus\:placeholder-default-snow:focus::placeholder {
-    color: var(--default-snow) !important;
+  .lg\:focus\:placeholder-anti-flash-white:focus::placeholder {
+    color: var(--anti-flash-white) !important;
   }
 
-  .lg\:focus\:placeholder-dark-snow:focus::placeholder {
-    color: var(--dark-snow) !important;
+  .lg\:focus\:placeholder-gainsboro:focus::placeholder {
+    color: var(--gainsboro) !important;
   }
 
-  .lg\:focus\:placeholder-extra-dark-snow:focus::placeholder {
-    color: var(--extra-dark-snow) !important;
+  .lg\:focus\:placeholder-lavender-gray:focus::placeholder {
+    color: var(--lavender-gray) !important;
   }
 
-  .lg\:focus\:placeholder-default-smoke:focus::placeholder {
-    color: var(--default-smoke) !important;
+  .lg\:focus\:placeholder-quick-silver:focus::placeholder {
+    color: var(--quick-silver) !important;
   }
 
-  .lg\:focus\:placeholder-dark-smoke:focus::placeholder {
-    color: var(--dark-smoke) !important;
+  .lg\:focus\:placeholder-aurometalsaurus:focus::placeholder {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .lg\:focus\:placeholder-extra-dark-smoke:focus::placeholder {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .lg\:focus\:placeholder-light-slate:focus::placeholder {
-    color: var(--light-slate) !important;
-  }
-
-  .lg\:focus\:placeholder-medium-slate:focus::placeholder {
-    color: var(--medium-slate) !important;
-  }
-
-  .lg\:focus\:placeholder-slate:focus::placeholder {
-    color: var(--slate) !important;
+  .lg\:focus\:placeholder-yankees-blue:focus::placeholder {
+    color: var(--yankees-blue) !important;
   }
 
   .lg\:focus\:placeholder-black:focus::placeholder {
     color: var(--black) !important;
-  }
-
-  .lg\:focus\:placeholder-light-warning:focus::placeholder {
-    color: var(--light-warning) !important;
-  }
-
-  .lg\:focus\:placeholder-default-warning:focus::placeholder {
-    color: var(--default-warning) !important;
-  }
-
-  .lg\:focus\:placeholder-dark-warning:focus::placeholder {
-    color: var(--dark-warning) !important;
-  }
-
-  .lg\:focus\:placeholder-light-positive:focus::placeholder {
-    color: var(--light-positive) !important;
-  }
-
-  .lg\:focus\:placeholder-default-positive:focus::placeholder {
-    color: var(--default-positive) !important;
-  }
-
-  .lg\:focus\:placeholder-dark-positive:focus::placeholder {
-    color: var(--dark-positive) !important;
-  }
-
-  .lg\:focus\:placeholder-light-negative:focus::placeholder {
-    color: var(--light-negative) !important;
-  }
-
-  .lg\:focus\:placeholder-default-negative:focus::placeholder {
-    color: var(--default-negative) !important;
-  }
-
-  .lg\:focus\:placeholder-dark-negative:focus::placeholder {
-    color: var(--dark-negative) !important;
-  }
-
-  .lg\:focus\:placeholder-light-info:focus::placeholder {
-    color: var(--light-info) !important;
-  }
-
-  .lg\:focus\:placeholder-default-info:focus::placeholder {
-    color: var(--default-info) !important;
-  }
-
-  .lg\:focus\:placeholder-dark-info:focus::placeholder {
-    color: var(--dark-info) !important;
   }
 
   .lg\:pointer-events-none {
@@ -26372,324 +23584,120 @@ video {
     color: transparent !important;
   }
 
-  .lg\:text-light-secondary {
-    color: var(--light-secondary) !important;
-  }
-
-  .lg\:text-default-secondary {
-    color: var(--default-secondary) !important;
-  }
-
-  .lg\:text-dark-secondary {
-    color: var(--dark-secondary) !important;
+  .lg\:text-primary {
+    color: var(--primary) !important;
   }
 
   .lg\:text-white {
     color: var(--white) !important;
   }
 
-  .lg\:text-default-snow {
-    color: var(--default-snow) !important;
+  .lg\:text-anti-flash-white {
+    color: var(--anti-flash-white) !important;
   }
 
-  .lg\:text-dark-snow {
-    color: var(--dark-snow) !important;
+  .lg\:text-gainsboro {
+    color: var(--gainsboro) !important;
   }
 
-  .lg\:text-extra-dark-snow {
-    color: var(--extra-dark-snow) !important;
+  .lg\:text-lavender-gray {
+    color: var(--lavender-gray) !important;
   }
 
-  .lg\:text-default-smoke {
-    color: var(--default-smoke) !important;
+  .lg\:text-quick-silver {
+    color: var(--quick-silver) !important;
   }
 
-  .lg\:text-dark-smoke {
-    color: var(--dark-smoke) !important;
+  .lg\:text-aurometalsaurus {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .lg\:text-extra-dark-smoke {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .lg\:text-light-slate {
-    color: var(--light-slate) !important;
-  }
-
-  .lg\:text-medium-slate {
-    color: var(--medium-slate) !important;
-  }
-
-  .lg\:text-slate {
-    color: var(--slate) !important;
+  .lg\:text-yankees-blue {
+    color: var(--yankees-blue) !important;
   }
 
   .lg\:text-black {
     color: var(--black) !important;
   }
 
-  .lg\:text-light-warning {
-    color: var(--light-warning) !important;
-  }
-
-  .lg\:text-default-warning {
-    color: var(--default-warning) !important;
-  }
-
-  .lg\:text-dark-warning {
-    color: var(--dark-warning) !important;
-  }
-
-  .lg\:text-light-positive {
-    color: var(--light-positive) !important;
-  }
-
-  .lg\:text-default-positive {
-    color: var(--default-positive) !important;
-  }
-
-  .lg\:text-dark-positive {
-    color: var(--dark-positive) !important;
-  }
-
-  .lg\:text-light-negative {
-    color: var(--light-negative) !important;
-  }
-
-  .lg\:text-default-negative {
-    color: var(--default-negative) !important;
-  }
-
-  .lg\:text-dark-negative {
-    color: var(--dark-negative) !important;
-  }
-
-  .lg\:text-light-info {
-    color: var(--light-info) !important;
-  }
-
-  .lg\:text-default-info {
-    color: var(--default-info) !important;
-  }
-
-  .lg\:text-dark-info {
-    color: var(--dark-info) !important;
-  }
-
   .lg\:hover\:text-transparent:hover {
     color: transparent !important;
   }
 
-  .lg\:hover\:text-light-secondary:hover {
-    color: var(--light-secondary) !important;
-  }
-
-  .lg\:hover\:text-default-secondary:hover {
-    color: var(--default-secondary) !important;
-  }
-
-  .lg\:hover\:text-dark-secondary:hover {
-    color: var(--dark-secondary) !important;
+  .lg\:hover\:text-primary:hover {
+    color: var(--primary) !important;
   }
 
   .lg\:hover\:text-white:hover {
     color: var(--white) !important;
   }
 
-  .lg\:hover\:text-default-snow:hover {
-    color: var(--default-snow) !important;
+  .lg\:hover\:text-anti-flash-white:hover {
+    color: var(--anti-flash-white) !important;
   }
 
-  .lg\:hover\:text-dark-snow:hover {
-    color: var(--dark-snow) !important;
+  .lg\:hover\:text-gainsboro:hover {
+    color: var(--gainsboro) !important;
   }
 
-  .lg\:hover\:text-extra-dark-snow:hover {
-    color: var(--extra-dark-snow) !important;
+  .lg\:hover\:text-lavender-gray:hover {
+    color: var(--lavender-gray) !important;
   }
 
-  .lg\:hover\:text-default-smoke:hover {
-    color: var(--default-smoke) !important;
+  .lg\:hover\:text-quick-silver:hover {
+    color: var(--quick-silver) !important;
   }
 
-  .lg\:hover\:text-dark-smoke:hover {
-    color: var(--dark-smoke) !important;
+  .lg\:hover\:text-aurometalsaurus:hover {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .lg\:hover\:text-extra-dark-smoke:hover {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .lg\:hover\:text-light-slate:hover {
-    color: var(--light-slate) !important;
-  }
-
-  .lg\:hover\:text-medium-slate:hover {
-    color: var(--medium-slate) !important;
-  }
-
-  .lg\:hover\:text-slate:hover {
-    color: var(--slate) !important;
+  .lg\:hover\:text-yankees-blue:hover {
+    color: var(--yankees-blue) !important;
   }
 
   .lg\:hover\:text-black:hover {
     color: var(--black) !important;
   }
 
-  .lg\:hover\:text-light-warning:hover {
-    color: var(--light-warning) !important;
-  }
-
-  .lg\:hover\:text-default-warning:hover {
-    color: var(--default-warning) !important;
-  }
-
-  .lg\:hover\:text-dark-warning:hover {
-    color: var(--dark-warning) !important;
-  }
-
-  .lg\:hover\:text-light-positive:hover {
-    color: var(--light-positive) !important;
-  }
-
-  .lg\:hover\:text-default-positive:hover {
-    color: var(--default-positive) !important;
-  }
-
-  .lg\:hover\:text-dark-positive:hover {
-    color: var(--dark-positive) !important;
-  }
-
-  .lg\:hover\:text-light-negative:hover {
-    color: var(--light-negative) !important;
-  }
-
-  .lg\:hover\:text-default-negative:hover {
-    color: var(--default-negative) !important;
-  }
-
-  .lg\:hover\:text-dark-negative:hover {
-    color: var(--dark-negative) !important;
-  }
-
-  .lg\:hover\:text-light-info:hover {
-    color: var(--light-info) !important;
-  }
-
-  .lg\:hover\:text-default-info:hover {
-    color: var(--default-info) !important;
-  }
-
-  .lg\:hover\:text-dark-info:hover {
-    color: var(--dark-info) !important;
-  }
-
   .lg\:focus\:text-transparent:focus {
     color: transparent !important;
   }
 
-  .lg\:focus\:text-light-secondary:focus {
-    color: var(--light-secondary) !important;
-  }
-
-  .lg\:focus\:text-default-secondary:focus {
-    color: var(--default-secondary) !important;
-  }
-
-  .lg\:focus\:text-dark-secondary:focus {
-    color: var(--dark-secondary) !important;
+  .lg\:focus\:text-primary:focus {
+    color: var(--primary) !important;
   }
 
   .lg\:focus\:text-white:focus {
     color: var(--white) !important;
   }
 
-  .lg\:focus\:text-default-snow:focus {
-    color: var(--default-snow) !important;
+  .lg\:focus\:text-anti-flash-white:focus {
+    color: var(--anti-flash-white) !important;
   }
 
-  .lg\:focus\:text-dark-snow:focus {
-    color: var(--dark-snow) !important;
+  .lg\:focus\:text-gainsboro:focus {
+    color: var(--gainsboro) !important;
   }
 
-  .lg\:focus\:text-extra-dark-snow:focus {
-    color: var(--extra-dark-snow) !important;
+  .lg\:focus\:text-lavender-gray:focus {
+    color: var(--lavender-gray) !important;
   }
 
-  .lg\:focus\:text-default-smoke:focus {
-    color: var(--default-smoke) !important;
+  .lg\:focus\:text-quick-silver:focus {
+    color: var(--quick-silver) !important;
   }
 
-  .lg\:focus\:text-dark-smoke:focus {
-    color: var(--dark-smoke) !important;
+  .lg\:focus\:text-aurometalsaurus:focus {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .lg\:focus\:text-extra-dark-smoke:focus {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .lg\:focus\:text-light-slate:focus {
-    color: var(--light-slate) !important;
-  }
-
-  .lg\:focus\:text-medium-slate:focus {
-    color: var(--medium-slate) !important;
-  }
-
-  .lg\:focus\:text-slate:focus {
-    color: var(--slate) !important;
+  .lg\:focus\:text-yankees-blue:focus {
+    color: var(--yankees-blue) !important;
   }
 
   .lg\:focus\:text-black:focus {
     color: var(--black) !important;
-  }
-
-  .lg\:focus\:text-light-warning:focus {
-    color: var(--light-warning) !important;
-  }
-
-  .lg\:focus\:text-default-warning:focus {
-    color: var(--default-warning) !important;
-  }
-
-  .lg\:focus\:text-dark-warning:focus {
-    color: var(--dark-warning) !important;
-  }
-
-  .lg\:focus\:text-light-positive:focus {
-    color: var(--light-positive) !important;
-  }
-
-  .lg\:focus\:text-default-positive:focus {
-    color: var(--default-positive) !important;
-  }
-
-  .lg\:focus\:text-dark-positive:focus {
-    color: var(--dark-positive) !important;
-  }
-
-  .lg\:focus\:text-light-negative:focus {
-    color: var(--light-negative) !important;
-  }
-
-  .lg\:focus\:text-default-negative:focus {
-    color: var(--default-negative) !important;
-  }
-
-  .lg\:focus\:text-dark-negative:focus {
-    color: var(--dark-negative) !important;
-  }
-
-  .lg\:focus\:text-light-info:focus {
-    color: var(--light-info) !important;
-  }
-
-  .lg\:focus\:text-default-info:focus {
-    color: var(--default-info) !important;
-  }
-
-  .lg\:focus\:text-dark-info:focus {
-    color: var(--dark-info) !important;
   }
 
   .lg\:text-2xs {
@@ -29601,324 +26609,120 @@ video {
     background-color: transparent !important;
   }
 
-  .xl\:bg-light-secondary {
-    background-color: var(--light-secondary) !important;
-  }
-
-  .xl\:bg-default-secondary {
-    background-color: var(--default-secondary) !important;
-  }
-
-  .xl\:bg-dark-secondary {
-    background-color: var(--dark-secondary) !important;
+  .xl\:bg-primary {
+    background-color: var(--primary) !important;
   }
 
   .xl\:bg-white {
     background-color: var(--white) !important;
   }
 
-  .xl\:bg-default-snow {
-    background-color: var(--default-snow) !important;
+  .xl\:bg-anti-flash-white {
+    background-color: var(--anti-flash-white) !important;
   }
 
-  .xl\:bg-dark-snow {
-    background-color: var(--dark-snow) !important;
+  .xl\:bg-gainsboro {
+    background-color: var(--gainsboro) !important;
   }
 
-  .xl\:bg-extra-dark-snow {
-    background-color: var(--extra-dark-snow) !important;
+  .xl\:bg-lavender-gray {
+    background-color: var(--lavender-gray) !important;
   }
 
-  .xl\:bg-default-smoke {
-    background-color: var(--default-smoke) !important;
+  .xl\:bg-quick-silver {
+    background-color: var(--quick-silver) !important;
   }
 
-  .xl\:bg-dark-smoke {
-    background-color: var(--dark-smoke) !important;
+  .xl\:bg-aurometalsaurus {
+    background-color: var(--aurometalsaurus) !important;
   }
 
-  .xl\:bg-extra-dark-smoke {
-    background-color: var(--extra-dark-smoke) !important;
-  }
-
-  .xl\:bg-light-slate {
-    background-color: var(--light-slate) !important;
-  }
-
-  .xl\:bg-medium-slate {
-    background-color: var(--medium-slate) !important;
-  }
-
-  .xl\:bg-slate {
-    background-color: var(--slate) !important;
+  .xl\:bg-yankees-blue {
+    background-color: var(--yankees-blue) !important;
   }
 
   .xl\:bg-black {
     background-color: var(--black) !important;
   }
 
-  .xl\:bg-light-warning {
-    background-color: var(--light-warning) !important;
-  }
-
-  .xl\:bg-default-warning {
-    background-color: var(--default-warning) !important;
-  }
-
-  .xl\:bg-dark-warning {
-    background-color: var(--dark-warning) !important;
-  }
-
-  .xl\:bg-light-positive {
-    background-color: var(--light-positive) !important;
-  }
-
-  .xl\:bg-default-positive {
-    background-color: var(--default-positive) !important;
-  }
-
-  .xl\:bg-dark-positive {
-    background-color: var(--dark-positive) !important;
-  }
-
-  .xl\:bg-light-negative {
-    background-color: var(--light-negative) !important;
-  }
-
-  .xl\:bg-default-negative {
-    background-color: var(--default-negative) !important;
-  }
-
-  .xl\:bg-dark-negative {
-    background-color: var(--dark-negative) !important;
-  }
-
-  .xl\:bg-light-info {
-    background-color: var(--light-info) !important;
-  }
-
-  .xl\:bg-default-info {
-    background-color: var(--default-info) !important;
-  }
-
-  .xl\:bg-dark-info {
-    background-color: var(--dark-info) !important;
-  }
-
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent !important;
   }
 
-  .xl\:hover\:bg-light-secondary:hover {
-    background-color: var(--light-secondary) !important;
-  }
-
-  .xl\:hover\:bg-default-secondary:hover {
-    background-color: var(--default-secondary) !important;
-  }
-
-  .xl\:hover\:bg-dark-secondary:hover {
-    background-color: var(--dark-secondary) !important;
+  .xl\:hover\:bg-primary:hover {
+    background-color: var(--primary) !important;
   }
 
   .xl\:hover\:bg-white:hover {
     background-color: var(--white) !important;
   }
 
-  .xl\:hover\:bg-default-snow:hover {
-    background-color: var(--default-snow) !important;
+  .xl\:hover\:bg-anti-flash-white:hover {
+    background-color: var(--anti-flash-white) !important;
   }
 
-  .xl\:hover\:bg-dark-snow:hover {
-    background-color: var(--dark-snow) !important;
+  .xl\:hover\:bg-gainsboro:hover {
+    background-color: var(--gainsboro) !important;
   }
 
-  .xl\:hover\:bg-extra-dark-snow:hover {
-    background-color: var(--extra-dark-snow) !important;
+  .xl\:hover\:bg-lavender-gray:hover {
+    background-color: var(--lavender-gray) !important;
   }
 
-  .xl\:hover\:bg-default-smoke:hover {
-    background-color: var(--default-smoke) !important;
+  .xl\:hover\:bg-quick-silver:hover {
+    background-color: var(--quick-silver) !important;
   }
 
-  .xl\:hover\:bg-dark-smoke:hover {
-    background-color: var(--dark-smoke) !important;
+  .xl\:hover\:bg-aurometalsaurus:hover {
+    background-color: var(--aurometalsaurus) !important;
   }
 
-  .xl\:hover\:bg-extra-dark-smoke:hover {
-    background-color: var(--extra-dark-smoke) !important;
-  }
-
-  .xl\:hover\:bg-light-slate:hover {
-    background-color: var(--light-slate) !important;
-  }
-
-  .xl\:hover\:bg-medium-slate:hover {
-    background-color: var(--medium-slate) !important;
-  }
-
-  .xl\:hover\:bg-slate:hover {
-    background-color: var(--slate) !important;
+  .xl\:hover\:bg-yankees-blue:hover {
+    background-color: var(--yankees-blue) !important;
   }
 
   .xl\:hover\:bg-black:hover {
     background-color: var(--black) !important;
   }
 
-  .xl\:hover\:bg-light-warning:hover {
-    background-color: var(--light-warning) !important;
-  }
-
-  .xl\:hover\:bg-default-warning:hover {
-    background-color: var(--default-warning) !important;
-  }
-
-  .xl\:hover\:bg-dark-warning:hover {
-    background-color: var(--dark-warning) !important;
-  }
-
-  .xl\:hover\:bg-light-positive:hover {
-    background-color: var(--light-positive) !important;
-  }
-
-  .xl\:hover\:bg-default-positive:hover {
-    background-color: var(--default-positive) !important;
-  }
-
-  .xl\:hover\:bg-dark-positive:hover {
-    background-color: var(--dark-positive) !important;
-  }
-
-  .xl\:hover\:bg-light-negative:hover {
-    background-color: var(--light-negative) !important;
-  }
-
-  .xl\:hover\:bg-default-negative:hover {
-    background-color: var(--default-negative) !important;
-  }
-
-  .xl\:hover\:bg-dark-negative:hover {
-    background-color: var(--dark-negative) !important;
-  }
-
-  .xl\:hover\:bg-light-info:hover {
-    background-color: var(--light-info) !important;
-  }
-
-  .xl\:hover\:bg-default-info:hover {
-    background-color: var(--default-info) !important;
-  }
-
-  .xl\:hover\:bg-dark-info:hover {
-    background-color: var(--dark-info) !important;
-  }
-
   .xl\:focus\:bg-transparent:focus {
     background-color: transparent !important;
   }
 
-  .xl\:focus\:bg-light-secondary:focus {
-    background-color: var(--light-secondary) !important;
-  }
-
-  .xl\:focus\:bg-default-secondary:focus {
-    background-color: var(--default-secondary) !important;
-  }
-
-  .xl\:focus\:bg-dark-secondary:focus {
-    background-color: var(--dark-secondary) !important;
+  .xl\:focus\:bg-primary:focus {
+    background-color: var(--primary) !important;
   }
 
   .xl\:focus\:bg-white:focus {
     background-color: var(--white) !important;
   }
 
-  .xl\:focus\:bg-default-snow:focus {
-    background-color: var(--default-snow) !important;
+  .xl\:focus\:bg-anti-flash-white:focus {
+    background-color: var(--anti-flash-white) !important;
   }
 
-  .xl\:focus\:bg-dark-snow:focus {
-    background-color: var(--dark-snow) !important;
+  .xl\:focus\:bg-gainsboro:focus {
+    background-color: var(--gainsboro) !important;
   }
 
-  .xl\:focus\:bg-extra-dark-snow:focus {
-    background-color: var(--extra-dark-snow) !important;
+  .xl\:focus\:bg-lavender-gray:focus {
+    background-color: var(--lavender-gray) !important;
   }
 
-  .xl\:focus\:bg-default-smoke:focus {
-    background-color: var(--default-smoke) !important;
+  .xl\:focus\:bg-quick-silver:focus {
+    background-color: var(--quick-silver) !important;
   }
 
-  .xl\:focus\:bg-dark-smoke:focus {
-    background-color: var(--dark-smoke) !important;
+  .xl\:focus\:bg-aurometalsaurus:focus {
+    background-color: var(--aurometalsaurus) !important;
   }
 
-  .xl\:focus\:bg-extra-dark-smoke:focus {
-    background-color: var(--extra-dark-smoke) !important;
-  }
-
-  .xl\:focus\:bg-light-slate:focus {
-    background-color: var(--light-slate) !important;
-  }
-
-  .xl\:focus\:bg-medium-slate:focus {
-    background-color: var(--medium-slate) !important;
-  }
-
-  .xl\:focus\:bg-slate:focus {
-    background-color: var(--slate) !important;
+  .xl\:focus\:bg-yankees-blue:focus {
+    background-color: var(--yankees-blue) !important;
   }
 
   .xl\:focus\:bg-black:focus {
     background-color: var(--black) !important;
-  }
-
-  .xl\:focus\:bg-light-warning:focus {
-    background-color: var(--light-warning) !important;
-  }
-
-  .xl\:focus\:bg-default-warning:focus {
-    background-color: var(--default-warning) !important;
-  }
-
-  .xl\:focus\:bg-dark-warning:focus {
-    background-color: var(--dark-warning) !important;
-  }
-
-  .xl\:focus\:bg-light-positive:focus {
-    background-color: var(--light-positive) !important;
-  }
-
-  .xl\:focus\:bg-default-positive:focus {
-    background-color: var(--default-positive) !important;
-  }
-
-  .xl\:focus\:bg-dark-positive:focus {
-    background-color: var(--dark-positive) !important;
-  }
-
-  .xl\:focus\:bg-light-negative:focus {
-    background-color: var(--light-negative) !important;
-  }
-
-  .xl\:focus\:bg-default-negative:focus {
-    background-color: var(--default-negative) !important;
-  }
-
-  .xl\:focus\:bg-dark-negative:focus {
-    background-color: var(--dark-negative) !important;
-  }
-
-  .xl\:focus\:bg-light-info:focus {
-    background-color: var(--light-info) !important;
-  }
-
-  .xl\:focus\:bg-default-info:focus {
-    background-color: var(--default-info) !important;
-  }
-
-  .xl\:focus\:bg-dark-info:focus {
-    background-color: var(--dark-info) !important;
   }
 
   .xl\:bg-bottom {
@@ -30005,324 +26809,120 @@ video {
     border-color: transparent !important;
   }
 
-  .xl\:border-light-secondary {
-    border-color: var(--light-secondary) !important;
-  }
-
-  .xl\:border-default-secondary {
-    border-color: var(--default-secondary) !important;
-  }
-
-  .xl\:border-dark-secondary {
-    border-color: var(--dark-secondary) !important;
+  .xl\:border-primary {
+    border-color: var(--primary) !important;
   }
 
   .xl\:border-white {
     border-color: var(--white) !important;
   }
 
-  .xl\:border-default-snow {
-    border-color: var(--default-snow) !important;
+  .xl\:border-anti-flash-white {
+    border-color: var(--anti-flash-white) !important;
   }
 
-  .xl\:border-dark-snow {
-    border-color: var(--dark-snow) !important;
+  .xl\:border-gainsboro {
+    border-color: var(--gainsboro) !important;
   }
 
-  .xl\:border-extra-dark-snow {
-    border-color: var(--extra-dark-snow) !important;
+  .xl\:border-lavender-gray {
+    border-color: var(--lavender-gray) !important;
   }
 
-  .xl\:border-default-smoke {
-    border-color: var(--default-smoke) !important;
+  .xl\:border-quick-silver {
+    border-color: var(--quick-silver) !important;
   }
 
-  .xl\:border-dark-smoke {
-    border-color: var(--dark-smoke) !important;
+  .xl\:border-aurometalsaurus {
+    border-color: var(--aurometalsaurus) !important;
   }
 
-  .xl\:border-extra-dark-smoke {
-    border-color: var(--extra-dark-smoke) !important;
-  }
-
-  .xl\:border-light-slate {
-    border-color: var(--light-slate) !important;
-  }
-
-  .xl\:border-medium-slate {
-    border-color: var(--medium-slate) !important;
-  }
-
-  .xl\:border-slate {
-    border-color: var(--slate) !important;
+  .xl\:border-yankees-blue {
+    border-color: var(--yankees-blue) !important;
   }
 
   .xl\:border-black {
     border-color: var(--black) !important;
   }
 
-  .xl\:border-light-warning {
-    border-color: var(--light-warning) !important;
-  }
-
-  .xl\:border-default-warning {
-    border-color: var(--default-warning) !important;
-  }
-
-  .xl\:border-dark-warning {
-    border-color: var(--dark-warning) !important;
-  }
-
-  .xl\:border-light-positive {
-    border-color: var(--light-positive) !important;
-  }
-
-  .xl\:border-default-positive {
-    border-color: var(--default-positive) !important;
-  }
-
-  .xl\:border-dark-positive {
-    border-color: var(--dark-positive) !important;
-  }
-
-  .xl\:border-light-negative {
-    border-color: var(--light-negative) !important;
-  }
-
-  .xl\:border-default-negative {
-    border-color: var(--default-negative) !important;
-  }
-
-  .xl\:border-dark-negative {
-    border-color: var(--dark-negative) !important;
-  }
-
-  .xl\:border-light-info {
-    border-color: var(--light-info) !important;
-  }
-
-  .xl\:border-default-info {
-    border-color: var(--default-info) !important;
-  }
-
-  .xl\:border-dark-info {
-    border-color: var(--dark-info) !important;
-  }
-
   .xl\:hover\:border-transparent:hover {
     border-color: transparent !important;
   }
 
-  .xl\:hover\:border-light-secondary:hover {
-    border-color: var(--light-secondary) !important;
-  }
-
-  .xl\:hover\:border-default-secondary:hover {
-    border-color: var(--default-secondary) !important;
-  }
-
-  .xl\:hover\:border-dark-secondary:hover {
-    border-color: var(--dark-secondary) !important;
+  .xl\:hover\:border-primary:hover {
+    border-color: var(--primary) !important;
   }
 
   .xl\:hover\:border-white:hover {
     border-color: var(--white) !important;
   }
 
-  .xl\:hover\:border-default-snow:hover {
-    border-color: var(--default-snow) !important;
+  .xl\:hover\:border-anti-flash-white:hover {
+    border-color: var(--anti-flash-white) !important;
   }
 
-  .xl\:hover\:border-dark-snow:hover {
-    border-color: var(--dark-snow) !important;
+  .xl\:hover\:border-gainsboro:hover {
+    border-color: var(--gainsboro) !important;
   }
 
-  .xl\:hover\:border-extra-dark-snow:hover {
-    border-color: var(--extra-dark-snow) !important;
+  .xl\:hover\:border-lavender-gray:hover {
+    border-color: var(--lavender-gray) !important;
   }
 
-  .xl\:hover\:border-default-smoke:hover {
-    border-color: var(--default-smoke) !important;
+  .xl\:hover\:border-quick-silver:hover {
+    border-color: var(--quick-silver) !important;
   }
 
-  .xl\:hover\:border-dark-smoke:hover {
-    border-color: var(--dark-smoke) !important;
+  .xl\:hover\:border-aurometalsaurus:hover {
+    border-color: var(--aurometalsaurus) !important;
   }
 
-  .xl\:hover\:border-extra-dark-smoke:hover {
-    border-color: var(--extra-dark-smoke) !important;
-  }
-
-  .xl\:hover\:border-light-slate:hover {
-    border-color: var(--light-slate) !important;
-  }
-
-  .xl\:hover\:border-medium-slate:hover {
-    border-color: var(--medium-slate) !important;
-  }
-
-  .xl\:hover\:border-slate:hover {
-    border-color: var(--slate) !important;
+  .xl\:hover\:border-yankees-blue:hover {
+    border-color: var(--yankees-blue) !important;
   }
 
   .xl\:hover\:border-black:hover {
     border-color: var(--black) !important;
   }
 
-  .xl\:hover\:border-light-warning:hover {
-    border-color: var(--light-warning) !important;
-  }
-
-  .xl\:hover\:border-default-warning:hover {
-    border-color: var(--default-warning) !important;
-  }
-
-  .xl\:hover\:border-dark-warning:hover {
-    border-color: var(--dark-warning) !important;
-  }
-
-  .xl\:hover\:border-light-positive:hover {
-    border-color: var(--light-positive) !important;
-  }
-
-  .xl\:hover\:border-default-positive:hover {
-    border-color: var(--default-positive) !important;
-  }
-
-  .xl\:hover\:border-dark-positive:hover {
-    border-color: var(--dark-positive) !important;
-  }
-
-  .xl\:hover\:border-light-negative:hover {
-    border-color: var(--light-negative) !important;
-  }
-
-  .xl\:hover\:border-default-negative:hover {
-    border-color: var(--default-negative) !important;
-  }
-
-  .xl\:hover\:border-dark-negative:hover {
-    border-color: var(--dark-negative) !important;
-  }
-
-  .xl\:hover\:border-light-info:hover {
-    border-color: var(--light-info) !important;
-  }
-
-  .xl\:hover\:border-default-info:hover {
-    border-color: var(--default-info) !important;
-  }
-
-  .xl\:hover\:border-dark-info:hover {
-    border-color: var(--dark-info) !important;
-  }
-
   .xl\:focus\:border-transparent:focus {
     border-color: transparent !important;
   }
 
-  .xl\:focus\:border-light-secondary:focus {
-    border-color: var(--light-secondary) !important;
-  }
-
-  .xl\:focus\:border-default-secondary:focus {
-    border-color: var(--default-secondary) !important;
-  }
-
-  .xl\:focus\:border-dark-secondary:focus {
-    border-color: var(--dark-secondary) !important;
+  .xl\:focus\:border-primary:focus {
+    border-color: var(--primary) !important;
   }
 
   .xl\:focus\:border-white:focus {
     border-color: var(--white) !important;
   }
 
-  .xl\:focus\:border-default-snow:focus {
-    border-color: var(--default-snow) !important;
+  .xl\:focus\:border-anti-flash-white:focus {
+    border-color: var(--anti-flash-white) !important;
   }
 
-  .xl\:focus\:border-dark-snow:focus {
-    border-color: var(--dark-snow) !important;
+  .xl\:focus\:border-gainsboro:focus {
+    border-color: var(--gainsboro) !important;
   }
 
-  .xl\:focus\:border-extra-dark-snow:focus {
-    border-color: var(--extra-dark-snow) !important;
+  .xl\:focus\:border-lavender-gray:focus {
+    border-color: var(--lavender-gray) !important;
   }
 
-  .xl\:focus\:border-default-smoke:focus {
-    border-color: var(--default-smoke) !important;
+  .xl\:focus\:border-quick-silver:focus {
+    border-color: var(--quick-silver) !important;
   }
 
-  .xl\:focus\:border-dark-smoke:focus {
-    border-color: var(--dark-smoke) !important;
+  .xl\:focus\:border-aurometalsaurus:focus {
+    border-color: var(--aurometalsaurus) !important;
   }
 
-  .xl\:focus\:border-extra-dark-smoke:focus {
-    border-color: var(--extra-dark-smoke) !important;
-  }
-
-  .xl\:focus\:border-light-slate:focus {
-    border-color: var(--light-slate) !important;
-  }
-
-  .xl\:focus\:border-medium-slate:focus {
-    border-color: var(--medium-slate) !important;
-  }
-
-  .xl\:focus\:border-slate:focus {
-    border-color: var(--slate) !important;
+  .xl\:focus\:border-yankees-blue:focus {
+    border-color: var(--yankees-blue) !important;
   }
 
   .xl\:focus\:border-black:focus {
     border-color: var(--black) !important;
-  }
-
-  .xl\:focus\:border-light-warning:focus {
-    border-color: var(--light-warning) !important;
-  }
-
-  .xl\:focus\:border-default-warning:focus {
-    border-color: var(--default-warning) !important;
-  }
-
-  .xl\:focus\:border-dark-warning:focus {
-    border-color: var(--dark-warning) !important;
-  }
-
-  .xl\:focus\:border-light-positive:focus {
-    border-color: var(--light-positive) !important;
-  }
-
-  .xl\:focus\:border-default-positive:focus {
-    border-color: var(--default-positive) !important;
-  }
-
-  .xl\:focus\:border-dark-positive:focus {
-    border-color: var(--dark-positive) !important;
-  }
-
-  .xl\:focus\:border-light-negative:focus {
-    border-color: var(--light-negative) !important;
-  }
-
-  .xl\:focus\:border-default-negative:focus {
-    border-color: var(--default-negative) !important;
-  }
-
-  .xl\:focus\:border-dark-negative:focus {
-    border-color: var(--dark-negative) !important;
-  }
-
-  .xl\:focus\:border-light-info:focus {
-    border-color: var(--light-info) !important;
-  }
-
-  .xl\:focus\:border-default-info:focus {
-    border-color: var(--default-info) !important;
-  }
-
-  .xl\:focus\:border-dark-info:focus {
-    border-color: var(--dark-info) !important;
   }
 
   .xl\:rounded-none {
@@ -30980,7 +27580,7 @@ video {
   }
 
   .xl\:font-sans {
-    font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+    font-family: Avenir, "Avenir Next", BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
   }
 
   .xl\:font-serif {
@@ -33149,216 +29749,80 @@ video {
     color: transparent !important;
   }
 
-  .xl\:placeholder-light-secondary::placeholder {
-    color: var(--light-secondary) !important;
-  }
-
-  .xl\:placeholder-default-secondary::placeholder {
-    color: var(--default-secondary) !important;
-  }
-
-  .xl\:placeholder-dark-secondary::placeholder {
-    color: var(--dark-secondary) !important;
+  .xl\:placeholder-primary::placeholder {
+    color: var(--primary) !important;
   }
 
   .xl\:placeholder-white::placeholder {
     color: var(--white) !important;
   }
 
-  .xl\:placeholder-default-snow::placeholder {
-    color: var(--default-snow) !important;
+  .xl\:placeholder-anti-flash-white::placeholder {
+    color: var(--anti-flash-white) !important;
   }
 
-  .xl\:placeholder-dark-snow::placeholder {
-    color: var(--dark-snow) !important;
+  .xl\:placeholder-gainsboro::placeholder {
+    color: var(--gainsboro) !important;
   }
 
-  .xl\:placeholder-extra-dark-snow::placeholder {
-    color: var(--extra-dark-snow) !important;
+  .xl\:placeholder-lavender-gray::placeholder {
+    color: var(--lavender-gray) !important;
   }
 
-  .xl\:placeholder-default-smoke::placeholder {
-    color: var(--default-smoke) !important;
+  .xl\:placeholder-quick-silver::placeholder {
+    color: var(--quick-silver) !important;
   }
 
-  .xl\:placeholder-dark-smoke::placeholder {
-    color: var(--dark-smoke) !important;
+  .xl\:placeholder-aurometalsaurus::placeholder {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .xl\:placeholder-extra-dark-smoke::placeholder {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .xl\:placeholder-light-slate::placeholder {
-    color: var(--light-slate) !important;
-  }
-
-  .xl\:placeholder-medium-slate::placeholder {
-    color: var(--medium-slate) !important;
-  }
-
-  .xl\:placeholder-slate::placeholder {
-    color: var(--slate) !important;
+  .xl\:placeholder-yankees-blue::placeholder {
+    color: var(--yankees-blue) !important;
   }
 
   .xl\:placeholder-black::placeholder {
     color: var(--black) !important;
   }
 
-  .xl\:placeholder-light-warning::placeholder {
-    color: var(--light-warning) !important;
-  }
-
-  .xl\:placeholder-default-warning::placeholder {
-    color: var(--default-warning) !important;
-  }
-
-  .xl\:placeholder-dark-warning::placeholder {
-    color: var(--dark-warning) !important;
-  }
-
-  .xl\:placeholder-light-positive::placeholder {
-    color: var(--light-positive) !important;
-  }
-
-  .xl\:placeholder-default-positive::placeholder {
-    color: var(--default-positive) !important;
-  }
-
-  .xl\:placeholder-dark-positive::placeholder {
-    color: var(--dark-positive) !important;
-  }
-
-  .xl\:placeholder-light-negative::placeholder {
-    color: var(--light-negative) !important;
-  }
-
-  .xl\:placeholder-default-negative::placeholder {
-    color: var(--default-negative) !important;
-  }
-
-  .xl\:placeholder-dark-negative::placeholder {
-    color: var(--dark-negative) !important;
-  }
-
-  .xl\:placeholder-light-info::placeholder {
-    color: var(--light-info) !important;
-  }
-
-  .xl\:placeholder-default-info::placeholder {
-    color: var(--default-info) !important;
-  }
-
-  .xl\:placeholder-dark-info::placeholder {
-    color: var(--dark-info) !important;
-  }
-
   .xl\:focus\:placeholder-transparent:focus::placeholder {
     color: transparent !important;
   }
 
-  .xl\:focus\:placeholder-light-secondary:focus::placeholder {
-    color: var(--light-secondary) !important;
-  }
-
-  .xl\:focus\:placeholder-default-secondary:focus::placeholder {
-    color: var(--default-secondary) !important;
-  }
-
-  .xl\:focus\:placeholder-dark-secondary:focus::placeholder {
-    color: var(--dark-secondary) !important;
+  .xl\:focus\:placeholder-primary:focus::placeholder {
+    color: var(--primary) !important;
   }
 
   .xl\:focus\:placeholder-white:focus::placeholder {
     color: var(--white) !important;
   }
 
-  .xl\:focus\:placeholder-default-snow:focus::placeholder {
-    color: var(--default-snow) !important;
+  .xl\:focus\:placeholder-anti-flash-white:focus::placeholder {
+    color: var(--anti-flash-white) !important;
   }
 
-  .xl\:focus\:placeholder-dark-snow:focus::placeholder {
-    color: var(--dark-snow) !important;
+  .xl\:focus\:placeholder-gainsboro:focus::placeholder {
+    color: var(--gainsboro) !important;
   }
 
-  .xl\:focus\:placeholder-extra-dark-snow:focus::placeholder {
-    color: var(--extra-dark-snow) !important;
+  .xl\:focus\:placeholder-lavender-gray:focus::placeholder {
+    color: var(--lavender-gray) !important;
   }
 
-  .xl\:focus\:placeholder-default-smoke:focus::placeholder {
-    color: var(--default-smoke) !important;
+  .xl\:focus\:placeholder-quick-silver:focus::placeholder {
+    color: var(--quick-silver) !important;
   }
 
-  .xl\:focus\:placeholder-dark-smoke:focus::placeholder {
-    color: var(--dark-smoke) !important;
+  .xl\:focus\:placeholder-aurometalsaurus:focus::placeholder {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .xl\:focus\:placeholder-extra-dark-smoke:focus::placeholder {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .xl\:focus\:placeholder-light-slate:focus::placeholder {
-    color: var(--light-slate) !important;
-  }
-
-  .xl\:focus\:placeholder-medium-slate:focus::placeholder {
-    color: var(--medium-slate) !important;
-  }
-
-  .xl\:focus\:placeholder-slate:focus::placeholder {
-    color: var(--slate) !important;
+  .xl\:focus\:placeholder-yankees-blue:focus::placeholder {
+    color: var(--yankees-blue) !important;
   }
 
   .xl\:focus\:placeholder-black:focus::placeholder {
     color: var(--black) !important;
-  }
-
-  .xl\:focus\:placeholder-light-warning:focus::placeholder {
-    color: var(--light-warning) !important;
-  }
-
-  .xl\:focus\:placeholder-default-warning:focus::placeholder {
-    color: var(--default-warning) !important;
-  }
-
-  .xl\:focus\:placeholder-dark-warning:focus::placeholder {
-    color: var(--dark-warning) !important;
-  }
-
-  .xl\:focus\:placeholder-light-positive:focus::placeholder {
-    color: var(--light-positive) !important;
-  }
-
-  .xl\:focus\:placeholder-default-positive:focus::placeholder {
-    color: var(--default-positive) !important;
-  }
-
-  .xl\:focus\:placeholder-dark-positive:focus::placeholder {
-    color: var(--dark-positive) !important;
-  }
-
-  .xl\:focus\:placeholder-light-negative:focus::placeholder {
-    color: var(--light-negative) !important;
-  }
-
-  .xl\:focus\:placeholder-default-negative:focus::placeholder {
-    color: var(--default-negative) !important;
-  }
-
-  .xl\:focus\:placeholder-dark-negative:focus::placeholder {
-    color: var(--dark-negative) !important;
-  }
-
-  .xl\:focus\:placeholder-light-info:focus::placeholder {
-    color: var(--light-info) !important;
-  }
-
-  .xl\:focus\:placeholder-default-info:focus::placeholder {
-    color: var(--default-info) !important;
-  }
-
-  .xl\:focus\:placeholder-dark-info:focus::placeholder {
-    color: var(--dark-info) !important;
   }
 
   .xl\:pointer-events-none {
@@ -33604,324 +30068,120 @@ video {
     color: transparent !important;
   }
 
-  .xl\:text-light-secondary {
-    color: var(--light-secondary) !important;
-  }
-
-  .xl\:text-default-secondary {
-    color: var(--default-secondary) !important;
-  }
-
-  .xl\:text-dark-secondary {
-    color: var(--dark-secondary) !important;
+  .xl\:text-primary {
+    color: var(--primary) !important;
   }
 
   .xl\:text-white {
     color: var(--white) !important;
   }
 
-  .xl\:text-default-snow {
-    color: var(--default-snow) !important;
+  .xl\:text-anti-flash-white {
+    color: var(--anti-flash-white) !important;
   }
 
-  .xl\:text-dark-snow {
-    color: var(--dark-snow) !important;
+  .xl\:text-gainsboro {
+    color: var(--gainsboro) !important;
   }
 
-  .xl\:text-extra-dark-snow {
-    color: var(--extra-dark-snow) !important;
+  .xl\:text-lavender-gray {
+    color: var(--lavender-gray) !important;
   }
 
-  .xl\:text-default-smoke {
-    color: var(--default-smoke) !important;
+  .xl\:text-quick-silver {
+    color: var(--quick-silver) !important;
   }
 
-  .xl\:text-dark-smoke {
-    color: var(--dark-smoke) !important;
+  .xl\:text-aurometalsaurus {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .xl\:text-extra-dark-smoke {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .xl\:text-light-slate {
-    color: var(--light-slate) !important;
-  }
-
-  .xl\:text-medium-slate {
-    color: var(--medium-slate) !important;
-  }
-
-  .xl\:text-slate {
-    color: var(--slate) !important;
+  .xl\:text-yankees-blue {
+    color: var(--yankees-blue) !important;
   }
 
   .xl\:text-black {
     color: var(--black) !important;
   }
 
-  .xl\:text-light-warning {
-    color: var(--light-warning) !important;
-  }
-
-  .xl\:text-default-warning {
-    color: var(--default-warning) !important;
-  }
-
-  .xl\:text-dark-warning {
-    color: var(--dark-warning) !important;
-  }
-
-  .xl\:text-light-positive {
-    color: var(--light-positive) !important;
-  }
-
-  .xl\:text-default-positive {
-    color: var(--default-positive) !important;
-  }
-
-  .xl\:text-dark-positive {
-    color: var(--dark-positive) !important;
-  }
-
-  .xl\:text-light-negative {
-    color: var(--light-negative) !important;
-  }
-
-  .xl\:text-default-negative {
-    color: var(--default-negative) !important;
-  }
-
-  .xl\:text-dark-negative {
-    color: var(--dark-negative) !important;
-  }
-
-  .xl\:text-light-info {
-    color: var(--light-info) !important;
-  }
-
-  .xl\:text-default-info {
-    color: var(--default-info) !important;
-  }
-
-  .xl\:text-dark-info {
-    color: var(--dark-info) !important;
-  }
-
   .xl\:hover\:text-transparent:hover {
     color: transparent !important;
   }
 
-  .xl\:hover\:text-light-secondary:hover {
-    color: var(--light-secondary) !important;
-  }
-
-  .xl\:hover\:text-default-secondary:hover {
-    color: var(--default-secondary) !important;
-  }
-
-  .xl\:hover\:text-dark-secondary:hover {
-    color: var(--dark-secondary) !important;
+  .xl\:hover\:text-primary:hover {
+    color: var(--primary) !important;
   }
 
   .xl\:hover\:text-white:hover {
     color: var(--white) !important;
   }
 
-  .xl\:hover\:text-default-snow:hover {
-    color: var(--default-snow) !important;
+  .xl\:hover\:text-anti-flash-white:hover {
+    color: var(--anti-flash-white) !important;
   }
 
-  .xl\:hover\:text-dark-snow:hover {
-    color: var(--dark-snow) !important;
+  .xl\:hover\:text-gainsboro:hover {
+    color: var(--gainsboro) !important;
   }
 
-  .xl\:hover\:text-extra-dark-snow:hover {
-    color: var(--extra-dark-snow) !important;
+  .xl\:hover\:text-lavender-gray:hover {
+    color: var(--lavender-gray) !important;
   }
 
-  .xl\:hover\:text-default-smoke:hover {
-    color: var(--default-smoke) !important;
+  .xl\:hover\:text-quick-silver:hover {
+    color: var(--quick-silver) !important;
   }
 
-  .xl\:hover\:text-dark-smoke:hover {
-    color: var(--dark-smoke) !important;
+  .xl\:hover\:text-aurometalsaurus:hover {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .xl\:hover\:text-extra-dark-smoke:hover {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .xl\:hover\:text-light-slate:hover {
-    color: var(--light-slate) !important;
-  }
-
-  .xl\:hover\:text-medium-slate:hover {
-    color: var(--medium-slate) !important;
-  }
-
-  .xl\:hover\:text-slate:hover {
-    color: var(--slate) !important;
+  .xl\:hover\:text-yankees-blue:hover {
+    color: var(--yankees-blue) !important;
   }
 
   .xl\:hover\:text-black:hover {
     color: var(--black) !important;
   }
 
-  .xl\:hover\:text-light-warning:hover {
-    color: var(--light-warning) !important;
-  }
-
-  .xl\:hover\:text-default-warning:hover {
-    color: var(--default-warning) !important;
-  }
-
-  .xl\:hover\:text-dark-warning:hover {
-    color: var(--dark-warning) !important;
-  }
-
-  .xl\:hover\:text-light-positive:hover {
-    color: var(--light-positive) !important;
-  }
-
-  .xl\:hover\:text-default-positive:hover {
-    color: var(--default-positive) !important;
-  }
-
-  .xl\:hover\:text-dark-positive:hover {
-    color: var(--dark-positive) !important;
-  }
-
-  .xl\:hover\:text-light-negative:hover {
-    color: var(--light-negative) !important;
-  }
-
-  .xl\:hover\:text-default-negative:hover {
-    color: var(--default-negative) !important;
-  }
-
-  .xl\:hover\:text-dark-negative:hover {
-    color: var(--dark-negative) !important;
-  }
-
-  .xl\:hover\:text-light-info:hover {
-    color: var(--light-info) !important;
-  }
-
-  .xl\:hover\:text-default-info:hover {
-    color: var(--default-info) !important;
-  }
-
-  .xl\:hover\:text-dark-info:hover {
-    color: var(--dark-info) !important;
-  }
-
   .xl\:focus\:text-transparent:focus {
     color: transparent !important;
   }
 
-  .xl\:focus\:text-light-secondary:focus {
-    color: var(--light-secondary) !important;
-  }
-
-  .xl\:focus\:text-default-secondary:focus {
-    color: var(--default-secondary) !important;
-  }
-
-  .xl\:focus\:text-dark-secondary:focus {
-    color: var(--dark-secondary) !important;
+  .xl\:focus\:text-primary:focus {
+    color: var(--primary) !important;
   }
 
   .xl\:focus\:text-white:focus {
     color: var(--white) !important;
   }
 
-  .xl\:focus\:text-default-snow:focus {
-    color: var(--default-snow) !important;
+  .xl\:focus\:text-anti-flash-white:focus {
+    color: var(--anti-flash-white) !important;
   }
 
-  .xl\:focus\:text-dark-snow:focus {
-    color: var(--dark-snow) !important;
+  .xl\:focus\:text-gainsboro:focus {
+    color: var(--gainsboro) !important;
   }
 
-  .xl\:focus\:text-extra-dark-snow:focus {
-    color: var(--extra-dark-snow) !important;
+  .xl\:focus\:text-lavender-gray:focus {
+    color: var(--lavender-gray) !important;
   }
 
-  .xl\:focus\:text-default-smoke:focus {
-    color: var(--default-smoke) !important;
+  .xl\:focus\:text-quick-silver:focus {
+    color: var(--quick-silver) !important;
   }
 
-  .xl\:focus\:text-dark-smoke:focus {
-    color: var(--dark-smoke) !important;
+  .xl\:focus\:text-aurometalsaurus:focus {
+    color: var(--aurometalsaurus) !important;
   }
 
-  .xl\:focus\:text-extra-dark-smoke:focus {
-    color: var(--extra-dark-smoke) !important;
-  }
-
-  .xl\:focus\:text-light-slate:focus {
-    color: var(--light-slate) !important;
-  }
-
-  .xl\:focus\:text-medium-slate:focus {
-    color: var(--medium-slate) !important;
-  }
-
-  .xl\:focus\:text-slate:focus {
-    color: var(--slate) !important;
+  .xl\:focus\:text-yankees-blue:focus {
+    color: var(--yankees-blue) !important;
   }
 
   .xl\:focus\:text-black:focus {
     color: var(--black) !important;
-  }
-
-  .xl\:focus\:text-light-warning:focus {
-    color: var(--light-warning) !important;
-  }
-
-  .xl\:focus\:text-default-warning:focus {
-    color: var(--default-warning) !important;
-  }
-
-  .xl\:focus\:text-dark-warning:focus {
-    color: var(--dark-warning) !important;
-  }
-
-  .xl\:focus\:text-light-positive:focus {
-    color: var(--light-positive) !important;
-  }
-
-  .xl\:focus\:text-default-positive:focus {
-    color: var(--default-positive) !important;
-  }
-
-  .xl\:focus\:text-dark-positive:focus {
-    color: var(--dark-positive) !important;
-  }
-
-  .xl\:focus\:text-light-negative:focus {
-    color: var(--light-negative) !important;
-  }
-
-  .xl\:focus\:text-default-negative:focus {
-    color: var(--default-negative) !important;
-  }
-
-  .xl\:focus\:text-dark-negative:focus {
-    color: var(--dark-negative) !important;
-  }
-
-  .xl\:focus\:text-light-info:focus {
-    color: var(--light-info) !important;
-  }
-
-  .xl\:focus\:text-default-info:focus {
-    color: var(--default-info) !important;
-  }
-
-  .xl\:focus\:text-dark-info:focus {
-    color: var(--dark-info) !important;
   }
 
   .xl\:text-2xs {

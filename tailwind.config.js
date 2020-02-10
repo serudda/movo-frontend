@@ -13,41 +13,18 @@ module.exports = {
     colors: {
       'transparent': 'transparent',
 
-      'light-secondary': 'var(--light-secondary)',
-      'default-secondary': 'var(--default-secondary)',
-      'dark-secondary': 'var(--dark-secondary)',
+      'primary': 'var(--primary)',
 
       'white': 'var(--white)',
 
-      'default-snow': 'var(--default-snow)',
-      'dark-snow': 'var(--dark-snow)',
-      'extra-dark-snow': 'var(--extra-dark-snow)',
+      'anti-flash-white': 'var(--anti-flash-white)',
+      'gainsboro': 'var(--gainsboro)',
+      'lavender-gray': 'var(--lavender-gray)',
+      'quick-silver': 'var(--quick-silver)',
+      'aurometalsaurus': 'var(--aurometalsaurus)',
+      'yankees-blue': 'var(--yankees-blue)',
 
-      'default-smoke': 'var(--default-smoke)',
-      'dark-smoke': 'var(--dark-smoke)',
-      'extra-dark-smoke': 'var(--extra-dark-smoke)',
-
-      'light-slate': 'var(--light-slate)',
-      'medium-slate': 'var(--medium-slate)',
-      'slate': 'var(--slate)',
-
-      'black': 'var(--black)',
-
-      'light-warning': 'var(--light-warning)',
-      'default-warning': 'var(--default-warning)',
-      'dark-warning': 'var(--dark-warning)',
-
-      'light-positive': 'var(--light-positive)',
-      'default-positive': 'var(--default-positive)',
-      'dark-positive': 'var(--dark-positive)',
-
-      'light-negative': 'var(--light-negative)',
-      'default-negative': 'var(--default-negative)',
-      'dark-negative': 'var(--dark-negative)',
-
-      'light-info': 'var(--light-info)',
-      'default-info': 'var(--default-info)',
-      'dark-info': 'var(--dark-info)'
+      'black': 'var(--black)'
     },
     spacing: {
       px: '1px',
@@ -143,8 +120,8 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Open Sans',
-        '-apple-system',
+        'Avenir',
+        '"Avenir Next"',
         'BlinkMacSystemFont',
         '"Segoe UI"',
         'Roboto',
