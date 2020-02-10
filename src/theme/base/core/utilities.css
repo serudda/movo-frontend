@@ -1656,12 +1656,24 @@ video {
   font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
 
+.font-thin {
+  font-weight: 100 !important;
+}
+
+.font-extra-light {
+  font-weight: 200 !important;
+}
+
 .font-light {
   font-weight: 300 !important;
 }
 
 .font-regular {
   font-weight: 400 !important;
+}
+
+.font-medium {
+  font-weight: 500 !important;
 }
 
 .font-semi-bold {
@@ -1676,12 +1688,28 @@ video {
   font-weight: 800 !important;
 }
 
+.font-black {
+  font-weight: 900 !important;
+}
+
+.hover\:font-thin:hover {
+  font-weight: 100 !important;
+}
+
+.hover\:font-extra-light:hover {
+  font-weight: 200 !important;
+}
+
 .hover\:font-light:hover {
   font-weight: 300 !important;
 }
 
 .hover\:font-regular:hover {
   font-weight: 400 !important;
+}
+
+.hover\:font-medium:hover {
+  font-weight: 500 !important;
 }
 
 .hover\:font-semi-bold:hover {
@@ -1696,12 +1724,28 @@ video {
   font-weight: 800 !important;
 }
 
+.hover\:font-black:hover {
+  font-weight: 900 !important;
+}
+
+.focus\:font-thin:focus {
+  font-weight: 100 !important;
+}
+
+.focus\:font-extra-light:focus {
+  font-weight: 200 !important;
+}
+
 .focus\:font-light:focus {
   font-weight: 300 !important;
 }
 
 .focus\:font-regular:focus {
   font-weight: 400 !important;
+}
+
+.focus\:font-medium:focus {
+  font-weight: 500 !important;
 }
 
 .focus\:font-semi-bold:focus {
@@ -1714,6 +1758,10 @@ video {
 
 .focus\:font-extra-bold:focus {
   font-weight: 800 !important;
+}
+
+.focus\:font-black:focus {
+  font-weight: 900 !important;
 }
 
 .h-0 {
@@ -1802,6 +1850,38 @@ video {
 
 .h-screen {
   height: 100vh !important;
+}
+
+.leading-3 {
+  line-height: .75rem !important;
+}
+
+.leading-4 {
+  line-height: 1rem !important;
+}
+
+.leading-5 {
+  line-height: 1.25rem !important;
+}
+
+.leading-6 {
+  line-height: 1.5rem !important;
+}
+
+.leading-7 {
+  line-height: 1.75rem !important;
+}
+
+.leading-8 {
+  line-height: 2rem !important;
+}
+
+.leading-9 {
+  line-height: 2.25rem !important;
+}
+
+.leading-10 {
+  line-height: 2.5rem !important;
 }
 
 .leading-none {
@@ -8139,12 +8219,24 @@ video {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
   }
 
+  .sm\:font-thin {
+    font-weight: 100 !important;
+  }
+
+  .sm\:font-extra-light {
+    font-weight: 200 !important;
+  }
+
   .sm\:font-light {
     font-weight: 300 !important;
   }
 
   .sm\:font-regular {
     font-weight: 400 !important;
+  }
+
+  .sm\:font-medium {
+    font-weight: 500 !important;
   }
 
   .sm\:font-semi-bold {
@@ -8159,12 +8251,28 @@ video {
     font-weight: 800 !important;
   }
 
+  .sm\:font-black {
+    font-weight: 900 !important;
+  }
+
+  .sm\:hover\:font-thin:hover {
+    font-weight: 100 !important;
+  }
+
+  .sm\:hover\:font-extra-light:hover {
+    font-weight: 200 !important;
+  }
+
   .sm\:hover\:font-light:hover {
     font-weight: 300 !important;
   }
 
   .sm\:hover\:font-regular:hover {
     font-weight: 400 !important;
+  }
+
+  .sm\:hover\:font-medium:hover {
+    font-weight: 500 !important;
   }
 
   .sm\:hover\:font-semi-bold:hover {
@@ -8179,12 +8287,28 @@ video {
     font-weight: 800 !important;
   }
 
+  .sm\:hover\:font-black:hover {
+    font-weight: 900 !important;
+  }
+
+  .sm\:focus\:font-thin:focus {
+    font-weight: 100 !important;
+  }
+
+  .sm\:focus\:font-extra-light:focus {
+    font-weight: 200 !important;
+  }
+
   .sm\:focus\:font-light:focus {
     font-weight: 300 !important;
   }
 
   .sm\:focus\:font-regular:focus {
     font-weight: 400 !important;
+  }
+
+  .sm\:focus\:font-medium:focus {
+    font-weight: 500 !important;
   }
 
   .sm\:focus\:font-semi-bold:focus {
@@ -8197,6 +8321,10 @@ video {
 
   .sm\:focus\:font-extra-bold:focus {
     font-weight: 800 !important;
+  }
+
+  .sm\:focus\:font-black:focus {
+    font-weight: 900 !important;
   }
 
   .sm\:h-0 {
@@ -8285,6 +8413,38 @@ video {
 
   .sm\:h-screen {
     height: 100vh !important;
+  }
+
+  .sm\:leading-3 {
+    line-height: .75rem !important;
+  }
+
+  .sm\:leading-4 {
+    line-height: 1rem !important;
+  }
+
+  .sm\:leading-5 {
+    line-height: 1.25rem !important;
+  }
+
+  .sm\:leading-6 {
+    line-height: 1.5rem !important;
+  }
+
+  .sm\:leading-7 {
+    line-height: 1.75rem !important;
+  }
+
+  .sm\:leading-8 {
+    line-height: 2rem !important;
+  }
+
+  .sm\:leading-9 {
+    line-height: 2.25rem !important;
+  }
+
+  .sm\:leading-10 {
+    line-height: 2.5rem !important;
   }
 
   .sm\:leading-none {
@@ -14623,12 +14783,24 @@ video {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
   }
 
+  .md\:font-thin {
+    font-weight: 100 !important;
+  }
+
+  .md\:font-extra-light {
+    font-weight: 200 !important;
+  }
+
   .md\:font-light {
     font-weight: 300 !important;
   }
 
   .md\:font-regular {
     font-weight: 400 !important;
+  }
+
+  .md\:font-medium {
+    font-weight: 500 !important;
   }
 
   .md\:font-semi-bold {
@@ -14643,12 +14815,28 @@ video {
     font-weight: 800 !important;
   }
 
+  .md\:font-black {
+    font-weight: 900 !important;
+  }
+
+  .md\:hover\:font-thin:hover {
+    font-weight: 100 !important;
+  }
+
+  .md\:hover\:font-extra-light:hover {
+    font-weight: 200 !important;
+  }
+
   .md\:hover\:font-light:hover {
     font-weight: 300 !important;
   }
 
   .md\:hover\:font-regular:hover {
     font-weight: 400 !important;
+  }
+
+  .md\:hover\:font-medium:hover {
+    font-weight: 500 !important;
   }
 
   .md\:hover\:font-semi-bold:hover {
@@ -14663,12 +14851,28 @@ video {
     font-weight: 800 !important;
   }
 
+  .md\:hover\:font-black:hover {
+    font-weight: 900 !important;
+  }
+
+  .md\:focus\:font-thin:focus {
+    font-weight: 100 !important;
+  }
+
+  .md\:focus\:font-extra-light:focus {
+    font-weight: 200 !important;
+  }
+
   .md\:focus\:font-light:focus {
     font-weight: 300 !important;
   }
 
   .md\:focus\:font-regular:focus {
     font-weight: 400 !important;
+  }
+
+  .md\:focus\:font-medium:focus {
+    font-weight: 500 !important;
   }
 
   .md\:focus\:font-semi-bold:focus {
@@ -14681,6 +14885,10 @@ video {
 
   .md\:focus\:font-extra-bold:focus {
     font-weight: 800 !important;
+  }
+
+  .md\:focus\:font-black:focus {
+    font-weight: 900 !important;
   }
 
   .md\:h-0 {
@@ -14769,6 +14977,38 @@ video {
 
   .md\:h-screen {
     height: 100vh !important;
+  }
+
+  .md\:leading-3 {
+    line-height: .75rem !important;
+  }
+
+  .md\:leading-4 {
+    line-height: 1rem !important;
+  }
+
+  .md\:leading-5 {
+    line-height: 1.25rem !important;
+  }
+
+  .md\:leading-6 {
+    line-height: 1.5rem !important;
+  }
+
+  .md\:leading-7 {
+    line-height: 1.75rem !important;
+  }
+
+  .md\:leading-8 {
+    line-height: 2rem !important;
+  }
+
+  .md\:leading-9 {
+    line-height: 2.25rem !important;
+  }
+
+  .md\:leading-10 {
+    line-height: 2.5rem !important;
   }
 
   .md\:leading-none {
@@ -21107,12 +21347,24 @@ video {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
   }
 
+  .lg\:font-thin {
+    font-weight: 100 !important;
+  }
+
+  .lg\:font-extra-light {
+    font-weight: 200 !important;
+  }
+
   .lg\:font-light {
     font-weight: 300 !important;
   }
 
   .lg\:font-regular {
     font-weight: 400 !important;
+  }
+
+  .lg\:font-medium {
+    font-weight: 500 !important;
   }
 
   .lg\:font-semi-bold {
@@ -21127,12 +21379,28 @@ video {
     font-weight: 800 !important;
   }
 
+  .lg\:font-black {
+    font-weight: 900 !important;
+  }
+
+  .lg\:hover\:font-thin:hover {
+    font-weight: 100 !important;
+  }
+
+  .lg\:hover\:font-extra-light:hover {
+    font-weight: 200 !important;
+  }
+
   .lg\:hover\:font-light:hover {
     font-weight: 300 !important;
   }
 
   .lg\:hover\:font-regular:hover {
     font-weight: 400 !important;
+  }
+
+  .lg\:hover\:font-medium:hover {
+    font-weight: 500 !important;
   }
 
   .lg\:hover\:font-semi-bold:hover {
@@ -21147,12 +21415,28 @@ video {
     font-weight: 800 !important;
   }
 
+  .lg\:hover\:font-black:hover {
+    font-weight: 900 !important;
+  }
+
+  .lg\:focus\:font-thin:focus {
+    font-weight: 100 !important;
+  }
+
+  .lg\:focus\:font-extra-light:focus {
+    font-weight: 200 !important;
+  }
+
   .lg\:focus\:font-light:focus {
     font-weight: 300 !important;
   }
 
   .lg\:focus\:font-regular:focus {
     font-weight: 400 !important;
+  }
+
+  .lg\:focus\:font-medium:focus {
+    font-weight: 500 !important;
   }
 
   .lg\:focus\:font-semi-bold:focus {
@@ -21165,6 +21449,10 @@ video {
 
   .lg\:focus\:font-extra-bold:focus {
     font-weight: 800 !important;
+  }
+
+  .lg\:focus\:font-black:focus {
+    font-weight: 900 !important;
   }
 
   .lg\:h-0 {
@@ -21253,6 +21541,38 @@ video {
 
   .lg\:h-screen {
     height: 100vh !important;
+  }
+
+  .lg\:leading-3 {
+    line-height: .75rem !important;
+  }
+
+  .lg\:leading-4 {
+    line-height: 1rem !important;
+  }
+
+  .lg\:leading-5 {
+    line-height: 1.25rem !important;
+  }
+
+  .lg\:leading-6 {
+    line-height: 1.5rem !important;
+  }
+
+  .lg\:leading-7 {
+    line-height: 1.75rem !important;
+  }
+
+  .lg\:leading-8 {
+    line-height: 2rem !important;
+  }
+
+  .lg\:leading-9 {
+    line-height: 2.25rem !important;
+  }
+
+  .lg\:leading-10 {
+    line-height: 2.5rem !important;
   }
 
   .lg\:leading-none {
@@ -27591,12 +27911,24 @@ video {
     font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
   }
 
+  .xl\:font-thin {
+    font-weight: 100 !important;
+  }
+
+  .xl\:font-extra-light {
+    font-weight: 200 !important;
+  }
+
   .xl\:font-light {
     font-weight: 300 !important;
   }
 
   .xl\:font-regular {
     font-weight: 400 !important;
+  }
+
+  .xl\:font-medium {
+    font-weight: 500 !important;
   }
 
   .xl\:font-semi-bold {
@@ -27611,12 +27943,28 @@ video {
     font-weight: 800 !important;
   }
 
+  .xl\:font-black {
+    font-weight: 900 !important;
+  }
+
+  .xl\:hover\:font-thin:hover {
+    font-weight: 100 !important;
+  }
+
+  .xl\:hover\:font-extra-light:hover {
+    font-weight: 200 !important;
+  }
+
   .xl\:hover\:font-light:hover {
     font-weight: 300 !important;
   }
 
   .xl\:hover\:font-regular:hover {
     font-weight: 400 !important;
+  }
+
+  .xl\:hover\:font-medium:hover {
+    font-weight: 500 !important;
   }
 
   .xl\:hover\:font-semi-bold:hover {
@@ -27631,12 +27979,28 @@ video {
     font-weight: 800 !important;
   }
 
+  .xl\:hover\:font-black:hover {
+    font-weight: 900 !important;
+  }
+
+  .xl\:focus\:font-thin:focus {
+    font-weight: 100 !important;
+  }
+
+  .xl\:focus\:font-extra-light:focus {
+    font-weight: 200 !important;
+  }
+
   .xl\:focus\:font-light:focus {
     font-weight: 300 !important;
   }
 
   .xl\:focus\:font-regular:focus {
     font-weight: 400 !important;
+  }
+
+  .xl\:focus\:font-medium:focus {
+    font-weight: 500 !important;
   }
 
   .xl\:focus\:font-semi-bold:focus {
@@ -27649,6 +28013,10 @@ video {
 
   .xl\:focus\:font-extra-bold:focus {
     font-weight: 800 !important;
+  }
+
+  .xl\:focus\:font-black:focus {
+    font-weight: 900 !important;
   }
 
   .xl\:h-0 {
@@ -27737,6 +28105,38 @@ video {
 
   .xl\:h-screen {
     height: 100vh !important;
+  }
+
+  .xl\:leading-3 {
+    line-height: .75rem !important;
+  }
+
+  .xl\:leading-4 {
+    line-height: 1rem !important;
+  }
+
+  .xl\:leading-5 {
+    line-height: 1.25rem !important;
+  }
+
+  .xl\:leading-6 {
+    line-height: 1.5rem !important;
+  }
+
+  .xl\:leading-7 {
+    line-height: 1.75rem !important;
+  }
+
+  .xl\:leading-8 {
+    line-height: 2rem !important;
+  }
+
+  .xl\:leading-9 {
+    line-height: 2.25rem !important;
+  }
+
+  .xl\:leading-10 {
+    line-height: 2.5rem !important;
   }
 
   .xl\:leading-none {

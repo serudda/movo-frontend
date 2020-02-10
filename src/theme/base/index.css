@@ -5,5 +5,5 @@
 /* App Core Styles
 --------------------------------------------------*/
 @import './core/color.css';
-@import './core/reset.css';
 @import './core/utilities.css';
+@import './core/reset.css';

@@ -2,14 +2,21 @@
 /*             UI GUIDELINE RESETS             */
 /***********************************************/
 
+
 body {
+  margin: 0;
   padding: 0;
-  background-color: var(--white);
-  color: var(--default-slate);
-  overflow-x: hidden;
-  height: 100%;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  letter-spacing: 0;
+  height: 100vh;
+  background-image: url("../../../background.png");
+  background-color: var(--yankees-blue);
+  background-position: top left;
+  background-size: cover;
+  font-weight: regular;
+}
+
+h1 {
+  position: relative;
+  letter-spacing: -0.18px;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
 }
