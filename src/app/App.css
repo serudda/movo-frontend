@@ -207,7 +207,7 @@ h2 + * {
   margin-top: 16px;
 }
 
-.App {
+.HomePage {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -219,7 +219,7 @@ h2 + * {
   width: calc(100% - 64px);
   height: calc(100% - 64px);
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: var(--white);
   transform: translate(-50%, -50%);
 }
 
