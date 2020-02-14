@@ -27,7 +27,7 @@ const OrderSummary = () => {
             <span className="summary-total-price text-xl leading-6 font-bold">107€</span>
           </li>
         </ul>
-        <Button></Button>
+        <Button label="Checkout"></Button>
       </div>
     </aside>
   );

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ItemRow from 'app/components/ItemRow/ItemRow';
+import Product from 'app/components/Product/Product';
 
 const ShoppingCart = () => {
   const products = [
@@ -10,7 +10,7 @@ const ShoppingCart = () => {
   ];
 
   const productsList = products.map((product) =>
-    <ItemRow product={product}/>
+    <Product product={product}/>
   );
 
   return (
