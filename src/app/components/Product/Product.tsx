@@ -4,15 +4,17 @@ import NumericStepper from '../NumericStepper/NumericStepper';
 
 import { ProductData } from 'app/interfaces/product-data';
 
+import './Product.css';
+
 export interface Props {
   product: ProductData;
 }
 
-const ItemRow = ({product}: Props) => {
+const Product = ({product}: Props) => {
   const {name, code, price, urlImg} = product;
 
   return (
-    <li className="ItemRow product row">
+    <li className="Product product row">
       <div className="col-product">
         <figure className="product-image flex items-center flex-row flex-no-wrap">
           <img className="mr-4 border border-solid border-lavender-gray rounded-md" src={urlImg} alt={name} />
@@ -35,4 +37,4 @@ const ItemRow = ({product}: Props) => {
   );
 };
 
-export default ItemRow;
+export default Product;
