@@ -7,33 +7,15 @@
   height: 72px;
 }
 
-.product-quantity {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #dbdbe0;
-  border-radius: 4px;
-  text-align: center;
-}
-
 /* TODO: duplicated in App.css */
 .product-code {
   font-size: 12px;
   line-height: 16px;
 }
 
-/* TODO: duplicated in App.css */
-.product-quantity {
-  font-size: 14px;
-  line-height: 17px;
-}
-
 .product h1 {
   font-size: 16px;
   line-height: 24px;
-}
-
-.col-quantity {
-  width: 20%;
 }
 
 .col-price {
