@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const NumericStepper = () => {
+import './NumericStepper.css';
+
+const NumericStepper = ({maxValue = 10}) => {
+
+  const [value, setValue] = useState(0);
+
+  const handleMinusClick = () => {
+    if (value > 0) {
+      setValue(value - 1);
+    }
+  };
+
+  const handlePlusClick = () => {
+    if (value < maxValue) {
+      setValue(value + 1);
+    }
+  };
+
+  const handleValueChange = (e) => {
+    setValue(e.target.value);
+  };
+
   return (
     <div className="col-quantity">
-      <button className="count">-</button>
-      <input type="text" className="product-quantity" value="3" />
-      <button className="count">+</button>
+      <button className="count" onClick={handleMinusClick}>-</button>
+      <input type="text" className="product-quantity" value={value} onChange={handleValueChange}/>
+      <button className="count" onClick={handlePlusClick}>+</button>
     </div>
   );
 };
