@@ -25,3 +25,36 @@
 .col-total {
   width: 15%;
 }
+
+.col-quantity {
+  width: 20%;
+}
+
+.products button.count {
+  font-size: 20px;
+  line-height: 25px;
+  padding: 0 8px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  color: var(--primary);
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-quantity {
+  border: 2px solid var(--gainsboro);
+  border-radius: 4px;
+  font-size: 14px;
+  height: 40px;
+  line-height: 17px;
+  text-align: center;
+  width: 40px;
+}
+
+input {
+  width: 100%;
+  height: 48px;
+  border-radius: 4px;
+}
