@@ -12,9 +12,9 @@ export interface Props {
 
 const Product = ({product}: Props) => {
   const {name, code, price, stock, urlImg} = product;
+  const checkout = useContext(CheckoutContext);
   const [value, setValue] = useState(0);
   const [total, setTotal] = useState(0);
-  const checkout = useContext(CheckoutContext);
 
   const handleMinusClick = () => {
     if (value > 0) {
@@ -37,17 +37,22 @@ const Product = ({product}: Props) => {
   const handleValueChange = (e) => {
     let newValue: number = parseInt(e.target.value, 10);
     if(newValue > stock) { newValue = stock; }
-
     setValue(newValue);
-    checkout.removeAllProductsByCode!(code);
-    for (let i = 0; i < newValue; i++) {
-      checkout.scan!(code);
-    }
-    setTotal(price * newValue);
+
+    if(!isNaN(newValue)) {
+      checkout.removeAllProductsByCode!(code);
+      for (let i = 0; i < newValue; i++) {
+        checkout.scan!(code);
+      }
+      setTotal(price * newValue);
+    } 
   };
 
   const handleBlur = (e) => {
-    if(e.target.value === '') { setValue(0); }
+    if(e.target.value === '') {
+      setValue(0);
+      setTotal(0);
+    }
   };
 
   const handleFocus = (e) => e.target.select();
@@ -65,7 +70,7 @@ const Product = ({product}: Props) => {
       </div>
       <div className="col-quantity">
         <button className="count" onClick={handleMinusClick}>-</button>
-        <input type="number" className="product-quantity" value={value} onChange={handleValueChange} onFocus={handleFocus} onBlur={handleBlur} min="0" max={stock}/>
+        <input type="number" className="product-quantity" value={value} onChange={handleValueChange} onFocus={handleFocus} onBlur={handleBlur} min="0" max={stock} pattern="[0-9]{10}"/>
         <button className="count" onClick={handlePlusClick}>+</button>
       </div>
       <div className="col-price">
