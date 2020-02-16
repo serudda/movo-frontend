@@ -1,4 +1,4 @@
-export const discountsData = async () => {
+export const discountData = async () => {
   return [
     {
       "id": 1,

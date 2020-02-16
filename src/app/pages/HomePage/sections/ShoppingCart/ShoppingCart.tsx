@@ -1,17 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import { CheckoutContext } from 'app/contexts/CheckoutContext';
 
 import Product from 'app/components/Product/Product';
 
 const ShoppingCart = () => {
-  const products = [
-    {name: 'Shirt', code: 'TSHIRT', price: 20, urlImg: 'shirt.png'},
-    {name: 'Mug', code: 'MUG', price: 5, urlImg: 'mug.png'},
-    {name: 'Cap', code: 'CAP', price: 10, urlImg: 'cap.png'}
-  ];
+  const checkout = useContext(CheckoutContext);
 
-  const productsList = products.map((product) =>
-    <Product product={product}/>
-  );
+  const productsList = checkout.availableProducts ? checkout.availableProducts.map((product) =>
+    <Product key={product.id} product={product} />
+  ) : null;
 
   return (
     <section className="ShoppingCart products py-8 px-12 flex-1">
