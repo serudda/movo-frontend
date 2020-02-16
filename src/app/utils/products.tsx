@@ -6,7 +6,7 @@ export const productData = async (): Promise<Array<IProductData>> => {
       "id": 1,
       "code": "TSHIRT",
       "name": "Shirt",
-      "price": 5,
+      "price": 20,
       "urlImg": "shirt.png",
       "discount": {
         "id": 2,
@@ -26,7 +26,7 @@ export const productData = async (): Promise<Array<IProductData>> => {
       "id": 3,
       "code": "CAP",
       "name": "Cap",
-      "price": 20,
+      "price": 5,
       "urlImg": "cap.png", 
       "discount": {
         "id": 1,
