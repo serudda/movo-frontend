@@ -37,6 +37,32 @@ export class Checkout {
     }
   }
 
+  public numberOfScannedProducts(): number {
+    return this._scannedProducts.length + 1;
+  }
+
+  public remove(productCode: string): void {
+    const product = this._availableProducts.find(product => product.code === productCode);
+    if(product) {
+      const idx = this._scannedProducts.indexOf(product);
+      if (idx >= 0) {
+        this._scannedProducts.splice(idx, 1);
+      }
+    }
+  }
+
+  public removeAllProductsByCode(productCode: string): void {
+    this._scannedProducts = this._scannedProducts.filter((item) => item.code !== productCode);
+  }
+
+  // TODO: Validar si esto funciona bien. Este metodo me va a servir en la seccion Order Summary.
+  public totalWithoutDiscount(): number {
+    const initialTotal = 0;
+    return this._scannedProducts.reduce((total, product) => {
+      return total + product.price;
+    }, initialTotal);
+  }
+
   public total(): number {
     return 100;
   }
