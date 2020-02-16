@@ -1,10 +1,12 @@
 import React, { useState, useContext } from 'react';
 
 import { CheckoutContext } from 'app/contexts/CheckoutContext';
+import { UserContext } from 'app/contexts/UserContext';
 
 import { IProductData } from 'app/interfaces/product-data';
 
 import './Product.css';
+import { Checkout } from 'app/models/checkout/checkout';
 
 export interface Props {
   product: IProductData;
@@ -12,7 +14,8 @@ export interface Props {
 
 const Product = ({product}: Props) => {
   const {name, code, price, stock, urlImg} = product;
-  const checkout = useContext(CheckoutContext);
+  const {checkout} = useContext(CheckoutContext);
+  const user: any = useContext(UserContext);
   const [value, setValue] = useState(0);
   const [total, setTotal] = useState(0);
 
@@ -31,6 +34,8 @@ const Product = ({product}: Props) => {
       setValue(newValue);
       checkout.scan!(code);
       setTotal(price * newValue);
+      checkout.setCheckout(checkout.checkout);
+      user.setName("Sergio");
     }
   };
 
@@ -40,7 +45,7 @@ const Product = ({product}: Props) => {
     setValue(newValue);
 
     if(!isNaN(newValue)) {
-      checkout.removeAllProductsByCode!(code);
+      checkout.checkout.removeAllProductsByCode!(code);
       for (let i = 0; i < newValue; i++) {
         checkout.scan!(code);
       }

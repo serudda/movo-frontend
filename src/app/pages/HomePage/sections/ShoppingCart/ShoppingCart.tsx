@@ -5,7 +5,7 @@ import { CheckoutContext } from 'app/contexts/CheckoutContext';
 import Product from 'app/components/Product/Product';
 
 const ShoppingCart = () => {
-  const checkout = useContext(CheckoutContext);
+  const {checkout} = useContext(CheckoutContext);
 
   const productsList = checkout.availableProducts ? checkout.availableProducts.map((product) =>
     <Product key={product.id} product={product} />

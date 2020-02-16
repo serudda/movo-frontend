@@ -13,9 +13,11 @@ export class Checkout {
   private _availableDiscounts: Array<IDiscountData>;
 
   constructor(pricingRules: PricingRules) {
+    console.log('pricingRules: ', pricingRules);
     this._availableProducts = pricingRules ? pricingRules.products : [];
     this._availableDiscounts = pricingRules ? pricingRules.discounts : [];
     this._scannedProducts = [];
+    console.log('this._availableProducts: ', this._availableProducts);
   }
 
   get availableDiscounts(): Array<IDiscountData> {
