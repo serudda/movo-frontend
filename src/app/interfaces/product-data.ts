@@ -7,4 +7,5 @@ export interface IProductData {
   price: number;
   urlImg: string;
   discount: IDiscountData | null;
+  stock: number;
 }

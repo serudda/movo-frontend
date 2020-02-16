@@ -11,7 +11,7 @@ export interface Props {
 }
 
 const Product = ({product}: Props) => {
-  const {name, code, price, urlImg} = product;
+  const {name, code, price, stock, urlImg} = product;
   const [value, setValue] = useState(0);
   const [total, setTotal] = useState(0);
   const checkout = useContext(CheckoutContext);
@@ -26,7 +26,7 @@ const Product = ({product}: Props) => {
   };
 
   const handlePlusClick = () => {
-    if (value < 10) {
+    if (value < stock) {
       const newValue = value + 1;
       setValue(newValue);
       checkout.scan!(code);
@@ -35,17 +35,22 @@ const Product = ({product}: Props) => {
   };
 
   const handleValueChange = (e) => {
-    const newValue = e.target.value;
+    let newValue: number = parseInt(e.target.value, 10);
+    if(newValue > stock) { newValue = stock; }
+
     setValue(newValue);
     checkout.removeAllProductsByCode!(code);
-
-    // TODO: Crashea cuando pongo 500000000 en el input. No es optimo esto. Buscar alternativa
     for (let i = 0; i < newValue; i++) {
       checkout.scan!(code);
     }
-
     setTotal(price * newValue);
   };
+
+  const handleBlur = (e) => {
+    if(e.target.value === '') { setValue(0); }
+  };
+
+  const handleFocus = (e) => e.target.select();
 
   return (
     <li className="Product product row">
@@ -60,7 +65,7 @@ const Product = ({product}: Props) => {
       </div>
       <div className="col-quantity">
         <button className="count" onClick={handleMinusClick}>-</button>
-        <input type="text" className="product-quantity" value={value} onChange={handleValueChange}/>
+        <input type="number" className="product-quantity" value={value} onChange={handleValueChange} onFocus={handleFocus} onBlur={handleBlur} min="0" max={stock}/>
         <button className="count" onClick={handlePlusClick}>+</button>
       </div>
       <div className="col-price">

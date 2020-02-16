@@ -12,7 +12,8 @@ export const productData = async (): Promise<Array<IProductData>> => {
         "id": 2,
         "code": "x3",
         "name": "x3"
-      }
+      },
+      "stock": 230
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@ export const productData = async (): Promise<Array<IProductData>> => {
       "name": "Mug",
       "price": 7.5,
       "urlImg": "mug.png",
-      "discount": null
+      "discount": null,
+      "stock": 100
     },
     {
       "id": 3,
@@ -32,7 +34,8 @@ export const productData = async (): Promise<Array<IProductData>> => {
         "id": 1,
         "code": "2x1",
         "name": "2x1"
-      }
+      },
+      "stock": 350
     }
   ];
 };
