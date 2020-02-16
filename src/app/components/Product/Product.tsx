@@ -2,12 +2,12 @@ import React from 'react';
 
 import NumericStepper from '../NumericStepper/NumericStepper';
 
-import { ProductData } from 'app/interfaces/product-data';
+import { IProductData } from 'app/interfaces/product-data';
 
 import './Product.css';
 
 export interface Props {
-  product: ProductData;
+  product: IProductData;
 }
 
 const Product = ({product}: Props) => {

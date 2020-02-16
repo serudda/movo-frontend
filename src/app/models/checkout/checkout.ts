@@ -1,16 +1,16 @@
-import { ProductData } from 'app/interfaces/product-data';
-import { DiscountData } from 'app/interfaces/discount-data';
+import { IProductData } from 'app/interfaces/product-data';
+import { IDiscountData } from 'app/interfaces/discount-data';
 
 export interface PricingRules {
-  products: Array<ProductData>;
-  discounts: Array<DiscountData>;
+  products: Array<IProductData>;
+  discounts: Array<IDiscountData>;
 }
 
 export class Checkout {
 
-  private _scannedProducts: Array<ProductData>;
-  private _availableProducts: Array<ProductData>;
-  private _availableDiscounts: Array<DiscountData>;
+  private _scannedProducts: Array<IProductData>;
+  private _availableProducts: Array<IProductData>;
+  private _availableDiscounts: Array<IDiscountData>;
 
   constructor(pricingRules: PricingRules) {
     this._availableProducts = pricingRules ? pricingRules.products : [];
@@ -18,15 +18,15 @@ export class Checkout {
     this._scannedProducts = [];
   }
 
-  get availableDiscounts(): Array<DiscountData> {
+  get availableDiscounts(): Array<IDiscountData> {
     return this._availableDiscounts;
   }
 
-  get availableProducts(): Array<ProductData> {
+  get availableProducts(): Array<IProductData> {
     return this._availableProducts;
   }
 
-  get scannedProducts(): Array<ProductData> {
+  get scannedProducts(): Array<IProductData> {
     return this._scannedProducts;
   }
 

@@ -1,25 +1,37 @@
-export const productsData = async () => {
+import { IProductData } from 'app/interfaces/product-data';
+
+export const productData = async (): Promise<Array<IProductData>> => {
   return [
     {
       "id": 1,
-      "code": "CAP",
-      "name": "Cap",
-      "price": 20,
+      "code": "TSHIRT",
+      "name": "Shirt",
+      "price": 5,
+      "urlImg": "shirt.png",
       "discount": {
-        "id": 1,
-        "code": "2x1",
-        "label": "2x1"
+        "id": 2,
+        "code": "x3",
+        "name": "x3"
       }
     },
     {
       "id": 2,
-      "code": "SHIRT",
-      "name": "Shirt",
-      "price": 5,
+      "code": "MUG",
+      "name": "Mug",
+      "price": 7.5,
+      "urlImg": "mug.png",
+      "discount": null
+    },
+    {
+      "id": 3,
+      "code": "CAP",
+      "name": "Cap",
+      "price": 20,
+      "urlImg": "cap.png", 
       "discount": {
-        "id": 2,
-        "code": "x3",
-        "label": "x3"
+        "id": 1,
+        "code": "2x1",
+        "name": "2x1"
       }
     }
   ];
