@@ -1,14 +1,8 @@
-import React, { useContext, useState } from 'react';
-
-import { CheckoutContext } from 'app/contexts/CheckoutContext';
-import { UserContext } from 'app/contexts/UserContext';
+import React from 'react';
 
 import Button from 'app/components/Button/Button';
 
-const OrderSummary = () => {
-  const { checkout } = useContext(CheckoutContext);
-  const user: any = useContext(UserContext);
-  // const [total, setTotal] = useState(checkout.totalWithoutDiscount!());
+const OrderSummary = ({totalWithoutDiscount}) => {
 
   return (
     <aside className="OrderSummary summary text-yankees-blue flex flex-col flex-wrap p-8">
@@ -19,7 +13,7 @@ const OrderSummary = () => {
             <span>10 Items</span>
           </span>
           <span className="summary-items-price text-base font-bold">
-            {checkout.totalWithoutDiscount}
+            <span>{totalWithoutDiscount}</span>
             <span className="currency font-bold ml-1">€</span>
           </span>
         </li>
