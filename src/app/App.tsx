@@ -1,16 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import { CheckoutProvider } from './contexts/CheckoutContext';
-
-import HomePage from './pages/HomePage/HomePage';
+import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
 
 import './App.css';
 
 const App = () => {
   return (
-    <CheckoutProvider>
-      <HomePage />
-    </CheckoutProvider>
+    <CheckoutPage />
   );
 }
 
