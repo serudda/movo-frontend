@@ -20,7 +20,6 @@ const ShoppingCart = ({
   totals,
   inputs,
   onInputChange,
-  onInputFocus,
   onInputBlur,
   onMinusClick,
   onPlusClick
@@ -34,7 +33,6 @@ const ShoppingCart = ({
       total={totals[product.code]}
       onInputChange={onInputChange}
       onInputBlur={onInputBlur}
-      onInputFocus={onInputFocus}
       onMinusClick={onMinusClick}
       onPlusClick={onPlusClick}/>
   );

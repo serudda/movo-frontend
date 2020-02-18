@@ -8,9 +8,8 @@ export interface Props {
   product: IProductData;
   total: number;
   value: number;
-  onInputChange: (product: IProductData) => any;
-  onInputBlur: () => any;
-  onInputFocus: () => any;
+  onInputChange: (product: IProductData, localValue: number) => any;
+  onInputBlur: (product: IProductData, localValue: number) => any;
   onMinusClick: (product: IProductData, localValue: number) => any;
   onPlusClick: (product: IProductData, localValue: number) => any;
 }
@@ -20,7 +19,6 @@ const Product = ({
   total,
   value,
   onInputChange,
-  onInputFocus,
   onInputBlur,
   onMinusClick,
   onPlusClick
@@ -37,12 +35,28 @@ const Product = ({
   };
 
   const handlePlusClick = () => {
-    if (localValue < product.stock) {
+    if (localValue < stock) {
       const newValue = localValue + 1;
       setLocalValue(newValue);
       onPlusClick(product, newValue);
     }
   };
+
+  const handleValueChange = (e) => {
+    let newValue = (e.target.value !== '') ? parseInt(e.target.value, 10) : e.target.value;
+    if((newValue !== '') && (newValue > stock)) { newValue = stock; }
+    setLocalValue(newValue);
+    onInputChange(product, newValue);
+  };
+
+  const handleBlur = (e) => {
+    if(e.target.value === '') {
+      setLocalValue(0);
+      onInputBlur(product, 0);
+    }
+  };
+
+  const handleFocus = (e) => e.target.select();
 
   return (
     <li className="Product product row">
@@ -57,7 +71,7 @@ const Product = ({
       </div>
       <div className="col-quantity">
         <button className="count" onClick={handleMinusClick}>-</button>
-        <input type="number" name={code} className="product-quantity" value={localValue} onChange={() => onInputChange(product)} onFocus={onInputFocus} onBlur={onInputBlur} min="0" max={stock} pattern="[0-9]{10}"/>
+        <input type="number" name={code} className="product-quantity" value={localValue} onChange={handleValueChange} onFocus={handleFocus} onBlur={handleBlur} min="0" max={stock} pattern="[0-9]{10}"/>
         <button className="count" onClick={handlePlusClick}>+</button>
       </div>
       <div className="col-price">
