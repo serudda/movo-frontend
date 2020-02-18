@@ -1,66 +1,31 @@
-import React, { useState, useContext } from 'react';
-
-import { CheckoutContext } from 'app/contexts/CheckoutContext';
-import { UserContext } from 'app/contexts/UserContext';
+import React from 'react';
 
 import { IProductData } from 'app/interfaces/product-data';
 
 import './Product.css';
-import { Checkout } from 'app/models/checkout/checkout';
 
 export interface Props {
   product: IProductData;
+  total: number;
+  value: string | number | string[];
+  onInputChange: (product: IProductData) => any;
+  onInputBlur: () => any;
+  onInputFocus: () => any;
+  onMinusClick: (product: IProductData) => any;
+  onPlusClick: (product: IProductData) => any;
 }
 
-const Product = ({product}: Props) => {
+const Product = ({
+  product,
+  total,
+  value,
+  onInputChange,
+  onInputFocus,
+  onInputBlur,
+  onMinusClick,
+  onPlusClick
+}: Props) => {
   const {name, code, price, stock, urlImg} = product;
-  const {checkout} = useContext(CheckoutContext);
-  const user: any = useContext(UserContext);
-  const [value, setValue] = useState(0);
-  const [total, setTotal] = useState(0);
-
-  const handleMinusClick = () => {
-    if (value > 0) {
-      const newValue = value - 1;
-      setValue(newValue);
-      checkout.remove!(code);
-      setTotal(price * newValue);
-    }
-  };
-
-  const handlePlusClick = () => {
-    if (value < stock) {
-      const newValue = value + 1;
-      setValue(newValue);
-      checkout.scan!(code);
-      setTotal(price * newValue);
-      checkout.setCheckout(checkout.checkout);
-      user.setName("Sergio");
-    }
-  };
-
-  const handleValueChange = (e) => {
-    let newValue: number = parseInt(e.target.value, 10);
-    if(newValue > stock) { newValue = stock; }
-    setValue(newValue);
-
-    if(!isNaN(newValue)) {
-      checkout.checkout.removeAllProductsByCode!(code);
-      for (let i = 0; i < newValue; i++) {
-        checkout.scan!(code);
-      }
-      setTotal(price * newValue);
-    } 
-  };
-
-  const handleBlur = (e) => {
-    if(e.target.value === '') {
-      setValue(0);
-      setTotal(0);
-    }
-  };
-
-  const handleFocus = (e) => e.target.select();
 
   return (
     <li className="Product product row">
@@ -74,9 +39,9 @@ const Product = ({product}: Props) => {
         </figure>
       </div>
       <div className="col-quantity">
-        <button className="count" onClick={handleMinusClick}>-</button>
-        <input type="number" className="product-quantity" value={value} onChange={handleValueChange} onFocus={handleFocus} onBlur={handleBlur} min="0" max={stock} pattern="[0-9]{10}"/>
-        <button className="count" onClick={handlePlusClick}>+</button>
+        <button className="count" onClick={() => onMinusClick(product)}>-</button>
+        <input type="number" name={code} className="product-quantity" value={value} onChange={() => onInputChange(product)} onFocus={onInputFocus} onBlur={onInputBlur} min="0" max={stock} pattern="[0-9]{10}"/>
+        <button className="count" onClick={() => onPlusClick(product)}>+</button>
       </div>
       <div className="col-price">
         <span className="product-price text-black text-base font-bold">{price}</span>

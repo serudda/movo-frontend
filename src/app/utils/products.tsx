@@ -1,7 +1,6 @@
-import { IProductData } from 'app/interfaces/product-data';
+// import { IProductData } from 'app/interfaces/product-data';
 
-export const productData = async (): Promise<Array<IProductData>> => {
-  return [
+export const productData = [
     {
       "id": 1,
       "code": "TSHIRT",
@@ -38,4 +37,3 @@ export const productData = async (): Promise<Array<IProductData>> => {
       "stock": 350
     }
   ];
-};

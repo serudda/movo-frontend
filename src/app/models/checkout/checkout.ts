@@ -2,22 +2,26 @@ import { IProductData } from 'app/interfaces/product-data';
 import { IDiscountData } from 'app/interfaces/discount-data';
 
 export interface PricingRules {
-  products: Array<IProductData>;
-  discounts: Array<IDiscountData>;
+  products: any;
+  discounts:any;
 }
 
 export class Checkout {
 
-  private _scannedProducts: Array<IProductData>;
-  private _availableProducts: Array<IProductData>;
-  private _availableDiscounts: Array<IDiscountData>;
+  private _scannedProducts: Array<IProductData> = [];
+  private _availableProducts: Array<IProductData> = [];
+  private _availableDiscounts: Array<IDiscountData> = [];
+  public numberOfScannedProducts: number = 0;
+  static instance: Checkout;
 
-  constructor(pricingRules: PricingRules) {
-    console.log('pricingRules: ', pricingRules);
-    this._availableProducts = pricingRules ? pricingRules.products : [];
-    this._availableDiscounts = pricingRules ? pricingRules.discounts : [];
-    this._scannedProducts = [];
-    console.log('this._availableProducts: ', this._availableProducts);
+  constructor(pricingRules?: PricingRules) {
+    if (!Checkout.instance) {
+      this._availableProducts = pricingRules ? pricingRules.products : [];
+      this._availableDiscounts = pricingRules ? pricingRules.discounts : [];
+      Checkout.instance = this;
+    }
+
+    return Checkout.instance;
   }
 
   get availableDiscounts(): Array<IDiscountData> {
@@ -35,13 +39,14 @@ export class Checkout {
   public scan(productCode: string): void {
     const product = this._availableProducts.find(product => product.code === productCode);
     if(product) {
-      this._scannedProducts.push(product);
+      this._scannedProducts = [...this._scannedProducts, product];
+      this.numberOfScannedProducts = this.numberOfScannedProducts + 1;
     }
   }
 
-  public numberOfScannedProducts(): number {
+  /*public numberOfScannedProducts(): number {
     return this._scannedProducts.length + 1;
-  }
+  }*/
 
   public remove(productCode: string): void {
     const product = this._availableProducts.find(product => product.code === productCode);
@@ -49,6 +54,7 @@ export class Checkout {
       const idx = this._scannedProducts.indexOf(product);
       if (idx >= 0) {
         this._scannedProducts.splice(idx, 1);
+        this.numberOfScannedProducts = this.numberOfScannedProducts - 1;
       }
     }
   }
@@ -57,11 +63,11 @@ export class Checkout {
     this._scannedProducts = this._scannedProducts.filter((item) => item.code !== productCode);
   }
 
-  // TODO: Validar si esto funciona bien. Este metodo me va a servir en la seccion Order Summary.
+  
   public totalWithoutDiscount(): number {
     const initialTotal = 0;
     return this._scannedProducts.reduce((total, product) => {
-      return total + product.price;
+      return total + Number(product.price);
     }, initialTotal);
   }
 

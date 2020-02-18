@@ -9,12 +9,13 @@ export const CheckoutContext: any = createContext({});
 export const CheckoutProvider = ({ children }) => {
   const [products, setProductsRules] = useState();
   const [discounts, setDiscountsRules] = useState();
+  const [checkout, setCheckout] = useState(() => new Checkout({products: productData, discounts: discountData}));
 
   //TODO: Move to a Service or Util folder 
-  const getProducts = async () => {
+  /*const getProducts = async () => {
     const productList = await productData();
     setProductsRules(productList);
-  };
+  };*/
 
   //TODO: Move to a Service or Util folder
   const getDiscounts = async () => {
@@ -22,16 +23,13 @@ export const CheckoutProvider = ({ children }) => {
     setDiscountsRules(discountList);
   };
 
-  useEffect(() => {
+  /*useEffect(() => {
     getProducts();
-  }, []);
+  }, []);*/
 
   useEffect(() => {
     getDiscounts();
   }, []);
-
-  const checkoutInstance = new Checkout({products, discounts});
-  const [checkout, setCheckout] = useState(checkoutInstance);
 
   return (
     <CheckoutContext.Provider
