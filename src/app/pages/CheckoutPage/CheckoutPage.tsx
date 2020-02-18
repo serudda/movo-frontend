@@ -18,26 +18,20 @@ const HomePage = () => {
   const [totalPerProduct, setTotalPerProduct] = useState({ TSHIRT: 0, MUG: 0, CAP: 0 });
 
 
-  const handleMinusClick = (product: IProductData) => {
+  const handleMinusClick = (product: IProductData, newValue: number) => {
+    console.log('newValue Minus: ', newValue);
     const code = product.code; 
-    let value = inputs[code];
-    if (value > 0) {
-      value = value - 1;
-      setInputs({...inputs, [code]: value} as any);
-      checkout.remove!(code);
-      setTotalPerProduct({...totalPerProduct, [code]: product.price * value});
-    }
+    setInputs({...inputs, [code]: newValue} as any);
+    checkout.remove!(code);
+    setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
   };
 
-  const handlePlusClick = (product: IProductData) => {
+  const handlePlusClick = (product: IProductData, newValue: number) => {
+    console.log('newValue Plus: ', newValue);
     const code = product.code;
-    let value = inputs[code];
-    if (value < product.stock) {
-      value = value + 1;
-      setInputs({...inputs, [code]: value} as any);
-      checkout.scan!(code);
-      setTotalPerProduct({...totalPerProduct, [code]: product.price * value});
-    }
+    setInputs({...inputs, [code]: newValue} as any);
+    checkout.scan!(code);
+    setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
   };
 
   // TODO: Chequear por que no funca

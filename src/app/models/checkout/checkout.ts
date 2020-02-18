@@ -11,17 +11,10 @@ export class Checkout {
   private _scannedProducts: Array<IProductData> = [];
   private _availableProducts: Array<IProductData> = [];
   private _availableDiscounts: Array<IDiscountData> = [];
-  public numberOfScannedProducts: number = 0;
-  static instance: Checkout;
 
-  constructor(pricingRules?: PricingRules) {
-    if (!Checkout.instance) {
-      this._availableProducts = pricingRules ? pricingRules.products : [];
-      this._availableDiscounts = pricingRules ? pricingRules.discounts : [];
-      Checkout.instance = this;
-    }
-
-    return Checkout.instance;
+  constructor(pricingRules: PricingRules) {
+    this._availableProducts = pricingRules ? pricingRules.products : [];
+    this._availableDiscounts = pricingRules ? pricingRules.discounts : [];
   }
 
   get availableDiscounts(): Array<IDiscountData> {
@@ -40,13 +33,12 @@ export class Checkout {
     const product = this._availableProducts.find(product => product.code === productCode);
     if(product) {
       this._scannedProducts = [...this._scannedProducts, product];
-      this.numberOfScannedProducts = this.numberOfScannedProducts + 1;
     }
   }
 
-  /*public numberOfScannedProducts(): number {
+  public numberOfScannedProducts(): number {
     return this._scannedProducts.length + 1;
-  }*/
+  }
 
   public remove(productCode: string): void {
     const product = this._availableProducts.find(product => product.code === productCode);
@@ -54,7 +46,6 @@ export class Checkout {
       const idx = this._scannedProducts.indexOf(product);
       if (idx >= 0) {
         this._scannedProducts.splice(idx, 1);
-        this.numberOfScannedProducts = this.numberOfScannedProducts - 1;
       }
     }
   }

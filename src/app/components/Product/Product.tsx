@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { IProductData } from 'app/interfaces/product-data';
 
@@ -7,12 +7,12 @@ import './Product.css';
 export interface Props {
   product: IProductData;
   total: number;
-  value: string | number | string[];
+  value: number;
   onInputChange: (product: IProductData) => any;
   onInputBlur: () => any;
   onInputFocus: () => any;
-  onMinusClick: (product: IProductData) => any;
-  onPlusClick: (product: IProductData) => any;
+  onMinusClick: (product: IProductData, localValue: number) => any;
+  onPlusClick: (product: IProductData, localValue: number) => any;
 }
 
 const Product = ({
@@ -26,6 +26,23 @@ const Product = ({
   onPlusClick
 }: Props) => {
   const {name, code, price, stock, urlImg} = product;
+  const [localValue, setLocalValue] = useState(value);
+
+  const handleMinusClick = () => {
+    if (localValue > 0) {
+      const newValue = localValue - 1;
+      setLocalValue(newValue);
+      onMinusClick(product, newValue);
+    }
+  };
+
+  const handlePlusClick = () => {
+    if (localValue < product.stock) {
+      const newValue = localValue + 1;
+      setLocalValue(newValue);
+      onPlusClick(product, newValue);
+    }
+  };
 
   return (
     <li className="Product product row">
@@ -39,9 +56,9 @@ const Product = ({
         </figure>
       </div>
       <div className="col-quantity">
-        <button className="count" onClick={() => onMinusClick(product)}>-</button>
-        <input type="number" name={code} className="product-quantity" value={value} onChange={() => onInputChange(product)} onFocus={onInputFocus} onBlur={onInputBlur} min="0" max={stock} pattern="[0-9]{10}"/>
-        <button className="count" onClick={() => onPlusClick(product)}>+</button>
+        <button className="count" onClick={handleMinusClick}>-</button>
+        <input type="number" name={code} className="product-quantity" value={localValue} onChange={() => onInputChange(product)} onFocus={onInputFocus} onBlur={onInputBlur} min="0" max={stock} pattern="[0-9]{10}"/>
+        <button className="count" onClick={handlePlusClick}>+</button>
       </div>
       <div className="col-price">
         <span className="product-price text-black text-base font-bold">{price}</span>
