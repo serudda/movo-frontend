@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { discountData } from 'app/utils/discounts';
 import { productData } from 'app/utils/products';
+import { arrayToObject } from 'app/utils/utils';
 
 import { IProductData } from 'app/interfaces/product-data';
 
@@ -13,9 +14,10 @@ import OrderSummary from './sections/OrderSummary/OrderSummary';
 
 const HomePage = () => {
   const checkout = new Checkout({products: productData, discounts: discountData});
+  const defaultInputsValue = arrayToObject(productData, 'code', 0);
   const [products] = useState(productData);
-  const [inputs, setInputs] = useState({ TSHIRT: 0, MUG: 0, CAP: 0 });
-  const [totalPerProduct, setTotalPerProduct] = useState({ TSHIRT: 0, MUG: 0, CAP: 0 });
+  const [inputs, setInputs] = useState(defaultInputsValue);
+  const [totalPerProduct, setTotalPerProduct] = useState(defaultInputsValue);
 
 
   const handleMinusClick = (product: IProductData, newValue: number) => {
