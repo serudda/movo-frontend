@@ -7,7 +7,7 @@ import { IProductData } from 'app/interfaces/product-data';
 export interface Props {
   products: Array<IProductData>;
   totals: any;
-  inputs: any;
+  values: any;
   onInputChange: (e: React.FormEvent<{}>) => any;
   onInputBlur: () => {};
   onInputFocus: () => {};
@@ -18,7 +18,7 @@ export interface Props {
 const ShoppingCart = ({
   products,
   totals,
-  inputs,
+  values,
   onInputChange,
   onInputBlur,
   onMinusClick,
@@ -29,7 +29,7 @@ const ShoppingCart = ({
     <Product 
       key={product.id}
       product={product}
-      value={inputs[product.code]}
+      value={values[product.code]}
       total={totals[product.code]}
       onInputChange={onInputChange}
       onInputBlur={onInputBlur}

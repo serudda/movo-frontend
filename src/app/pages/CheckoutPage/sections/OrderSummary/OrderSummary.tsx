@@ -2,7 +2,7 @@ import React from 'react';
 
 import Button from 'app/components/Button/Button';
 
-const OrderSummary = ({totalWithoutDiscount}) => {
+const OrderSummary = ({scannedItems, totalWithoutDiscount}) => {
 
   return (
     <aside className="OrderSummary summary text-yankees-blue flex flex-col flex-wrap p-8">
@@ -10,7 +10,7 @@ const OrderSummary = ({totalWithoutDiscount}) => {
       <ul className="summary-items wrapper border-b border-solid border-gainsboro py-8">
         <li>
           <span className="summary-items-number font-bold">
-            <span>10 Items</span>
+            <span>{scannedItems} Items</span>
           </span>
           <span className="summary-items-price text-base font-bold">
             <span>{totalWithoutDiscount}</span>

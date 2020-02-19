@@ -1,10 +1,13 @@
 import { IProductData } from 'app/interfaces/product-data';
 import { IDiscountData } from 'app/interfaces/discount-data';
 
-export interface PricingRules {
+import { calculateTotal } from 'app/utils/utils';
+
+export interface IPricingRules {
   products: Array<IProductData>;
   discounts:Array<IDiscountData>;
 }
+
 
 export class Checkout {
 
@@ -14,7 +17,7 @@ export class Checkout {
 
   static instance: Checkout;
 
-  constructor(pricingRules: PricingRules) {
+  constructor(pricingRules: IPricingRules) {
     if (!Checkout.instance) {
       this._availableProducts = pricingRules ? pricingRules.products : [];
       this._availableDiscounts = pricingRules ? pricingRules.discounts : [];
@@ -44,7 +47,7 @@ export class Checkout {
   }
 
   public numberOfScannedProducts(): number {
-    return this._scannedProducts.length + 1;
+    return this._scannedProducts.length;
   }
 
   // TODO: Mejorar esta funcion para remover ese juego de if y que sea inmutable
@@ -64,10 +67,7 @@ export class Checkout {
 
   
   public totalWithoutDiscount(): number {
-    const initialTotal = 0;
-    return this._scannedProducts.reduce((total, product) => {
-      return total + Number(product.price);
-    }, initialTotal);
+    return calculateTotal(this._scannedProducts, 'price', 0);
   }
 
   public total(): number {

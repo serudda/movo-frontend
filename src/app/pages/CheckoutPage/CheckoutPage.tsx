@@ -17,56 +17,52 @@ const HomePage = () => {
   const defaultInputsValue = arrayToObject(productData, 'code', 0);
 
   const [products] = useState(productData);
-  const [inputs, setInputs] = useState(defaultInputsValue);
+  const [inputValues, setInputValues] = useState(defaultInputsValue);
   const [totalPerProduct, setTotalPerProduct] = useState(defaultInputsValue);
 
 
   const handleMinusClick = (product: IProductData, newValue: number) => {
-    const code = product.code; 
-    setInputs({...inputs, [code]: newValue} as any);
+    const code = product.code;
     checkout.remove!(code);
+    setInputValues({...inputValues, [code]: newValue});
     setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
   };
 
   const handlePlusClick = (product: IProductData, newValue: number) => {
     const code = product.code;
     checkout.scan!(code);
-    setInputs({...inputs, [code]: newValue} as any);
+    setInputValues({...inputValues, [code]: newValue});
     setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
   };
 
   const handleValueChange = (product: IProductData, newValue: number) => {
     const code = product.code;
-    setInputs({...inputs, [code]: newValue} as any);
     checkout.removeAllProductsByCode!(code);
-    for (let i = 0; i < newValue; i++) {
-      checkout.scan!(code);
-    }
+    for (let i = 0; i < newValue; i++) { checkout.scan!(code); }
+    setInputValues({...inputValues, [code]: newValue});
     setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
   };
 
   const handleBlur = (product: IProductData, newValue: number) => {
     const code = product.code;
-    setInputs({...inputs, [code]: newValue} as any);
+    setInputValues({...inputValues, [code]: newValue});
     setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
   };
 
-  // TODO: Mejorar esta groseria
-  const calculateTotalWithoutDiscount = () => {
-    return totalPerProduct.MUG + totalPerProduct.CAP + totalPerProduct.TSHIRT;
-  };
 
   return (
     <main className="CheckoutPage">
       <ShoppingCart
         products={products}
-        inputs={inputs}
+        values={inputValues}
         totals={totalPerProduct}
         onInputChange={handleValueChange}
         onInputBlur={handleBlur}
         onMinusClick={handleMinusClick}
         onPlusClick={handlePlusClick} />
-      <OrderSummary totalWithoutDiscount={calculateTotalWithoutDiscount()}/>
+      <OrderSummary
+        scannedItems={checkout.numberOfScannedProducts()}
+        totalWithoutDiscount={checkout.totalWithoutDiscount()} />
     </main>
   );
 }
