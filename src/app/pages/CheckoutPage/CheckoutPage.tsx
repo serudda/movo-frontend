@@ -15,6 +15,7 @@ import OrderSummary from './sections/OrderSummary/OrderSummary';
 const HomePage = () => {
   const checkout = new Checkout({products: productData, discounts: discountData});
   const defaultInputsValue = arrayToObject(productData, 'code', 0);
+
   const [products] = useState(productData);
   const [inputs, setInputs] = useState(defaultInputsValue);
   const [totalPerProduct, setTotalPerProduct] = useState(defaultInputsValue);
@@ -29,8 +30,8 @@ const HomePage = () => {
 
   const handlePlusClick = (product: IProductData, newValue: number) => {
     const code = product.code;
-    setInputs({...inputs, [code]: newValue} as any);
     checkout.scan!(code);
+    setInputs({...inputs, [code]: newValue} as any);
     setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
   };
 

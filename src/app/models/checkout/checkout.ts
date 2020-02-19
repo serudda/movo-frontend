@@ -2,8 +2,8 @@ import { IProductData } from 'app/interfaces/product-data';
 import { IDiscountData } from 'app/interfaces/discount-data';
 
 export interface PricingRules {
-  products: any;
-  discounts:any;
+  products: Array<IProductData>;
+  discounts:Array<IDiscountData>;
 }
 
 export class Checkout {
@@ -12,9 +12,16 @@ export class Checkout {
   private _availableProducts: Array<IProductData> = [];
   private _availableDiscounts: Array<IDiscountData> = [];
 
+  static instance: Checkout;
+
   constructor(pricingRules: PricingRules) {
-    this._availableProducts = pricingRules ? pricingRules.products : [];
-    this._availableDiscounts = pricingRules ? pricingRules.discounts : [];
+    if (!Checkout.instance) {
+      this._availableProducts = pricingRules ? pricingRules.products : [];
+      this._availableDiscounts = pricingRules ? pricingRules.discounts : [];
+      Checkout.instance = this;
+    }
+
+    return Checkout.instance;
   }
 
   get availableDiscounts(): Array<IDiscountData> {
@@ -40,6 +47,7 @@ export class Checkout {
     return this._scannedProducts.length + 1;
   }
 
+  // TODO: Mejorar esta funcion para remover ese juego de if y que sea inmutable
   public remove(productCode: string): void {
     const product = this._availableProducts.find(product => product.code === productCode);
     if(product) {
