@@ -4,14 +4,14 @@ import { IProductData } from 'app/interfaces/product-data';
 
 import './Product.css';
 
-export interface Props {
+export interface IProps {
   product: IProductData;
   total: number;
   value: number;
-  onInputChange: (product: IProductData, localValue: number) => any;
-  onInputBlur: (product: IProductData, localValue: number) => any;
-  onMinusClick: (product: IProductData, localValue: number) => any;
-  onPlusClick: (product: IProductData, localValue: number) => any;
+  onInputChange: (product: IProductData, newValue: number) => any;
+  onInputBlur: (product: IProductData, newValue: number) => any;
+  onMinusClick: (product: IProductData, newValue: number) => any;
+  onPlusClick: (product: IProductData, newValue: number) => any;
 }
 
 const Product = ({
@@ -22,8 +22,8 @@ const Product = ({
   onInputBlur,
   onMinusClick,
   onPlusClick
-}: Props) => {
-  const {name, code, price, stock, urlImg} = product;
+}: IProps) => {
+  const {name, code, price, stock, url_img} = product;
   const [localValue, setLocalValue] = useState(value);
 
   const handleMinusClick = () => {
@@ -62,7 +62,7 @@ const Product = ({
     <li className="Product product row">
       <div className="col-product">
         <figure className="product-image flex items-center flex-row flex-no-wrap">
-          <img className="mr-4 border border-solid border-lavender-gray rounded-md" src={urlImg} alt={name} />
+          <img className="mr-4 border border-solid border-lavender-gray rounded-md" src={url_img} alt={name} />
           <div className="product-description">
             <h1 className="text-primary text-lg font-black">{name}</h1>
             <p className="product-code text-quick-silver font-semi-bold">Product code {code}</p>

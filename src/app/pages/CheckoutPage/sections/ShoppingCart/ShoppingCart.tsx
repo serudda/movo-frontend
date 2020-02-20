@@ -8,11 +8,10 @@ export interface Props {
   products: Array<IProductData>;
   totals: any;
   values: any;
-  onInputChange: (e: React.FormEvent<{}>) => any;
-  onInputBlur: () => {};
-  onInputFocus: () => {};
-  onMinusClick: () => {};
-  onPlusClick: () => {};
+  onInputChange: (product: IProductData, newValue: number) => any;
+  onInputBlur: (product: IProductData, newValue: number) => any;
+  onMinusClick: (product: IProductData, newValue: number) => any;
+  onPlusClick: (product: IProductData, newValue: number) => any;
 }
 
 const ShoppingCart = ({

@@ -1,7 +1,7 @@
 import { IProductData } from 'app/interfaces/product-data';
 import { IDiscountData } from 'app/interfaces/discount-data';
 
-import { calculateTotal } from 'app/utils/utils';
+import { calculateTotal, getDiscountedPrice } from 'app/utils/utils';
 
 export interface IPricingRules {
   products: Array<IProductData>;
@@ -62,17 +62,25 @@ export class Checkout {
   }
 
   public removeAllProductsByCode(productCode: string): void {
-    this._scannedProducts = this._scannedProducts.filter((item) => item.code !== productCode);
+    this._scannedProducts = this._scannedProducts.filter((product) => product.code !== productCode);
   }
-
   
-  public totalWithoutDiscount(): number {
+  public subtotal(): number {
+    console.log(this._scannedProducts);
     return calculateTotal(this._scannedProducts, 'price', 0);
   }
 
   public total(): number {
     return 100;
   }
+
+  public calculateDiscountByProductCode(productCode: string) {
+    const discount = this._availableDiscounts.find((discount) => discount.product_code !== productCode);
+    return this._scannedProducts.reduce((total, product) => {
+      return total + getDiscountedPrice(product.price, discount?.value);
+    }, 0);
+  }
+
 }
 
 

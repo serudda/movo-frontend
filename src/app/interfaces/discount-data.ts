@@ -1,5 +1,7 @@
 export interface IDiscountData {
   id: number;
-  code: string;
+  tag: string;
   name: string;
+  value: number;
+  product_code: string;
 }

@@ -1,8 +1,20 @@
 import React from 'react';
 
+import { IDiscountData } from 'app/interfaces/discount-data';
+
 import Button from 'app/components/Button/Button';
 
-const OrderSummary = ({scannedItems, totalWithoutDiscount}) => {
+export interface IProps {
+  discounts: Array<IDiscountData>;
+  scannedItems: number;
+  subtotal: number;
+}
+
+const OrderSummary = ({discounts, scannedItems, subtotal}: IProps) => {
+
+  const discountList = discounts.map((discount: IDiscountData) =>
+    <li key={discount.id}><span>{discount.name}</span><span>-10€</span></li>
+  );
 
   return (
     <aside className="OrderSummary summary text-yankees-blue flex flex-col flex-wrap p-8">
@@ -13,7 +25,7 @@ const OrderSummary = ({scannedItems, totalWithoutDiscount}) => {
             <span>{scannedItems} Items</span>
           </span>
           <span className="summary-items-price text-base font-bold">
-            <span>{totalWithoutDiscount}</span>
+            <span>{subtotal}</span>
             <span className="currency font-bold ml-1">€</span>
           </span>
         </li>
@@ -21,9 +33,7 @@ const OrderSummary = ({scannedItems, totalWithoutDiscount}) => {
       <div className="summary-discounts wrapper-half py-6">
         <h2 className="text-quick-silver uppercase text-xs leading-4 tracking-wider font-bold mb-4">Discounts</h2>
         <ul className="font-bold">
-          <li><span>2x1 Mug offer</span><span>-10€</span></li>
-          <li><span>x3 Shirt offer</span><span>-3€</span></li>
-          <li><span>Promo code</span><span>0€</span></li>
+          {discountList}
         </ul>
       </div>
       <div className="summary-total wrapper text-yankees-blue self-end mt-auto pt-4 pb-0 border-solid border-t border-gainsboro">

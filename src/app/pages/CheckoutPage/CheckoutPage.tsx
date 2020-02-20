@@ -62,7 +62,9 @@ const HomePage = () => {
         onPlusClick={handlePlusClick} />
       <OrderSummary
         scannedItems={checkout.numberOfScannedProducts()}
-        totalWithoutDiscount={checkout.totalWithoutDiscount()} />
+        discounts={checkout.availableDiscounts}
+        subtotal={checkout.subtotal()}
+      />
     </main>
   );
 }

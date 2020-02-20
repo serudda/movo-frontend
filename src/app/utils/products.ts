@@ -6,12 +6,7 @@ export const productData = [
       "code": "TSHIRT",
       "name": "Shirt",
       "price": 20,
-      "urlImg": "shirt.png",
-      "discount": {
-        "id": 2,
-        "code": "x3",
-        "name": "x3"
-      },
+      "url_img": "shirt.png",
       "stock": 230
     },
     {
@@ -19,8 +14,7 @@ export const productData = [
       "code": "MUG",
       "name": "Mug",
       "price": 7.5,
-      "urlImg": "mug.png",
-      "discount": null,
+      "url_img": "mug.png",
       "stock": 100
     },
     {
@@ -28,12 +22,7 @@ export const productData = [
       "code": "CAP",
       "name": "Cap",
       "price": 5,
-      "urlImg": "cap.png", 
-      "discount": {
-        "id": 1,
-        "code": "2x1",
-        "name": "2x1"
-      },
+      "url_img": "cap.png",
       "stock": 350
     }
   ];
