@@ -26,11 +26,10 @@ const HomePage = () => {
     const code = product.code;
     checkout.remove!(code);
     setInputValues({...inputValues, [code]: newValue});
+    // TODO: Analizar si esta logica de crear el objeto {MUG: 0, CAP: 0, TSHIRT: 0} deberia ir en Checkout (alla ya tenemos uno.) Unificar logicas
     setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
     if(checkout.hasDiscounts(code)) {
-      if(checkout.isAvailableToTheDiscount(code)) {
-        setDiscountedPrice({...discountedPrice, [code]: checkout.calculateDiscountByProductCode(code)});
-      }
+      setDiscountedPrice({...discountedPrice, [code]: checkout.calculateDiscountByProductCode(code)});
     }
   };
 
@@ -38,11 +37,10 @@ const HomePage = () => {
     const code = product.code;
     checkout.scan!(code);
     setInputValues({...inputValues, [code]: newValue});
+    // TODO: Analizar si estos calculos deberian ir del lado de Checkout, no aqui
     setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
     if(checkout.hasDiscounts(code)) {
-      if(checkout.isAvailableToTheDiscount(code)) {
-        setDiscountedPrice({...discountedPrice, [code]: checkout.calculateDiscountByProductCode(code)});
-      }
+      setDiscountedPrice({...discountedPrice, [code]: checkout.calculateDiscountByProductCode(code)});
     }
   };
 
@@ -50,14 +48,11 @@ const HomePage = () => {
     const code = product.code;
     checkout.removeAllProductsByCode!(code);
     for (let i = 0; i < newValue; i++) { checkout.scan!(code); }
+    // TODO: Estas 4 lineas de abajo se repiten en todos los handles, unificar.
     setInputValues({...inputValues, [code]: newValue});
     setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
-    // TODO: Cuando escribo un numero impar, no esta respetando el descuento de las demas 2x1.
-    // TODO: Cuando borro todo y escribo 1, no me esta reseteando el descuento.
     if(checkout.hasDiscounts(code)) {
-      if(checkout.isAvailableToTheDiscount(code)) {
-        setDiscountedPrice({...discountedPrice, [code]: checkout.calculateDiscountByProductCode(code)});
-      }
+      setDiscountedPrice({...discountedPrice, [code]: checkout.calculateDiscountByProductCode(code)});
     }
   };
 
@@ -66,9 +61,7 @@ const HomePage = () => {
     setInputValues({...inputValues, [code]: newValue});
     setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
     if(checkout.hasDiscounts(code)) {
-      if(checkout.isAvailableToTheDiscount(code)) {
-        setDiscountedPrice({...discountedPrice, [code]: checkout.calculateDiscountByProductCode(code)});
-      }
+      setDiscountedPrice({...discountedPrice, [code]: checkout.calculateDiscountByProductCode(code)});
     }
   };
 
@@ -88,7 +81,7 @@ const HomePage = () => {
         discounts={checkout.availableDiscounts}
         discountedPrice={discountedPrice}
         subtotal={checkout.subtotal()}
-        total={2000}
+        total={checkout.total()}
       />
     </main>
   );

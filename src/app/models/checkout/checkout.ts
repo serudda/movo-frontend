@@ -1,7 +1,7 @@
 import { IProductData } from 'app/interfaces/product-data';
 import { IDiscountData } from 'app/interfaces/discount-data';
 
-import { calculateTotal, getDiscountedPrice, isEven, hasMoreThanThreeEqualElements } from 'app/utils/utils';
+import { arrayToObject, calculateTotal, getDiscountedPrice, isEven, hasMoreThanThreeEqualElements } from 'app/utils/utils';
 
 export interface IPricingRules {
   products: Array<IProductData>;
@@ -14,6 +14,10 @@ export class Checkout {
   private _scannedProducts: Array<IProductData> = [];
   private _availableProducts: Array<IProductData> = [];
   private _availableDiscounts: Array<IDiscountData> = [];
+  private _subtotal: number = 0;
+  private _discounted: any;
+  private _saleTotal: number = 0;
+  private _total: number = 0;
 
   static instance: Checkout;
 
@@ -21,6 +25,7 @@ export class Checkout {
     if (!Checkout.instance) {
       this._availableProducts = pricingRules ? pricingRules.products : [];
       this._availableDiscounts = pricingRules ? pricingRules.discounts : [];
+      this._discounted = arrayToObject(this._availableProducts, 'code', 0);
       Checkout.instance = this;
     }
 
@@ -66,111 +71,62 @@ export class Checkout {
   }
   
   public subtotal(): number {
-    return calculateTotal(this._scannedProducts, 'price', 0);
+    this._subtotal = calculateTotal(this._scannedProducts, 'price', 0);
+    return this._subtotal;
   }
 
   public total(): number {
-    return 100;
+    this._total = this._subtotal - this._sumDiscounted();
+    return this._total;
+  }
+
+  // TODO: Mejorar este loop
+  private _sumDiscounted(): number {
+    let total = 0;
+    for (const key in this._discounted) {
+      total = total + this._discounted[key];
+    }
+    return total;
   }
 
   public hasDiscounts(productCode: string): boolean {
     return !!(this._availableDiscounts.find((discount) => discount.product_code === productCode));
   }
 
-  public isAvailableToTheDiscount(productCode: string): boolean {
-    const discount = this._availableDiscounts.find((discount) => discount.product_code === productCode);
-    const products = this._scannedProducts.filter((product) => product.code === discount?.product_code);
-
-    switch (discount?.tag) {
-      case '2x1':
-        return isEven(products.length);
-      case 'x3':
-        return hasMoreThanThreeEqualElements(products, 'code', discount.product_code);
-      default:
-        return false;
-    }
-  }
-
   public calculateDiscountByProductCode(productCode: string) {
     const discount = this._availableDiscounts.find((discount) => discount.product_code === productCode);
     const products = this._scannedProducts.filter((product) => product.code === discount?.product_code);
-    
-    return products.reduce((total, product) => {
-      return total + getDiscountedPrice(product.price, discount?.value);
-    }, 0);
+
+    this._discounted[productCode] = this._applyDiscount(products, discount as IDiscountData);
+    return this._discounted[productCode];
+  }
+
+  private _applyDiscount(products: Array<IProductData>, discount: IDiscountData) {
+    switch (discount.tag) {
+      // TODO: Extraer la logica de cada discount, y crear un catalogo de descuentos
+      case '2x1':
+        let total = 0;
+        let amount = products.length;
+        if(!isEven(amount)) amount = amount - 1;
+        for (let i = 0; i < amount; i++) {
+          total = total + getDiscountedPrice(products[i].price, discount?.value);
+        }
+        return total;
+      
+      case 'x3':
+        if(hasMoreThanThreeEqualElements(products, 'code', discount.product_code)) {
+          let total = 0;
+          let amount = products.length;
+          for (let i = 0; i < amount; i++) {
+            total = total + getDiscountedPrice(products[i].price, discount?.value);
+          }
+          return total;
+        } else {
+          return 0;
+        }
+      default:
+        return 0;
+    }
   }
 
 }
-
-
-
-/*
-scannedProducts: [
-  {
-    id: 2,
-    code: 'SHIRT',
-    name: 'Shirt',
-    price: 5,
-    discount: 1
-  },
-
-  {
-    id: 2,
-    code: 'SHIRT',
-    name: 'Shirt',
-    price: 5,
-    discount: 1
-  },
-
-  {
-    id: 2,
-    code: 'SHIRT',
-    name: 'Shirt',
-    price: 5,
-    discount: 1
-  },
-
-  {
-    id: 1,
-    code: 'CAP',
-    name: 'Cap',
-    price: 20,
-    discount: 2
-  }
-];
-
-pricingRules: 
-  {
-    products: [
-      {
-        id: 1,
-        code: 'CAP',
-        name: 'Cap',
-        price: 20,
-        discount: 1
-      },
-      {
-        id: 2,
-        code: 'SHIRT',
-        name: 'Shirt',
-        price: 5,
-        discount: 2
-      }
-    ],
-
-    discounts: [
-      {
-        id: 1,
-        code: '2x1',
-        label: '2x1'
-      },
-      {
-        id: 2,
-        code: 'x3',
-        label: 'x3'
-      }
-    ]
-  };
-
-
-*/

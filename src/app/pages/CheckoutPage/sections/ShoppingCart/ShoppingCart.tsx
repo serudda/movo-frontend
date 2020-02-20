@@ -6,6 +6,7 @@ import { IProductData } from 'app/interfaces/product-data';
 
 export interface IProps {
   products: Array<IProductData>;
+  // TODO: Remover estos any
   totals: any;
   values: any;
   onInputChange: (product: IProductData, newValue: number) => any;
@@ -14,6 +15,7 @@ export interface IProps {
   onPlusClick: (product: IProductData, newValue: number) => any;
 }
 
+// TODO: Conectar con IProps
 const ShoppingCart = ({
   products,
   totals,
