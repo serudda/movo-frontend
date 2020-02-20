@@ -19,3 +19,16 @@ export const addPropObject = (obj: any, key: string, value: any): Object => {
   const cloneObj = { ...obj, [key]: value };
   return cloneObj;
 }
+
+export const isEven = (value: number) => {
+  if (value % 2 === 0) { return true; }
+  return false;
+}
+
+export const hasMoreThanThreeEqualElements = (array: Array<any>, key: string, value: any): boolean => {
+  let count = 0;
+  array.forEach(item => {
+    if(item[key] === value) { count++; }      
+  });
+  return (count >= 3);
+}

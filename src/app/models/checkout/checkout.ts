@@ -1,7 +1,7 @@
 import { IProductData } from 'app/interfaces/product-data';
 import { IDiscountData } from 'app/interfaces/discount-data';
 
-import { calculateTotal, getDiscountedPrice } from 'app/utils/utils';
+import { calculateTotal, getDiscountedPrice, isEven, hasMoreThanThreeEqualElements } from 'app/utils/utils';
 
 export interface IPricingRules {
   products: Array<IProductData>;
@@ -66,7 +66,6 @@ export class Checkout {
   }
   
   public subtotal(): number {
-    console.log(this._scannedProducts);
     return calculateTotal(this._scannedProducts, 'price', 0);
   }
 
@@ -74,9 +73,29 @@ export class Checkout {
     return 100;
   }
 
+  public hasDiscounts(productCode: string): boolean {
+    return !!(this._availableDiscounts.find((discount) => discount.product_code === productCode));
+  }
+
+  public isAvailableToTheDiscount(productCode: string): boolean {
+    const discount = this._availableDiscounts.find((discount) => discount.product_code === productCode);
+    const products = this._scannedProducts.filter((product) => product.code === discount?.product_code);
+
+    switch (discount?.tag) {
+      case '2x1':
+        return isEven(products.length);
+      case 'x3':
+        return hasMoreThanThreeEqualElements(products, 'code', discount.product_code);
+      default:
+        return false;
+    }
+  }
+
   public calculateDiscountByProductCode(productCode: string) {
-    const discount = this._availableDiscounts.find((discount) => discount.product_code !== productCode);
-    return this._scannedProducts.reduce((total, product) => {
+    const discount = this._availableDiscounts.find((discount) => discount.product_code === productCode);
+    const products = this._scannedProducts.filter((product) => product.code === discount?.product_code);
+    
+    return products.reduce((total, product) => {
       return total + getDiscountedPrice(product.price, discount?.value);
     }, 0);
   }

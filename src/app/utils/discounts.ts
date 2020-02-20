@@ -11,6 +11,6 @@ export const discountData = [
     "tag": "x3",
     "name": "x3 Shirt offer",
     "value": 0.05,
-    "product_code": "SHIRT"
+    "product_code": "TSHIRT"
   }
 ];

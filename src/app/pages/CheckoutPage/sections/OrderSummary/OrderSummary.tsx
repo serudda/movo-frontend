@@ -6,14 +6,16 @@ import Button from 'app/components/Button/Button';
 
 export interface IProps {
   discounts: Array<IDiscountData>;
+  discountedPrice: Object;
   scannedItems: number;
   subtotal: number;
+  total: number;
 }
 
-const OrderSummary = ({discounts, scannedItems, subtotal}: IProps) => {
+const OrderSummary = ({discounts, discountedPrice, scannedItems, subtotal, total}: IProps) => {
 
   const discountList = discounts.map((discount: IDiscountData) =>
-    <li key={discount.id}><span>{discount.name}</span><span>-10€</span></li>
+    <li key={discount.id}><span>{discount.name}</span><span>-{discountedPrice[discount.product_code]}€</span></li>
   );
 
   return (
@@ -40,7 +42,7 @@ const OrderSummary = ({discounts, scannedItems, subtotal}: IProps) => {
         <ul>
           <li className="flex items-center">
             <span className="summary-total-cost uppercase font-bold">Total cost</span>
-            <span className="summary-total-price text-xl leading-6 font-bold">107€</span>
+            <span className="summary-total-price text-xl leading-6 font-bold">{total} €</span>
           </li>
         </ul>
         <Button label="Checkout"></Button>

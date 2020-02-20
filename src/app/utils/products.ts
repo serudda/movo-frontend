@@ -13,7 +13,7 @@ export const productData = [
       "id": 2,
       "code": "MUG",
       "name": "Mug",
-      "price": 7.5,
+      "price": 5,
       "url_img": "mug.png",
       "stock": 100
     },
@@ -21,7 +21,7 @@ export const productData = [
       "id": 3,
       "code": "CAP",
       "name": "Cap",
-      "price": 5,
+      "price": 10,
       "url_img": "cap.png",
       "stock": 350
     }

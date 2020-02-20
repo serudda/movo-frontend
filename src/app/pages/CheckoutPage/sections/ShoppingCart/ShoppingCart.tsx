@@ -4,7 +4,7 @@ import Product from 'app/components/Product/Product';
 
 import { IProductData } from 'app/interfaces/product-data';
 
-export interface Props {
+export interface IProps {
   products: Array<IProductData>;
   totals: any;
   values: any;
