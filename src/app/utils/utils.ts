@@ -25,10 +25,10 @@ export const isEven = (value: number) => {
   return false;
 }
 
-export const hasMoreThanThreeEqualElements = (array: Array<any>, key: string, value: any): boolean => {
+export const hasMoreThan = (array: Array<any>, key: string, value: any, moreThan: number = 1): boolean => {
   let count = 0;
   array.forEach(item => {
     if(item[key] === value) { count++; }      
   });
-  return (count >= 3);
+  return (count >= moreThan);
 }

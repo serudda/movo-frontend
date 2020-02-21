@@ -1,7 +1,12 @@
 import { IProductData } from 'app/interfaces/product-data';
 import { IDiscountData } from 'app/interfaces/discount-data';
 
-import { arrayToObject, calculateTotal, getDiscountedPrice, isEven, hasMoreThanThreeEqualElements } from 'app/utils/utils';
+import {
+  arrayToObject,
+  calculateTotal
+} from 'app/utils/utils';
+
+import { bulkDiscount, twoForOneDiscount } from 'app/utils/discount-catalog';
 
 export interface IPricingRules {
   products: Array<IProductData>;
@@ -102,27 +107,10 @@ export class Checkout {
 
   private _applyDiscount(products: Array<IProductData>, discount: IDiscountData) {
     switch (discount.tag) {
-      // TODO: Extraer la logica de cada discount, y crear un catalogo de descuentos
       case '2x1':
-        let total = 0;
-        let amount = products.length;
-        if(!isEven(amount)) amount = amount - 1;
-        for (let i = 0; i < amount; i++) {
-          total = total + getDiscountedPrice(products[i].price, discount?.value);
-        }
-        return total;
-      
+        return twoForOneDiscount(products, discount);
       case 'x3':
-        if(hasMoreThanThreeEqualElements(products, 'code', discount.product_code)) {
-          let total = 0;
-          let amount = products.length;
-          for (let i = 0; i < amount; i++) {
-            total = total + getDiscountedPrice(products[i].price, discount?.value);
-          }
-          return total;
-        } else {
-          return 0;
-        }
+        return bulkDiscount(products, discount);
       default:
         return 0;
     }
