@@ -12,7 +12,13 @@ export interface IProps {
   total: number;
 }
 
-const OrderSummary = ({discounts, discountedPrice, scannedItems, subtotal, total}: IProps) => {
+const OrderSummary = ({
+  discounts,
+  discountedPrice,
+  scannedItems,
+  subtotal,
+  total
+}: IProps) => {
 
   const discountList = discounts.map((discount: IDiscountData) =>
     <li key={discount.id}><span>{discount.name}</span><span>-{discountedPrice[discount.product_code]}€</span></li>

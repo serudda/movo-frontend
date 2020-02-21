@@ -16,7 +16,6 @@ export class Checkout {
   private _availableDiscounts: Array<IDiscountData> = [];
   private _subtotal: number = 0;
   private _discounted: any;
-  private _saleTotal: number = 0;
   private _total: number = 0;
 
   static instance: Checkout;

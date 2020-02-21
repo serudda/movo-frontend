@@ -8,10 +8,10 @@ export interface IProps {
   product: IProductData;
   total: number;
   value: number;
-  onInputChange: (product: IProductData, newValue: number) => any;
-  onInputBlur: (product: IProductData, newValue: number) => any;
-  onMinusClick: (product: IProductData, newValue: number) => any;
-  onPlusClick: (product: IProductData, newValue: number) => any;
+  onInputChange: (product: IProductData, newValue: number) => void;
+  onInputBlur: (product: IProductData, newValue: number) => void;
+  onMinusClick: (product: IProductData, newValue: number) => void;
+  onPlusClick: (product: IProductData, newValue: number) => void;
 }
 
 const Product = ({
@@ -71,7 +71,17 @@ const Product = ({
       </div>
       <div className="col-quantity">
         <button className="count" onClick={handleMinusClick}>-</button>
-        <input type="number" name={code} className="product-quantity" value={localValue} onChange={handleValueChange} onFocus={handleFocus} onBlur={handleBlur} min="0" max={stock} pattern="[0-9]{10}"/>
+        <input 
+          type="number"
+          name={code}
+          className="product-quantity"
+          value={localValue}
+          onChange={handleValueChange}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          min="0"
+          max={stock}
+          pattern="[0-9]{10}"/>
         <button className="count" onClick={handlePlusClick}>+</button>
       </div>
       <div className="col-price">

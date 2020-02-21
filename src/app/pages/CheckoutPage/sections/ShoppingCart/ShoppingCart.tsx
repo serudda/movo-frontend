@@ -9,10 +9,10 @@ export interface IProps {
   // TODO: Remover estos any
   totals: any;
   values: any;
-  onInputChange: (product: IProductData, newValue: number) => any;
-  onInputBlur: (product: IProductData, newValue: number) => any;
-  onMinusClick: (product: IProductData, newValue: number) => any;
-  onPlusClick: (product: IProductData, newValue: number) => any;
+  onInputChange: (product: IProductData, newValue: number) => void;
+  onInputBlur: (product: IProductData, newValue: number) => void;
+  onMinusClick: (product: IProductData, newValue: number) => void;
+  onPlusClick: (product: IProductData, newValue: number) => void;
 }
 
 // TODO: Conectar con IProps
@@ -24,7 +24,7 @@ const ShoppingCart = ({
   onInputBlur,
   onMinusClick,
   onPlusClick
-}) => {
+}: IProps) => {
 
   const productsList = products.map((product) =>
     <Product 

@@ -1,6 +1,6 @@
-// import { IProductData } from 'app/interfaces/product-data';
+import { IProductData } from 'app/interfaces/product-data';
 
-export const productData = [
+export const productData: Array<IProductData> = [
     {
       "id": 1,
       "code": "TSHIRT",

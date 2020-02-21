@@ -1,4 +1,6 @@
-export const discountData = [
+import { IDiscountData } from 'app/interfaces/discount-data';
+
+export const discountData: Array<IDiscountData> = [
   {
     "id": 1,
     "tag": "2x1",
