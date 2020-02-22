@@ -15,8 +15,8 @@ export const bulkDiscount = (products: Array<IProductData>, discount: IDiscountD
 
 const calculate = (products: Array<IProductData>, discount: IDiscountData) => {
   let total = 0;
-  for (let i = 0; i < products.length; i++) {
-    total = total + getDiscountedPrice(products[i].price, discount?.value);
+  for (const product of products) {
+    total = total + getDiscountedPrice(product.price, discount?.value);
   }
   return total;
 }
