@@ -1,4 +1,8 @@
-export const arrayToObject = (array: Array<any>, key: string, value: any): Object =>
+export interface IObjectKey {
+  [key: string]: any;
+}
+
+export const arrayToObject = (array: Array<any>, key: string, value: any): IObjectKey =>
   array.reduce((obj, item) => {
     obj[item[key]] = value;
     return obj;

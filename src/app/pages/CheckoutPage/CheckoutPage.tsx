@@ -18,51 +18,46 @@ const HomePage = () => {
 
   const [products] = useState(productData);
   const [inputValues, setInputValues] = useState(defaultInputsValue);
-  const [totalPerProduct, setTotalPerProduct] = useState(defaultInputsValue);
-  const [discountedPrice, setDiscountedPrice] = useState(defaultInputsValue);
 
 
   const handleMinusClick = (product: IProductData, newValue: number) => {
     const code = product.code;
     checkout.remove!(code);
-    setInputValues({...inputValues, [code]: newValue});
-    // TODO: Analizar si esta logica de crear el objeto {MUG: 0, CAP: 0, TSHIRT: 0} deberia ir en Checkout (alla ya tenemos uno.) Unificar logicas
-    setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
+    checkout.calculateTotalPerProduct(product, newValue);
     if(checkout.hasDiscounts(code)) {
-      setDiscountedPrice({...discountedPrice, [code]: checkout.calculateDiscountByProductCode(code)});
+      checkout.calculateDiscount(code);
     }
+    setInputValues({...inputValues, [code]: newValue});
   };
 
   const handlePlusClick = (product: IProductData, newValue: number) => {
     const code = product.code;
     checkout.scan!(code);
-    setInputValues({...inputValues, [code]: newValue});
-    // TODO: Analizar si estos calculos deberian ir del lado de Checkout, no aqui
-    setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
+    checkout.calculateTotalPerProduct(product, newValue);
     if(checkout.hasDiscounts(code)) {
-      setDiscountedPrice({...discountedPrice, [code]: checkout.calculateDiscountByProductCode(code)});
+      checkout.calculateDiscount(code);
     }
+    setInputValues({...inputValues, [code]: newValue});
   };
 
   const handleValueChange = (product: IProductData, newValue: number) => {
     const code = product.code;
     checkout.removeAllProductsByCode!(code);
     for (let i = 0; i < newValue; i++) { checkout.scan!(code); }
-    // TODO: Estas 4 lineas de abajo se repiten en todos los handles, unificar.
-    setInputValues({...inputValues, [code]: newValue});
-    setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
+    checkout.calculateTotalPerProduct(product, newValue);
     if(checkout.hasDiscounts(code)) {
-      setDiscountedPrice({...discountedPrice, [code]: checkout.calculateDiscountByProductCode(code)});
+      checkout.calculateDiscount(code);
     }
+    setInputValues({...inputValues, [code]: newValue});
   };
 
   const handleBlur = (product: IProductData, newValue: number) => {
-    const code = product.code;
-    setInputValues({...inputValues, [code]: newValue});
-    setTotalPerProduct({...totalPerProduct, [code]: product.price * newValue});
+    const code = product.code;    
+    checkout.calculateTotalPerProduct(product, newValue);
     if(checkout.hasDiscounts(code)) {
-      setDiscountedPrice({...discountedPrice, [code]: checkout.calculateDiscountByProductCode(code)});
+      checkout.calculateDiscount(code);
     }
+    setInputValues({...inputValues, [code]: newValue});
   };
 
 
@@ -71,7 +66,7 @@ const HomePage = () => {
       <ShoppingCart
         products={products}
         values={inputValues}
-        totals={totalPerProduct}
+        totals={checkout.totalPerProduct}
         onInputChange={handleValueChange}
         onInputBlur={handleBlur}
         onMinusClick={handleMinusClick}
@@ -79,7 +74,7 @@ const HomePage = () => {
       <OrderSummary
         scannedItems={checkout.numberOfScannedProducts()}
         discounts={checkout.availableDiscounts}
-        discountedPrice={discountedPrice}
+        discountedPrice={checkout.totalDiscount}
         subtotal={checkout.subtotal()}
         total={checkout.total()}
       />

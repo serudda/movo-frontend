@@ -13,14 +13,20 @@ export interface IPricingRules {
   discounts:Array<IDiscountData>;
 }
 
+export interface ITotalObjectKey {
+  [key: string]: number;
+}
+
 
 export class Checkout {
 
   private _scannedProducts: Array<IProductData> = [];
   private _availableProducts: Array<IProductData> = [];
   private _availableDiscounts: Array<IDiscountData> = [];
+
+  private _totalPerProduct: ITotalObjectKey = {};
+  private _totalDiscount: ITotalObjectKey = {};
   private _subtotal: number = 0;
-  private _discounted: any;
   private _total: number = 0;
 
   static instance: Checkout;
@@ -29,7 +35,8 @@ export class Checkout {
     if (!Checkout.instance) {
       this._availableProducts = pricingRules ? pricingRules.products : [];
       this._availableDiscounts = pricingRules ? pricingRules.discounts : [];
-      this._discounted = arrayToObject(this._availableProducts, 'code', 0);
+      this._totalPerProduct = arrayToObject(this._availableProducts, 'code', 0); 
+      this._totalDiscount = arrayToObject(this._availableProducts, 'code', 0);
       Checkout.instance = this;
     }
 
@@ -48,6 +55,18 @@ export class Checkout {
     return this._scannedProducts;
   }
 
+  get totalPerProduct(): ITotalObjectKey {
+    return this._totalPerProduct;
+  }
+
+  get totalDiscount(): ITotalObjectKey {
+    return this._totalDiscount;
+  }
+
+  public hasDiscounts(productCode: string): boolean {
+    return !!(this._availableDiscounts.find((discount) => discount.product_code === productCode));
+  }
+
   public scan(productCode: string): void {
     const product = this._availableProducts.find(product => product.code === productCode);
     if(product) {
@@ -55,23 +74,20 @@ export class Checkout {
     }
   }
 
-  public numberOfScannedProducts(): number {
-    return this._scannedProducts.length;
-  }
-
-  // TODO: Mejorar esta funcion para remover ese juego de if y que sea inmutable
   public remove(productCode: string): void {
     const product = this._availableProducts.find(product => product.code === productCode);
     if(product) {
       const idx = this._scannedProducts.indexOf(product);
-      if (idx >= 0) {
-        this._scannedProducts.splice(idx, 1);
-      }
+      if (idx >= 0) { this._scannedProducts.splice(idx, 1); }
     }
   }
 
   public removeAllProductsByCode(productCode: string): void {
     this._scannedProducts = this._scannedProducts.filter((product) => product.code !== productCode);
+  }
+
+  public numberOfScannedProducts(): number {
+    return this._scannedProducts.length;
   }
   
   public subtotal(): number {
@@ -80,29 +96,27 @@ export class Checkout {
   }
 
   public total(): number {
-    this._total = this._subtotal - this._sumDiscounted();
+    this._total = this._subtotal - this._sumTotalDiscount();
     return this._total;
   }
 
-  // TODO: Mejorar este loop
-  private _sumDiscounted(): number {
-    let total = 0;
-    for (const key in this._discounted) {
-      total = total + this._discounted[key];
-    }
-    return total;
-  }
-
-  public hasDiscounts(productCode: string): boolean {
-    return !!(this._availableDiscounts.find((discount) => discount.product_code === productCode));
-  }
-
-  public calculateDiscountByProductCode(productCode: string) {
+  public calculateDiscount(productCode: string) {
     const discount = this._availableDiscounts.find((discount) => discount.product_code === productCode);
     const products = this._scannedProducts.filter((product) => product.code === discount?.product_code);
 
-    this._discounted[productCode] = this._applyDiscount(products, discount as IDiscountData);
-    return this._discounted[productCode];
+    this._totalDiscount[productCode] = this._applyDiscount(products, discount as IDiscountData);
+  }
+
+  public calculateTotalPerProduct(product: IProductData, amount: number) {
+    this._totalPerProduct[product.code] = product.price * amount;
+  }
+
+  private _sumTotalDiscount(): number {
+    let total = 0;
+    for (const key in this._totalDiscount) {
+      total = total + this._totalDiscount[key];
+    }
+    return total;
   }
 
   private _applyDiscount(products: Array<IProductData>, discount: IDiscountData) {
