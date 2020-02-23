@@ -3,7 +3,7 @@ import React from 'react';
 import { IObjectKey } from 'app/interfaces/common';
 import { IDiscountData } from 'app/interfaces/discount-data';
 
-import Button from 'app/components/Button/Button';
+import Button, { ButtonUse, ButtonSize } from 'app/components/Button/Button';
 
 import './OrderSummary.css';
 
@@ -54,7 +54,12 @@ const OrderSummary = ({
             <span className="text-xl leading-6 font-bold">{total} €</span>
           </li>
         </ul>
-        <Button label="Checkout"></Button>
+        <Button
+          label="Checkout"
+          use={ButtonUse.primary}
+          size={ButtonSize.md}
+          block={true}
+          className="mt-12" />
       </div>
     </aside>
   );
