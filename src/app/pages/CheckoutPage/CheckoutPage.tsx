@@ -11,6 +11,8 @@ import { Checkout } from 'app/models/checkout/checkout';
 import ShoppingCart from './sections/ShoppingCart/ShoppingCart';
 import OrderSummary from './sections/OrderSummary/OrderSummary';
 
+import './CheckoutPage.css';
+
 
 const HomePage = () => {
   const checkout = new Checkout({products: productData, discounts: discountData});
@@ -49,7 +51,7 @@ const HomePage = () => {
 
 
   return (
-    <main className="CheckoutPage">
+    <main className="CheckoutPage fixed flex rounded-md bg-white overflow-x-hidden overflow-y-auto">
       <ShoppingCart
         products={products}
         values={inputValues}

@@ -39,7 +39,7 @@ const ShoppingCart = ({
   );
 
   return (
-    <section className="ShoppingCart products py-8 px-12 flex-1">
+    <section className="ShoppingCart py-8 px-12 flex-1">
       <h1 className="pb-4 border-solid border-b border-gainsboro font-black">
         Shopping cart
       </h1>

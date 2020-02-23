@@ -1,6 +1,6 @@
-/***********************************************/
-/*             UI GUIDELINE RESETS             */
-/***********************************************/
+/*******************************************/
+/*             PROJECTS RESETS             */
+/*******************************************/
 
 
 body {
@@ -12,6 +12,8 @@ body {
   background-position: top left;
   background-size: cover;
   font-weight: regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
@@ -19,4 +21,35 @@ h1 {
   letter-spacing: -0.18px;
   font-size: 1.125rem;
   line-height: 1.5rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+/* Grid */
+.row {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.row + .row {
+  margin-top: 32px;
+}
+
+[class*="col-"] {
+  display: flex;
+  align-items: center;
+}
+
+[class*="col-"]:nth-child(n + 2) {
+  justify-content: center;
 }

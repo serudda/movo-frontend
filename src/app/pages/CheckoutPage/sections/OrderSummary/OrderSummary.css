@@ -1,0 +1,23 @@
+.OrderSummary {
+  width: 312px;
+}
+
+.OrderSummary > * {
+  width: 100%;
+}
+
+.OrderSummary input::placeholder {
+  color: var(--quick-silver);
+  text-transform: lowercase;
+}
+
+.OrderSummary ul li {
+  display: flex;
+  font-size: .875rem;
+  justify-content: space-between;
+  line-height: 1rem;
+}
+
+.OrderSummary ul li + li {
+  margin-top: 1.25rem;
+}

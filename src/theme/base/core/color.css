@@ -5,6 +5,10 @@
 
 :root {
   --primary:            #7350FF;
+  --light-primary:      #8142ff;
+
+  --light-secondary:    #292759;
+  --secondary:          #212240;
   
   --white:              #FFFFFF;
 
