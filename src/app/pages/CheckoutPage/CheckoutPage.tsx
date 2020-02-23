@@ -11,6 +11,8 @@ import { Checkout } from 'app/models/checkout/checkout';
 import ShoppingCart from './sections/ShoppingCart/ShoppingCart';
 import OrderSummary from './sections/OrderSummary/OrderSummary';
 
+import './CheckoutPage.css';
+
 
 const HomePage = () => {
   const checkout = new Checkout({products: productData, discounts: discountData});

@@ -1,0 +1,32 @@
+.OrderSummary {
+  width: 312px;
+  background-color: var(--anti-flash-white);
+}
+
+.OrderSummary > * {
+  width: 100%;
+}
+
+.OrderSummary input::placeholder {
+  color: var(--quick-silver);
+  text-transform: lowercase;
+}
+
+.OrderSummary ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.OrderSummary ul li > *:nth-child(2) {
+  font-weight: bold;
+}
+
+.OrderSummary ul li + li {
+  margin-top: 20px;
+}
+
+.OrderSummary input,
+.OrderSummary ul li {
+  font-size: 14px;
+  line-height: 17px;
+}

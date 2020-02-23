@@ -4,6 +4,8 @@ import { IDiscountData } from 'app/interfaces/discount-data';
 
 import Button from 'app/components/Button/Button';
 
+import './OrderSummary.css';
+
 export interface IProps {
   discounts: Array<IDiscountData>;
   discountedPrice: Object;
@@ -25,30 +27,30 @@ const OrderSummary = ({
   );
 
   return (
-    <aside className="OrderSummary summary text-yankees-blue flex flex-col flex-wrap p-8">
+    <aside className="OrderSummary text-yankees-blue flex flex-col flex-wrap p-8">
       <h1 className="pb-4 border-solid border-b border-gainsboro font-black">Order Summary</h1>
-      <ul className="summary-items wrapper border-b border-solid border-gainsboro py-8">
+      <ul className="wrapper border-b border-solid border-gainsboro py-8">
         <li>
-          <span className="summary-items-number font-bold">
+          <span className="font-bold">
             <span>{scannedItems} Items</span>
           </span>
-          <span className="summary-items-price text-base font-bold">
+          <span className="text-base font-bold">
             <span>{subtotal}</span>
-            <span className="currency font-bold ml-1">€</span>
+            <span className="font-bold ml-1">€</span>
           </span>
         </li>
       </ul>
-      <div className="summary-discounts wrapper-half py-6">
+      <div className="wrapper-half py-6">
         <h2 className="text-quick-silver uppercase text-xs leading-4 tracking-wider font-bold mb-4">Discounts</h2>
         <ul className="font-bold">
           {discountList}
         </ul>
       </div>
-      <div className="summary-total wrapper text-yankees-blue self-end mt-auto pt-4 pb-0 border-solid border-t border-gainsboro">
+      <div className="wrapper text-yankees-blue self-end mt-auto pt-4 pb-0 border-solid border-t border-gainsboro">
         <ul>
           <li className="flex items-center">
-            <span className="summary-total-cost uppercase font-bold">Total cost</span>
-            <span className="summary-total-price text-xl leading-6 font-bold">{total} €</span>
+            <span className="uppercase font-bold">Total cost</span>
+            <span className="text-xl leading-6 font-bold">{total} €</span>
           </li>
         </ul>
         <Button label="Checkout"></Button>
