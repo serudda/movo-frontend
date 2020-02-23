@@ -59,13 +59,13 @@ const Product = ({
   const handleFocus = (e) => e.target.select();
 
   return (
-    <li className="Product product row">
+    <li className="Product row">
       <div className="col-product">
         <figure className="product-image flex items-center flex-row flex-no-wrap">
           <img className="mr-4 border border-solid border-lavender-gray rounded-md" src={url_img} alt={name} />
           <div className="product-description">
-            <h1 className="text-primary text-lg font-black">{name}</h1>
-            <p className="product-code text-quick-silver font-semi-bold">Product code {code}</p>
+            <h1 className="text-primary text-lg leading-6 font-black">{name}</h1>
+            <p className="text-xs leading-4 text-quick-silver font-semi-bold">Product code {code}</p>
           </div>
         </figure>
       </div>
@@ -85,12 +85,12 @@ const Product = ({
         <button className="count" onClick={handlePlusClick}>+</button>
       </div>
       <div className="col-price">
-        <span className="product-price text-black text-base font-bold">{price}</span>
-        <span className="product-currency currency font-bold ml-1">€</span>
+        <span className="text-black text-base font-bold">{price}</span>
+        <span className="font-bold ml-1">€</span>
       </div>
       <div className="col-total">
-        <span className="product-price text-black text-base font-bold">{total}</span>
-        <span className="product-currency currency font-bold ml-1">€</span>
+        <span className="text-black text-base font-bold">{total}</span>
+        <span className="font-bold ml-1">€</span>
       </div>
     </li>
   );
