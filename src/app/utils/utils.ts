@@ -1,4 +1,6 @@
-export const arrayToObject = (array: Array<any>, key: string, value: number): Object =>
+import { IObjectKey } from 'app/interfaces/common';
+
+export const arrayToObject = (array: Array<any>, key: string, value: any): IObjectKey =>
   array.reduce((obj, item) => {
     obj[item[key]] = value;
     return obj;
@@ -25,10 +27,10 @@ export const isEven = (value: number) => {
   return false;
 }
 
-export const hasMoreThanThreeEqualElements = (array: Array<any>, key: string, value: any): boolean => {
+export const hasMoreThan = (array: Array<any>, key: string, value: any, moreThan: number = 1): boolean => {
   let count = 0;
   array.forEach(item => {
     if(item[key] === value) { count++; }      
   });
-  return (count >= 3);
+  return (count >= moreThan);
 }
