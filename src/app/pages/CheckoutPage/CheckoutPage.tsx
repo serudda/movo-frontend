@@ -21,43 +21,30 @@ const HomePage = () => {
 
 
   const handleMinusClick = (product: IProductData, newValue: number) => {
-    const code = product.code;
-    checkout.remove!(code);
-    checkout.calculateTotalPerProduct(product, newValue);
-    if(checkout.hasDiscounts(code)) {
-      checkout.calculateDiscount(code);
-    }
-    setInputValues({...inputValues, [code]: newValue});
+    checkout.remove!(product.code);
+    runCalc(product, newValue);
   };
 
   const handlePlusClick = (product: IProductData, newValue: number) => {
-    const code = product.code;
-    checkout.scan!(code);
-    checkout.calculateTotalPerProduct(product, newValue);
-    if(checkout.hasDiscounts(code)) {
-      checkout.calculateDiscount(code);
-    }
-    setInputValues({...inputValues, [code]: newValue});
+    checkout.scan!(product.code);
+    runCalc(product, newValue);
   };
 
   const handleValueChange = (product: IProductData, newValue: number) => {
-    const code = product.code;
-    checkout.removeAllProductsByCode!(code);
-    for (let i = 0; i < newValue; i++) { checkout.scan!(code); }
-    checkout.calculateTotalPerProduct(product, newValue);
-    if(checkout.hasDiscounts(code)) {
-      checkout.calculateDiscount(code);
-    }
-    setInputValues({...inputValues, [code]: newValue});
+    checkout.removeAllProductsByCode!(product.code);
+    for (let i = 0; i < newValue; i++) { checkout.scan!(product.code); }
+    runCalc(product, newValue);
   };
 
   const handleBlur = (product: IProductData, newValue: number) => {
-    const code = product.code;    
-    checkout.calculateTotalPerProduct(product, newValue);
-    if(checkout.hasDiscounts(code)) {
-      checkout.calculateDiscount(code);
-    }
-    setInputValues({...inputValues, [code]: newValue});
+    runCalc(product, newValue);
+  };
+
+  const runCalc = (product: IProductData, value: number) => {
+    const code = product.code;
+    checkout.calculateTotalPerProduct(product, value);
+    if(checkout.hasDiscounts(code)) { checkout.calculateDiscount(code); }
+    setInputValues({...inputValues, [code]: value});
   };
 
 

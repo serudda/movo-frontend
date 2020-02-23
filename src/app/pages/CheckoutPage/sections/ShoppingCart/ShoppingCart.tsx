@@ -2,13 +2,13 @@ import React from 'react';
 
 import Product from 'app/components/Product/Product';
 
+import { IObjectKey } from 'app/interfaces/common';
 import { IProductData } from 'app/interfaces/product-data';
 
 export interface IProps {
   products: Array<IProductData>;
-  // TODO: Remover estos any
-  totals: any;
-  values: any;
+  totals: IObjectKey;
+  values: IObjectKey;
   onInputChange: (product: IProductData, newValue: number) => void;
   onInputBlur: (product: IProductData, newValue: number) => void;
   onMinusClick: (product: IProductData, newValue: number) => void;

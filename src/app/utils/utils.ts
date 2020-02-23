@@ -1,6 +1,4 @@
-export interface IObjectKey {
-  [key: string]: any;
-}
+import { IObjectKey } from 'app/interfaces/common';
 
 export const arrayToObject = (array: Array<any>, key: string, value: any): IObjectKey =>
   array.reduce((obj, item) => {

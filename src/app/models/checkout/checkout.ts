@@ -1,5 +1,6 @@
-import { IProductData } from 'app/interfaces/product-data';
+import { IObjectKey } from 'app/interfaces/common';
 import { IDiscountData } from 'app/interfaces/discount-data';
+import { IProductData } from 'app/interfaces/product-data';
 
 import {
   arrayToObject,
@@ -13,19 +14,14 @@ export interface IPricingRules {
   discounts:Array<IDiscountData>;
 }
 
-export interface ITotalObjectKey {
-  [key: string]: number;
-}
-
-
 export class Checkout {
 
   private _scannedProducts: Array<IProductData> = [];
   private _availableProducts: Array<IProductData> = [];
   private _availableDiscounts: Array<IDiscountData> = [];
 
-  private _totalPerProduct: ITotalObjectKey = {};
-  private _totalDiscount: ITotalObjectKey = {};
+  private _totalPerProduct: IObjectKey = {};
+  private _totalDiscount: IObjectKey = {};
   private _subtotal: number = 0;
   private _total: number = 0;
 
@@ -55,11 +51,11 @@ export class Checkout {
     return this._scannedProducts;
   }
 
-  get totalPerProduct(): ITotalObjectKey {
+  get totalPerProduct(): IObjectKey {
     return this._totalPerProduct;
   }
 
-  get totalDiscount(): ITotalObjectKey {
+  get totalDiscount(): IObjectKey {
     return this._totalDiscount;
   }
 
