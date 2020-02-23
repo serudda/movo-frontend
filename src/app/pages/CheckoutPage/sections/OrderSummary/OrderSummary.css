@@ -1,6 +1,5 @@
 .OrderSummary {
   width: 312px;
-  background-color: var(--anti-flash-white);
 }
 
 .OrderSummary > * {
@@ -14,19 +13,11 @@
 
 .OrderSummary ul li {
   display: flex;
+  font-size: .875rem;
   justify-content: space-between;
-}
-
-.OrderSummary ul li > *:nth-child(2) {
-  font-weight: bold;
+  line-height: 1rem;
 }
 
 .OrderSummary ul li + li {
-  margin-top: 20px;
-}
-
-.OrderSummary input,
-.OrderSummary ul li {
-  font-size: 14px;
-  line-height: 17px;
+  margin-top: 1.25rem;
 }

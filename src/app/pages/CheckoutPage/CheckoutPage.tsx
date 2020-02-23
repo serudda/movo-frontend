@@ -51,7 +51,7 @@ const HomePage = () => {
 
 
   return (
-    <main className="CheckoutPage">
+    <main className="CheckoutPage fixed flex rounded-md bg-white overflow-x-hidden overflow-y-auto">
       <ShoppingCart
         products={products}
         values={inputValues}

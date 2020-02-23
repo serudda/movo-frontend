@@ -1,15 +1,9 @@
 .CheckoutPage {
-  position: fixed;
-  top: 50%;
+  height: calc(100% - 64px);
   left: 50%;
-  display: flex;
-  overflow-x: hidden;
-  overflow-y: auto;
   max-width: 1088px;
   max-height: 648px;
-  width: calc(100% - 64px);
-  height: calc(100% - 64px);
-  border-radius: 4px;
-  background-color: var(--white);
+  top: 50%;
   transform: translate(-50%, -50%);
+  width: calc(100% - 64px);
 }
