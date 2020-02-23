@@ -1,0 +1,9 @@
+.CheckoutPage {
+  height: calc(100% - 64px);
+  left: 50%;
+  max-width: 1088px;
+  max-height: 648px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 64px);
+}

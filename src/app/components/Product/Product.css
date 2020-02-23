@@ -2,22 +2,6 @@
   width: 45%;
 }
 
-.product-image img {
-  width: 72px;
-  height: 72px;
-}
-
-/* TODO: duplicated in App.css */
-.product-code {
-  font-size: 12px;
-  line-height: 16px;
-}
-
-.product h1 {
-  font-size: 16px;
-  line-height: 24px;
-}
-
 .col-price {
   width: 20%;
 }
@@ -30,31 +14,18 @@
   width: 20%;
 }
 
-.products button.count {
-  font-size: 20px;
-  line-height: 25px;
-  padding: 0 8px;
-  height: 40px;
-  border: none;
-  background: transparent;
-  color: var(--primary);
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
+.product-image img {
+  width: 72px;
+  height: 72px;
 }
 
-.product-quantity {
-  border: 2px solid var(--gainsboro);
-  border-radius: 4px;
-  font-size: 14px;
+.NumericStepper__input {
   height: 40px;
-  line-height: 17px;
-  text-align: center;
   width: 40px;
 }
 
-input {
-  width: 100%;
-  height: 48px;
-  border-radius: 4px;
+.NumericStepper__count {
+  padding: 0 8px;
+  height: 40px;
+  color: var(--primary);
 }
