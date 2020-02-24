@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 
 import { IProductData } from 'app/interfaces/product-data';
 
-import useModal from 'app/hooks/useModal';
-
-import Modal from 'app/components/Modal/Modal';
+import { ModalContext } from 'app/contexts/ModalContext';
 
 import './Product.css';
 
@@ -29,7 +27,7 @@ const Product = ({
 }: IProps) => {
   const {name, code, price, stock, url_img} = product;
   const [localValue, setLocalValue] = useState(value);
-  const {isShowing, toggle} = useModal();
+  const {isShowing, setIsShowing}: any = useContext(ModalContext);
 
   const handleMinusClick = () => {
     if (localValue > 0) {
@@ -64,13 +62,12 @@ const Product = ({
   const handleFocus = (e) => e.target.select();
 
   return (
-    <>
     <li className="Product row">
       <div className="col-product">
         <figure className="product-image flex items-center flex-row flex-no-wrap">
           <img className="mr-4 border border-solid border-lavender-gray rounded-md" src={url_img} alt={name} />
           <div className="product-description">
-            <h1 className="text-primary text-lg leading-6 font-black cursor-pointer" onClick={toggle}>{name}</h1>
+            <h1 className="text-primary text-lg leading-6 font-black cursor-pointer" onClick={() => setIsShowing(!isShowing) }>{name}</h1>
             <p className="text-xs leading-4 text-quick-silver font-semi-bold">Product code {code}</p>
           </div>
         </figure>
@@ -105,8 +102,6 @@ const Product = ({
         <span className="font-bold ml-1">€</span>
       </div>
     </li>
-    <Modal isShowing={isShowing} hide={toggle} />
-    </>
   );
 };
 

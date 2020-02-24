@@ -1,12 +1,17 @@
 import React from 'react';
 
+import { ModalProvider } from 'app/contexts/ModalContext';
+
 import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
+
+import Modal from 'app/components/Modal/Modal';
 
 const App = () => {
   return (
-    <div className="App">
+    <ModalProvider>
       <CheckoutPage />
-    </div>
+      <Modal/>
+    </ModalProvider>
   );
 }
 
