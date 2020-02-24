@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 import CheckoutPage from './pages/CheckoutPage/CheckoutPage';
 
 const App = () => {
   return (
-    <CheckoutPage />
+    <div className="App">
+      <CheckoutPage />
+    </div>
   );
 }
 
