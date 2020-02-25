@@ -4169,8 +4169,44 @@ video {
   fill: currentColor !important;
 }
 
-.stroke-current {
-  stroke: currentColor !important;
+.stroke-transparent {
+  stroke: transparent !important;
+}
+
+.stroke-primary {
+  stroke: var(--primary) !important;
+}
+
+.stroke-white {
+  stroke: var(--white) !important;
+}
+
+.stroke-anti-flash-white {
+  stroke: var(--anti-flash-white) !important;
+}
+
+.stroke-gainsboro {
+  stroke: var(--gainsboro) !important;
+}
+
+.stroke-lavender-gray {
+  stroke: var(--lavender-gray) !important;
+}
+
+.stroke-quick-silver {
+  stroke: var(--quick-silver) !important;
+}
+
+.stroke-aurometalsaurus {
+  stroke: var(--aurometalsaurus) !important;
+}
+
+.stroke-yankees-blue {
+  stroke: var(--yankees-blue) !important;
+}
+
+.stroke-black {
+  stroke: var(--black) !important;
 }
 
 .stroke-0 {
@@ -10732,8 +10768,44 @@ video {
     fill: currentColor !important;
   }
 
-  .sm\:stroke-current {
-    stroke: currentColor !important;
+  .sm\:stroke-transparent {
+    stroke: transparent !important;
+  }
+
+  .sm\:stroke-primary {
+    stroke: var(--primary) !important;
+  }
+
+  .sm\:stroke-white {
+    stroke: var(--white) !important;
+  }
+
+  .sm\:stroke-anti-flash-white {
+    stroke: var(--anti-flash-white) !important;
+  }
+
+  .sm\:stroke-gainsboro {
+    stroke: var(--gainsboro) !important;
+  }
+
+  .sm\:stroke-lavender-gray {
+    stroke: var(--lavender-gray) !important;
+  }
+
+  .sm\:stroke-quick-silver {
+    stroke: var(--quick-silver) !important;
+  }
+
+  .sm\:stroke-aurometalsaurus {
+    stroke: var(--aurometalsaurus) !important;
+  }
+
+  .sm\:stroke-yankees-blue {
+    stroke: var(--yankees-blue) !important;
+  }
+
+  .sm\:stroke-black {
+    stroke: var(--black) !important;
   }
 
   .sm\:stroke-0 {
@@ -17296,8 +17368,44 @@ video {
     fill: currentColor !important;
   }
 
-  .md\:stroke-current {
-    stroke: currentColor !important;
+  .md\:stroke-transparent {
+    stroke: transparent !important;
+  }
+
+  .md\:stroke-primary {
+    stroke: var(--primary) !important;
+  }
+
+  .md\:stroke-white {
+    stroke: var(--white) !important;
+  }
+
+  .md\:stroke-anti-flash-white {
+    stroke: var(--anti-flash-white) !important;
+  }
+
+  .md\:stroke-gainsboro {
+    stroke: var(--gainsboro) !important;
+  }
+
+  .md\:stroke-lavender-gray {
+    stroke: var(--lavender-gray) !important;
+  }
+
+  .md\:stroke-quick-silver {
+    stroke: var(--quick-silver) !important;
+  }
+
+  .md\:stroke-aurometalsaurus {
+    stroke: var(--aurometalsaurus) !important;
+  }
+
+  .md\:stroke-yankees-blue {
+    stroke: var(--yankees-blue) !important;
+  }
+
+  .md\:stroke-black {
+    stroke: var(--black) !important;
   }
 
   .md\:stroke-0 {
@@ -23860,8 +23968,44 @@ video {
     fill: currentColor !important;
   }
 
-  .lg\:stroke-current {
-    stroke: currentColor !important;
+  .lg\:stroke-transparent {
+    stroke: transparent !important;
+  }
+
+  .lg\:stroke-primary {
+    stroke: var(--primary) !important;
+  }
+
+  .lg\:stroke-white {
+    stroke: var(--white) !important;
+  }
+
+  .lg\:stroke-anti-flash-white {
+    stroke: var(--anti-flash-white) !important;
+  }
+
+  .lg\:stroke-gainsboro {
+    stroke: var(--gainsboro) !important;
+  }
+
+  .lg\:stroke-lavender-gray {
+    stroke: var(--lavender-gray) !important;
+  }
+
+  .lg\:stroke-quick-silver {
+    stroke: var(--quick-silver) !important;
+  }
+
+  .lg\:stroke-aurometalsaurus {
+    stroke: var(--aurometalsaurus) !important;
+  }
+
+  .lg\:stroke-yankees-blue {
+    stroke: var(--yankees-blue) !important;
+  }
+
+  .lg\:stroke-black {
+    stroke: var(--black) !important;
   }
 
   .lg\:stroke-0 {
@@ -30424,8 +30568,44 @@ video {
     fill: currentColor !important;
   }
 
-  .xl\:stroke-current {
-    stroke: currentColor !important;
+  .xl\:stroke-transparent {
+    stroke: transparent !important;
+  }
+
+  .xl\:stroke-primary {
+    stroke: var(--primary) !important;
+  }
+
+  .xl\:stroke-white {
+    stroke: var(--white) !important;
+  }
+
+  .xl\:stroke-anti-flash-white {
+    stroke: var(--anti-flash-white) !important;
+  }
+
+  .xl\:stroke-gainsboro {
+    stroke: var(--gainsboro) !important;
+  }
+
+  .xl\:stroke-lavender-gray {
+    stroke: var(--lavender-gray) !important;
+  }
+
+  .xl\:stroke-quick-silver {
+    stroke: var(--quick-silver) !important;
+  }
+
+  .xl\:stroke-aurometalsaurus {
+    stroke: var(--aurometalsaurus) !important;
+  }
+
+  .xl\:stroke-yankees-blue {
+    stroke: var(--yankees-blue) !important;
+  }
+
+  .xl\:stroke-black {
+    stroke: var(--black) !important;
   }
 
   .xl\:stroke-0 {
