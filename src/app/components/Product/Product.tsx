@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 
 import { IProductData } from 'app/interfaces/product-data';
 
-import { ModalContext } from 'app/contexts/ModalContext';
+import { ModalContext, Modals } from 'app/contexts/ModalContext';
 
 import './Product.css';
 
@@ -27,7 +27,7 @@ const Product = ({
 }: IProps) => {
   const {name, code, price, stock, url_img} = product;
   const [localValue, setLocalValue] = useState(value);
-  const {isShowing, setIsShowing} = useContext(ModalContext);
+  const {setCurrentModal} = useContext(ModalContext);
 
   const handleMinusClick = () => {
     if (localValue > 0) {
@@ -61,12 +61,22 @@ const Product = ({
 
   const handleFocus = (e) => e.target.select();
 
+  const openModal = () => {
+    setCurrentModal({
+      name: Modals.ProductDetailModal,
+      props: {
+        product,
+        onClose: () => setCurrentModal(null)
+      }
+    });
+  };
+
   return (
     <li className="Product row">
       <div className="col-product">
         <figure
           className="product-image flex items-center flex-row flex-no-wrap cursor-pointer"
-          onClick={() => setIsShowing(!isShowing) }>
+          onClick={openModal}>
           <img 
             className="mr-4 border border-solid border-lavender-gray rounded-md"
             src={url_img}
