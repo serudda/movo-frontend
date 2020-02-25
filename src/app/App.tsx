@@ -10,7 +10,7 @@ const App = () => {
   return (
     <ModalProvider>
       <CheckoutPage />
-      <Modal/>
+      <Modal />
     </ModalProvider>
   );
 }
