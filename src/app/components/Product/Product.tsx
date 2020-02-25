@@ -67,7 +67,10 @@ const Product = ({
         <figure
           className="product-image flex items-center flex-row flex-no-wrap cursor-pointer"
           onClick={() => setIsShowing(!isShowing) }>
-          <img className="mr-4 border border-solid border-lavender-gray rounded-md" src={url_img} alt={name} />
+          <img 
+            className="mr-4 border border-solid border-lavender-gray rounded-md"
+            src={url_img}
+            alt={name} />
           <div className="product-description">
             <h1 className="text-primary text-lg leading-6 font-black">{name}</h1>
             <p className="text-xs leading-4 text-quick-silver font-semi-bold">Product code {code}</p>
