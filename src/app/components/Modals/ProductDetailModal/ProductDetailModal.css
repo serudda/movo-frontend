@@ -1,15 +1,4 @@
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1040;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-  opacity: .5;
-}
-
-.modal-wrapper {
+.ProductDetailModal {
   position: fixed;
   top: 0;
   left: 0;
@@ -21,24 +10,23 @@
   outline: 0;
 }
 
-.modal {
+.ProductDetailModal .content {
   z-index: 100;
   background: white;
   position: relative;
   margin: 1.75rem auto;
-  border-radius: 3px;
-  max-width: 500px;
-  padding: 2rem;
+  max-width: 1088px;
+  max-height: 648px;
 }
 
-.modal-header {
+.ProductDetailModal .header {
   display: flex;
   justify-content: flex-end;
 }
 
-.modal-close-button {
-  font-size: 1.4rem;
-  font-weight: 700;
+.close-btn {
+  font-size: 1.5rem;
+  font-weight: 500;
   line-height: 1;
   color: #000;
   opacity: .3;
