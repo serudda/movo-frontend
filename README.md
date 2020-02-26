@@ -46,7 +46,7 @@ yarn start
 
 #### You can find bellow all the resources used to create this project
 
-📑 · [Paper mockups, Sketch files, More details about implementation.](https://www.notion.so/seruda/Movo-Frontend-Challenge-ef7b766095494cb4a23578cf6c8bcbfd)
+📑 · [Details about implementation.](https://www.notion.so/seruda/Movo-Frontend-Challenge-ef7b766095494cb4a23578cf6c8bcbfd)
 
 <br>
 
