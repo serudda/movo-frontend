@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background-image: url("../../../assets/images/background.png");
   background-color: var(--yankees-blue);
   background-position: top left;
   background-size: cover;

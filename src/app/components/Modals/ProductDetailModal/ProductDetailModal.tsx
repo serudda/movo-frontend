@@ -29,7 +29,7 @@ const ProductDetailModal = ({
         <div className="w-1/2 sm:w-2/3">
           <div 
             className="w-full h-full bg-anti-flash-white bg-cover bg-center bg-no-repeat"
-            style={{backgroundImage: `url(${product.img_url})`}}>
+            style={{backgroundImage: `url("images/${product.img_url}")`}}>
           </div>
         </div>
         <div className="w-1/2 sm:w-1/3 p-8">

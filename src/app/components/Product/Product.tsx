@@ -80,7 +80,7 @@ const Product = ({
           onClick={openModal}>
           <img 
             className="mr-4 border border-solid border-lavender-gray rounded-md"
-            src={thumbnail_url}
+            src={`images/${thumbnail_url}`}
             alt={name} />
           <div className="product-description">
             <h1 className="text-primary text-lg leading-6 font-black">{name}</h1>
