@@ -1,44 +1,62 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Movo Frontend Challenge
 
-## Available Scripts
+### Stack
+- React 16.12.0
+- Typescript
+- TailwindCSS (Generate utilities.scss)
 
-In the project directory, you can run:
 
-### `yarn start`
+### Install
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Actually, you don't need an **'installation'**, you just open the app on this [url](https://movo-test.netlify.com/). This project is deployed in [Netlify](https://www.netlify.com/), which is connected with a [GitHub](https://github.com/sruda/movo-frontend) repo.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+**PRD:** https://movo-test.netlify.com/
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-----
 
-### `yarn build`
+#### If you want to run the project locally, you should follow this steps:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the project.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
+git clone https://github.com/sruda/movo-frontend.git projectname
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+```shell
+npm install
+```
 
-### `yarn eject`
+3. Launch a local server:
+```shell
+npm start
+```
+or 
+```shell
+yarn start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Open your favorite browser, and browse to:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[**http://localhost:3000/**](http://localhost:3000/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+#### You can find bellow all the resources used to create this project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📑 · [Paper mockups, Sketch files, More details about implementation.](https://www.notion.so/seruda/Movo-Frontend-Challenge-ef7b766095494cb4a23578cf6c8bcbfd)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
+
+### Pending tasks(technical debt)
+
+- Add a new validation into the NumericStepper input in order to avoid the typing of negative numbers.
+- Remove the symbol "minus" when the discount is 0.
+- Include robust Test structure. The base structure is ready to include any kind of Test (E2E, Unit Test, StorybookJS/Storyshots, etc.).
+
+-----
+
+**NOTE**
+**Please, if you have any question, don't hesitate to contact me: sergioruizdavila@gmail.com**
