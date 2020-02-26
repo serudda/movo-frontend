@@ -10,12 +10,19 @@ import './ProductDetailModal.css';
 export interface IProps {
   product: IProductData;
   onClose: () => void;
+  onAddClick: () => void;
 }
 
 const ProductDetailModal = ({
   product,
-  onClose
+  onClose,
+  onAddClick
 }: IProps) => {
+
+  const handleClick = () => {
+    onAddClick();
+    onClose();
+  }
   return (
     <div className="ProductDetailModal" aria-modal aria-hidden role="dialog">
       <div className="content bg-white flex rounded-md h-full">
@@ -49,7 +56,8 @@ const ProductDetailModal = ({
               use={ButtonUse.primary}
               size={ButtonSize.md}
               block={true}
-              className="mt-12" />
+              className="mt-12"
+              onClick={handleClick} />
           </div>
         </div>
       </div>

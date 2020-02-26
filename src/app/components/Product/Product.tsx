@@ -66,7 +66,8 @@ const Product = ({
       name: Modals.ProductDetailModal,
       props: {
         product,
-        onClose: () => setCurrentModal(null)
+        onClose: () => setCurrentModal(null),
+        onAddClick: handlePlusClick
       }
     });
   };
