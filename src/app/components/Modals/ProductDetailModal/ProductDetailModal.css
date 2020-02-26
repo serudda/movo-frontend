@@ -1,0 +1,34 @@
+.ProductDetailModal {
+  height: calc(100% - 64px);
+  left: 50%;
+  max-width: 1088px;
+  max-height: 648px;
+  overflow: hidden;
+  outline: 0;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 64px);
+  z-index: 1050;
+}
+
+.ProductDetailModal .content {
+  z-index: 100;
+  background: white;
+  position: relative;
+}
+
+.ProductDetailModal .header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #000;
+  opacity: .3;
+  cursor: pointer;
+  border: none;
+}
