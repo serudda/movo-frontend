@@ -4,6 +4,7 @@ export interface IProductData {
   name: string;
   description: string;
   price: number;
-  url_img: string;
+  thumbnail_url: string;
+  img_url: string;
   stock: number;
 }

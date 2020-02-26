@@ -21,8 +21,8 @@ const ProductDetailModal = ({
       <div className="content bg-white flex rounded-md h-full">
         <div className="w-1/2 sm:w-2/3">
           <div 
-            className="w-full h-full bg-cover bg-center bg-no-repeat"
-            style={{backgroundImage: `url(tshirt@2x-crop.jpg)`}}>
+            className="w-full h-full bg-anti-flash-white bg-cover bg-center bg-no-repeat"
+            style={{backgroundImage: `url(${product.img_url})`}}>
           </div>
         </div>
         <div className="w-1/2 sm:w-1/3 p-8">
