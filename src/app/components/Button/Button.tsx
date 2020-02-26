@@ -30,6 +30,7 @@ export interface IProps {
   block?: boolean;
   type?: ButtonType;
   className?: string;
+  onClick: (e: React.FormEvent<{}>) => any;
 }
 
 const Button = ({
@@ -38,7 +39,8 @@ const Button = ({
   use = ButtonUse.primary,
   type = ButtonType.button,
   block = false,
-  className
+  className,
+  onClick
 }: IProps) => {
 
   const btnClass = classNames({
@@ -52,7 +54,8 @@ const Button = ({
   return (
     <button
       className={btnClass}
-      type={type}>
+      type={type}
+      onClick={onClick}>
       {label}
     </button>
   );

@@ -59,7 +59,8 @@ const OrderSummary = ({
           use={ButtonUse.primary}
           size={ButtonSize.md}
           block={true}
-          className="mt-12" />
+          className="mt-12"
+          onClick={() => console.log('CHECKOUT!')} />
       </div>
     </aside>
   );
