@@ -55,6 +55,7 @@ yarn start
 - Add a new validation into the NumericStepper input in order to avoid the typing of negative numbers.
 - Remove the symbol "minus" when the discount is 0.
 - Include robust Test structure. The base structure is ready to include any kind of Test (E2E, Unit Test, StorybookJS/Storyshots, etc.).
+- Consider move all the Checkout logic to a **Hook + Context** in order to avoid pass down every method from parent to nested children.
 
 -----
 
